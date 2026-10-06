@@ -1,0 +1,186 @@
+#define F_CPU 8000000UL   // Tan so thach anh 8MHz
+
+#include <avr/io.h>
+#include <util/delay.h>
+#include <stdio.h>
+#include <stdint.h>
+
+// ==========================================
+// CAU HINH CHAN LCD 16x2 (8-bit)
+// ==========================================
+#define LCD_DATA_PORT   PORTC
+#define LCD_DATA_DIR    DDRC
+
+#define LCD_CTRL_PORT   PORTD
+#define LCD_CTRL_DIR    DDRD
+#define LCD_RS          PD6
+#define LCD_RW          PD5
+#define LCD_EN          PD7
+
+// ==========================================
+// CAU HINH CHAN DHT11
+// ==========================================
+#define DHT_PORT        PORTA
+#define DHT_PIN_REG     PINA
+#define DHT_DIR         DDRA
+#define DHT_PIN         PA1
+
+// ==========================================
+// HAM LCD
+// ==========================================
+void LCD_Cmd(unsigned char cmd) {
+	LCD_CTRL_PORT &= ~(1 << LCD_RS);     // RS = 0: ghi lenh
+	LCD_CTRL_PORT &= ~(1 << LCD_RW);     // RW = 0: ghi
+	LCD_DATA_PORT = cmd;
+	_delay_us(1);
+
+	LCD_CTRL_PORT |= (1 << LCD_EN);
+	_delay_us(2);
+	LCD_CTRL_PORT &= ~(1 << LCD_EN);
+	_delay_ms(2);
+}
+
+void LCD_Char(unsigned char data) {
+	LCD_CTRL_PORT |= (1 << LCD_RS);      // RS = 1: ghi ky tu
+	LCD_CTRL_PORT &= ~(1 << LCD_RW);
+	LCD_DATA_PORT = data;
+	_delay_us(1);
+
+	LCD_CTRL_PORT |= (1 << LCD_EN);
+	_delay_us(2);
+	LCD_CTRL_PORT &= ~(1 << LCD_EN);
+	_delay_us(50);
+}
+
+void LCD_Init(void) {
+	LCD_DATA_DIR = 0xFF;
+	LCD_CTRL_DIR |= (1 << LCD_RS) | (1 << LCD_RW) | (1 << LCD_EN);
+	LCD_CTRL_PORT &= ~((1 << LCD_RS) | (1 << LCD_RW) | (1 << LCD_EN));
+
+	_delay_ms(40);                       // Cho LCD len nguon on dinh
+
+	LCD_Cmd(0x38);                       // Gui 3 lan theo datasheet HD44780
+	_delay_ms(5);
+	LCD_Cmd(0x38);
+	_delay_us(150);
+	LCD_Cmd(0x38);
+
+	LCD_Cmd(0x0C);                       // Bat hien thi, tat con tro
+	LCD_Cmd(0x06);                       // Tu dong tang con tro
+	LCD_Cmd(0x01);                       // Xoa man hinh
+	_delay_ms(2);
+}
+
+void LCD_String(const char *str) {
+	while (*str) {
+		LCD_Char(*str++);
+	}
+}
+
+void LCD_SetCursor(uint8_t row, uint8_t col) {
+	LCD_Cmd((row == 0 ? 0x80 : 0xC0) + col);
+}
+
+void LCD_Clear(void) {
+	LCD_Cmd(0x01);
+	_delay_ms(2);
+}
+
+// ==========================================
+// HAM DHT11
+// ==========================================
+
+// Cho chan DHT dat muc 'level' (0 hoac 1), toi da max_us micro-giay
+// Tra ve 1 neu thanh cong, 0 neu timeout
+static uint8_t DHT_WaitLevel(uint8_t level, uint8_t max_us) {
+	uint8_t t = 0;
+	while (((DHT_PIN_REG >> DHT_PIN) & 1) != level) {
+		_delay_us(1);
+		if (++t > max_us) return 0;
+	}
+	return 1;
+}
+
+uint8_t DHT11_Read(uint8_t *temperature, uint8_t *humidity) {
+	uint8_t data[5] = {0, 0, 0, 0, 0};
+
+	// Buoc 1: Start signal - keo LOW it nhat 18ms
+	DHT_DIR  |= (1 << DHT_PIN);
+	DHT_PORT &= ~(1 << DHT_PIN);
+	_delay_ms(20);
+
+	// Buoc 2: Nha chan, chuyen sang Input (co pull-up)
+	DHT_PORT |= (1 << DHT_PIN);
+	DHT_DIR  &= ~(1 << DHT_PIN);
+
+	// Buoc 3: Cho DHT11 phan hoi: LOW 80us -> HIGH 80us -> LOW (bat dau bit dau)
+	if (!DHT_WaitLevel(0, 100)) return 0;
+	if (!DHT_WaitLevel(1, 100)) return 0;
+	if (!DHT_WaitLevel(0, 100)) return 0;
+
+	// Buoc 4: Doc 40 bit
+	for (uint8_t i = 0; i < 5; i++) {
+		for (uint8_t j = 0; j < 8; j++) {
+			// Moi bit bat dau bang ~50us LOW, sau do xung HIGH
+			if (!DHT_WaitLevel(1, 100)) return 0;
+
+			_delay_us(35);               // Bit 0 ~27us, bit 1 ~70us
+
+			data[i] <<= 1;
+			if (DHT_PIN_REG & (1 << DHT_PIN)) {
+				data[i] |= 1;            // Van con HIGH -> bit 1
+			}
+
+			// Cho het xung de sang bit ke tiep (bit 0 thi da LOW san)
+			if (!DHT_WaitLevel(0, 100)) return 0;
+		}
+	}
+
+	// Buoc 5: Kiem tra checksum
+	if ((uint8_t)(data[0] + data[1] + data[2] + data[3]) == data[4]) {
+		*humidity    = data[0];
+		*temperature = data[2];
+		return 1;
+	}
+	return 0;
+}
+
+// ==========================================
+// MAIN
+// ==========================================
+int main(void) {
+	// Tat JTAG de dung PC2..PC5 lam I/O (phai ghi 2 lan lien tiep)
+	MCUCSR = (1 << JTD);
+	MCUCSR = (1 << JTD);
+
+	LCD_Init();
+	LCD_SetCursor(0, 0);
+	LCD_String("He Thong DHT11");
+	LCD_SetCursor(1, 0);
+	LCD_String("Dang Khoi Tao...");
+	_delay_ms(2000);                     // DHT11 can >1s sau khi cap nguon
+	LCD_Clear();
+
+	uint8_t temp = 0;
+	uint8_t humi = 0;
+	char buffer[20];
+
+	while (1) {
+		if (DHT11_Read(&temp, &humi)) {
+			sprintf(buffer, "Temp: %d %cC   ", temp, 0xDF);
+			LCD_SetCursor(0, 0);
+			LCD_String(buffer);
+
+			sprintf(buffer, "Do am: %d %%   ", humi);
+			LCD_SetCursor(1, 0);
+			LCD_String(buffer);
+			} else {
+			LCD_SetCursor(0, 0);
+			LCD_String("Sensor Error!   ");
+			LCD_SetCursor(1, 0);
+			LCD_String("Check Wiring... ");
+		}
+
+		_delay_ms(2000);                 // DHT11 toi thieu 1s giua 2 lan doc
+	}
+}
