@@ -1,0 +1,30 @@
+digraph wiring {
+ graph [rankdir=LR, bgcolor="#f8fafc", pad="0.35", nodesep="0.3", ranksep="1", label="ATmega16 environmental monitor | 8 MHz | firmware C\nDIP-40 pin numbers; see wiring.md for kit jumpers and voltage details", labelloc=t, fontname="DejaVu Sans", fontsize=17];
+ node [shape=box, style="rounded,filled", fillcolor="white", color="#94a3b8", fontname="DejaVu Sans", fontsize=12];
+ edge [color="#475569", fontname="DejaVu Sans", fontsize=10];
+ mcu [shape=plain, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="8" BGCOLOR="#e0f2fe"><TR><TD COLSPAN="2"><B>ATmega16 / DIP-40</B></TD></TR><TR><TD PORT="dht">PA1 / 39</TD><TD>DHT11</TD></TR><TR><TD PORT="adc">PA0 / 40</TD><TD>ADC0 / VR1</TD></TR><TR><TD PORT="keys">PB0-3 / 1-4</TD><TD>UP DOWN SET ACK</TD></TR><TR><TD PORT="uart">PD0-1 / 14-15</TD><TD>RX TX / 9600 8N1</TD></TR><TR><TD PORT="lcd">PC4-7 / 26-29</TD><TD>LCD D4-D7</TD></TR><TR><TD PORT="ctl">PD6/5/7 / 20/19/21</TD><TD>LCD RS/RW/E</TD></TR><TR><TD PORT="twi">PC0-1 / 22-23</TD><TD>SCL SDA / 100 kHz</TD></TR><TR><TD PORT="buzz">PD2 / 16</TD><TD>Buzzer control</TD></TR><TR><TD PORT="isp">PB5-7 / 6-8 + RESET / 9</TD><TD>ISP MOSI MISO SCK</TD></TR><TR><TD PORT="power">VCC 10, AVCC 30</TD><TD>5 V; GND 11,31</TD></TR><TR><TD>XTAL1/2 / 13,12</TD><TD>8 MHz crystal</TD></TR></TABLE>>];
+ dht [label="DHT11\nDATA + 4.7k pull-up to 5 V"];
+ vr [label="VR1 potentiometer\n0-5 V wiper"];
+ keys [label="4 kit buttons to GND\nPB1=UP, PB2=DOWN\nPB3=SET, PB4=ACK"];
+ serial [label="USB-UART TTL\nAdapter TX -> MCU RX\nAdapter RX <- MCU TX"];
+ lcd [label="LCD 1602 / HD44780\n4-bit mode; R/W held LOW\nVDD 5 V, VSS GND\nContrast circuit separate from VR1"];
+ bus [label="I2C bus + external pull-ups\n5 V side", fillcolor="#fef3c7"];
+ rtc [label="DS3231 | 0x68\nRTC + backup battery"];
+ shift [label="Bidirectional I2C\n5 V <-> 3.3 V level shifter"];
+ light [label="BH1750 | 0x23 (ADDR LOW)\nBare chip 2.4-3.6 V\nUse verified breakout / 3.3 V side"];
+ buzz [label="Transistor driver + buzzer\nActive: chirp; passive: 2 kHz\nAdd pull-down / protection as needed"];
+ isp [label="USBasp / AVRISP\nRESET + MOSI/MISO/SCK\nCommon GND, target supply"];
+ power [label="Regulated 5 V supply\n100 nF at VCC and AVCC\nCommon GND for all modules"];
+ note [label="Normal LCD/I2C: remove JP2 (LED7)\nLED bank: JP1 per wiring.md\nLED7 diagnostic: LCD/I2C OFF\nNo motor connection", fillcolor="#fee2e2", color="#ef4444"];
+ dht -> mcu:dht [dir=both,label="DATA"];
+ vr -> mcu:adc [label="wiper"];
+ keys -> mcu:keys [label="active LOW"];
+ serial -> mcu:uart [dir=both];
+ mcu:lcd -> lcd [label="D4-D7"];
+ mcu:ctl -> lcd [label="RS/RW/E"];
+ mcu:twi -> bus [dir=both,label="SCL/SDA"];
+ bus -> rtc [dir=both]; bus -> shift [dir=both]; shift -> light [dir=both];
+ mcu:buzz -> buzz;
+ isp -> mcu:isp [dir=both]; power -> mcu:power;
+ note -> mcu [style=dashed,arrowhead=none];
+}

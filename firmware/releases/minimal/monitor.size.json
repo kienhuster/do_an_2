@@ -1,0 +1,6 @@
+{
+  "flash": 4342,
+  "static_sram": 143,
+  "eeprom": 0,
+  "stack_headroom": 881
+}
