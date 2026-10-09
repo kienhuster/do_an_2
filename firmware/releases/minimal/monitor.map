@@ -1,0 +1,993 @@
+Archive member included to satisfy reference by file (symbol)
+
+/workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodqi4.o)
+                              build/minimal/command.o (__udivmodqi4)
+/workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodhi4.o)
+                              build/minimal/uart.o (__udivmodhi4)
+/workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_divmodhi4.o)
+                              build/minimal/ui.o (__divmodhi4)
+/workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodsi4.o)
+                              build/minimal/board.o (__udivmodsi4)
+/workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_exit.o)
+                              /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/crtatmega16.o (exit)
+/workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_tablejump2.o)
+                              build/minimal/ui.o (__tablejump2__)
+/workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_copy_data.o)
+                              build/minimal/core.o (__do_copy_data)
+/workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_clear_bss.o)
+                              build/minimal/board.o (__do_clear_bss)
+/workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_umulhisi3.o)
+                              build/minimal/core.o (__umulhisi3)
+/workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strcmp.o)
+                              build/minimal/core.o (strcmp)
+
+Discarded input sections
+
+ .data          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/crtatmega16.o
+ .bss           0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/crtatmega16.o
+ .text          0x00000000        0x0 build/minimal/board.o
+ .data          0x00000000        0x0 build/minimal/board.o
+ .bss           0x00000000        0x0 build/minimal/board.o
+ .text.adc_read
+                0x00000000        0x4 build/minimal/board.o
+ .text          0x00000000        0x0 build/minimal/command.o
+ .data          0x00000000        0x0 build/minimal/command.o
+ .bss           0x00000000        0x0 build/minimal/command.o
+ .text          0x00000000        0x0 build/minimal/core.o
+ .data          0x00000000        0x0 build/minimal/core.o
+ .bss           0x00000000        0x0 build/minimal/core.o
+ .text.bcd      0x00000000       0x28 build/minimal/core.o
+ .rodata.settings_set.str1.1
+                0x00000000       0x2f build/minimal/core.o
+ .text.settings_set
+                0x00000000      0x1bc build/minimal/core.o
+ .text.crc16    0x00000000       0x2e build/minimal/core.o
+ .text.sequence_newer
+                0x00000000       0x1a build/minimal/core.o
+ .text.record_pack
+                0x00000000       0x6c build/minimal/core.o
+ .text.record_unpack
+                0x00000000      0x130 build/minimal/core.o
+ .text.rtc_valid
+                0x00000000       0x50 build/minimal/core.o
+ .text.rtc_decode
+                0x00000000      0x14a build/minimal/core.o
+ .text.rtc_encode
+                0x00000000       0x7a build/minimal/core.o
+ .text.parse_i16
+                0x00000000       0xb6 build/minimal/core.o
+ .rodata.days.0
+                0x00000000        0xc build/minimal/core.o
+ .text          0x00000000        0x0 build/minimal/dht.o
+ .data          0x00000000        0x0 build/minimal/dht.o
+ .bss           0x00000000        0x0 build/minimal/dht.o
+ .text          0x00000000        0x0 build/minimal/i2c.o
+ .data          0x00000000        0x0 build/minimal/i2c.o
+ .bss           0x00000000        0x0 build/minimal/i2c.o
+ .text.i2c_write
+                0x00000000        0x4 build/minimal/i2c.o
+ .text.i2c_read
+                0x00000000        0x4 build/minimal/i2c.o
+ .text.i2c_regs
+                0x00000000        0x4 build/minimal/i2c.o
+ .text          0x00000000        0x0 build/minimal/lcd.o
+ .data          0x00000000        0x0 build/minimal/lcd.o
+ .bss           0x00000000        0x0 build/minimal/lcd.o
+ .text.lcd_line
+                0x00000000        0x2 build/minimal/lcd.o
+ .text          0x00000000        0x0 build/minimal/main.o
+ .data          0x00000000        0x0 build/minimal/main.o
+ .bss           0x00000000        0x0 build/minimal/main.o
+ .text.app_load
+                0x00000000       0x2c build/minimal/main.o
+ .text          0x00000000        0x0 build/minimal/optional.o
+ .data          0x00000000        0x0 build/minimal/optional.o
+ .bss           0x00000000        0x0 build/minimal/optional.o
+ .text.rtc_read
+                0x00000000        0x4 build/minimal/optional.o
+ .text.rtc_set  0x00000000        0x4 build/minimal/optional.o
+ .text.light_start
+                0x00000000        0x4 build/minimal/optional.o
+ .text.light_read
+                0x00000000        0x4 build/minimal/optional.o
+ .debug_info    0x00000000      0x177 build/minimal/optional.o
+ .debug_abbrev  0x00000000       0xf1 build/minimal/optional.o
+ .debug_loclists
+                0x00000000       0x2e build/minimal/optional.o
+ .debug_aranges
+                0x00000000       0x38 build/minimal/optional.o
+ .debug_rnglists
+                0x00000000       0x25 build/minimal/optional.o
+ .debug_line    0x00000000       0xc0 build/minimal/optional.o
+ .debug_str     0x00000000      0x16c build/minimal/optional.o
+ .debug_line_str
+                0x00000000       0xa2 build/minimal/optional.o
+ .comment       0x00000000       0x13 build/minimal/optional.o
+ .debug_frame   0x00000000       0x54 build/minimal/optional.o
+ .text          0x00000000        0x0 build/minimal/reset.o
+ .data          0x00000000        0x0 build/minimal/reset.o
+ .bss           0x00000000        0x0 build/minimal/reset.o
+ .text          0x00000000        0x0 build/minimal/storage.o
+ .data          0x00000000        0x0 build/minimal/storage.o
+ .bss           0x00000000        0x0 build/minimal/storage.o
+ .text.nv_load  0x00000000        0x4 build/minimal/storage.o
+ .text          0x00000000        0x0 build/minimal/uart.o
+ .data          0x00000000        0x0 build/minimal/uart.o
+ .bss           0x00000000        0x0 build/minimal/uart.o
+ .text.uart_get
+                0x00000000        0x4 build/minimal/uart.o
+ .text.uart_clear_errors
+                0x00000000        0x2 build/minimal/uart.o
+ .text.uart_take_rx_fault
+                0x00000000        0x4 build/minimal/uart.o
+ .text          0x00000000        0x0 build/minimal/ui.o
+ .data          0x00000000        0x0 build/minimal/ui.o
+ .bss           0x00000000        0x0 build/minimal/ui.o
+ .text.ui_cancel
+                0x00000000        0x6 build/minimal/ui.o
+ .text          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodqi4.o)
+ .data          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodqi4.o)
+ .bss           0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodqi4.o)
+ .text.libgcc.mul
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodqi4.o)
+ .text.libgcc   0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodqi4.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodqi4.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodqi4.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodqi4.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodqi4.o)
+ .text          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodhi4.o)
+ .data          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodhi4.o)
+ .bss           0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodhi4.o)
+ .text.libgcc.mul
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodhi4.o)
+ .text.libgcc   0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodhi4.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodhi4.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodhi4.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodhi4.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodhi4.o)
+ .text          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_divmodhi4.o)
+ .data          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_divmodhi4.o)
+ .bss           0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_divmodhi4.o)
+ .text.libgcc.mul
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_divmodhi4.o)
+ .text.libgcc   0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_divmodhi4.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_divmodhi4.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_divmodhi4.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_divmodhi4.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_divmodhi4.o)
+ .text          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodsi4.o)
+ .data          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodsi4.o)
+ .bss           0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.mul
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodsi4.o)
+ .text.libgcc   0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodsi4.o)
+ .text          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_exit.o)
+ .data          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_exit.o)
+ .bss           0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_exit.o)
+ .text.libgcc.mul
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_exit.o)
+ .text.libgcc.div
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_exit.o)
+ .text.libgcc   0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_exit.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_exit.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_exit.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_exit.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_exit.o)
+ .text          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_tablejump2.o)
+ .data          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_tablejump2.o)
+ .bss           0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_tablejump2.o)
+ .text.libgcc.mul
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_tablejump2.o)
+ .text.libgcc.div
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_tablejump2.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_tablejump2.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_tablejump2.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_tablejump2.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_tablejump2.o)
+ .text          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_copy_data.o)
+ .data          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_copy_data.o)
+ .bss           0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.mul
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.div
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc   0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_copy_data.o)
+ .text          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_clear_bss.o)
+ .data          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_clear_bss.o)
+ .bss           0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.mul
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.div
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_clear_bss.o)
+ .text          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_umulhisi3.o)
+ .data          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_umulhisi3.o)
+ .bss           0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_umulhisi3.o)
+ .text.libgcc.div
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_umulhisi3.o)
+ .text.libgcc   0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_umulhisi3.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_umulhisi3.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_umulhisi3.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_umulhisi3.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_umulhisi3.o)
+ .text          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strcmp.o)
+ .data          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strcmp.o)
+ .bss           0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strcmp.o)
+ .text.avr-libc
+                0x00000000       0x12 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strcmp.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00004000         xr
+data             0x00800060         0x00000400         rw!x
+eeprom           0x00810000         0x00000200         rw!x
+fuse             0x00820000         0x00000002         rw!x
+lock             0x00830000         0x00000400         rw!x
+signature        0x00840000         0x00000400         rw!x
+user_signatures  0x00850000         0x00000400         rw!x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/crtatmega16.o
+LOAD build/minimal/board.o
+LOAD build/minimal/command.o
+LOAD build/minimal/core.o
+LOAD build/minimal/dht.o
+LOAD build/minimal/i2c.o
+LOAD build/minimal/lcd.o
+LOAD build/minimal/main.o
+LOAD build/minimal/optional.o
+LOAD build/minimal/reset.o
+LOAD build/minimal/storage.o
+LOAD build/minimal/uart.o
+LOAD build/minimal/ui.o
+START GROUP
+LOAD /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a
+LOAD /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a
+LOAD /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a
+LOAD /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libatmega16.a
+END GROUP
+                [0x00000000]                      __TEXT_REGION_ORIGIN__ = DEFINED (__TEXT_REGION_ORIGIN__)?__TEXT_REGION_ORIGIN__:0x0
+                [0x00004000]                      __TEXT_REGION_LENGTH__ = DEFINED (__TEXT_REGION_LENGTH__)?__TEXT_REGION_LENGTH__:0x20000
+                [0x00800060]                      __DATA_REGION_ORIGIN__ = DEFINED (__DATA_REGION_ORIGIN__)?__DATA_REGION_ORIGIN__:0x800060
+                [0x00000400]                      __DATA_REGION_LENGTH__ = DEFINED (__DATA_REGION_LENGTH__)?__DATA_REGION_LENGTH__:0xffa0
+                [0x00000200]                      __EEPROM_REGION_LENGTH__ = DEFINED (__EEPROM_REGION_LENGTH__)?__EEPROM_REGION_LENGTH__:0x10000
+                [0x00000002]                      __FUSE_REGION_LENGTH__ = DEFINED (__FUSE_REGION_LENGTH__)?__FUSE_REGION_LENGTH__:0x400
+                0x00000400                        __LOCK_REGION_LENGTH__ = DEFINED (__LOCK_REGION_LENGTH__)?__LOCK_REGION_LENGTH__:0x400
+                0x00000400                        __SIGNATURE_REGION_LENGTH__ = DEFINED (__SIGNATURE_REGION_LENGTH__)?__SIGNATURE_REGION_LENGTH__:0x400
+                0x00000400                        __USER_SIGNATURE_REGION_LENGTH__ = DEFINED (__USER_SIGNATURE_REGION_LENGTH__)?__USER_SIGNATURE_REGION_LENGTH__:0x400
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0x10e8
+ *(.vectors)
+ .vectors       0x00000000       0x54 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/crtatmega16.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+                0x00000054                        . = ALIGN (0x2)
+                0x00000054                        __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000054        0x0 linker stubs
+ *(.trampolines*)
+                0x00000054                        __trampolines_end = .
+ *libprintf_flt.a:*(.progmem.data)
+ *libc.a:*(.progmem.data)
+ *(.progmem.*)
+ .progmem.data.__c.0
+                0x00000054        0x3 build/minimal/command.o
+ .progmem.data.__c.1
+                0x00000057        0x3 build/minimal/command.o
+ .progmem.data.__c.2
+                0x0000005a       0x50 build/minimal/command.o
+ .progmem.data.__c.0
+                0x000000aa       0x2f build/minimal/main.o
+                0x000000da                        . = ALIGN (0x2)
+ *fill*         0x000000d9        0x1 
+ *(.lowtext)
+ *(.lowtext*)
+                0x000000da                        __ctors_start = .
+ *(.ctors)
+                0x000000da                        __ctors_end = .
+                0x000000da                        __dtors_start = .
+ *(.dtors)
+                0x000000da                        __dtors_end = .
+ SORT_BY_NAME(*)(.ctors)
+ SORT_BY_NAME(*)(.dtors)
+ *(.init0)
+ .init0         0x000000da        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/crtatmega16.o
+                0x000000da                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x000000da        0xc /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/crtatmega16.o
+ *(.init2)
+ *(.init3)
+ .init3         0x000000e6       0x18 build/minimal/reset.o
+                0x000000e6                early_reset
+ *(.init3)
+ *(.init4)
+ .init4         0x000000fe       0x16 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_copy_data.o)
+                0x000000fe                __do_copy_data
+ .init4         0x00000114       0x10 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_clear_bss.o)
+                0x00000114                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000124        0x8 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/crtatmega16.o
+ *(.init9)
+ *(.text)
+ .text          0x0000012c        0x4 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/crtatmega16.o
+                0x0000012c                __vector_1
+                0x0000012c                __vector_12
+                0x0000012c                __bad_interrupt
+                0x0000012c                __vector_3
+                0x0000012c                __vector_11
+                0x0000012c                __vector_13
+                0x0000012c                __vector_17
+                0x0000012c                __vector_19
+                0x0000012c                __vector_7
+                0x0000012c                __vector_5
+                0x0000012c                __vector_4
+                0x0000012c                __vector_9
+                0x0000012c                __vector_2
+                0x0000012c                __vector_15
+                0x0000012c                __vector_14
+                0x0000012c                __vector_10
+                0x0000012c                __vector_16
+                0x0000012c                __vector_18
+                0x0000012c                __vector_20
+                0x00000130                        . = ALIGN (0x2)
+ *(.text.*)
+ .text.__vector_8
+                0x00000130       0xa8 build/minimal/board.o
+                0x00000130                __vector_8
+ .text.clock_ms
+                0x000001d8       0x74 build/minimal/board.o
+                0x000001d8                clock_ms
+ .text.board_init
+                0x0000024c       0x36 build/minimal/board.o
+                0x0000024c                board_init
+ .text.keys_raw
+                0x00000282        0x8 build/minimal/board.o
+                0x00000282                keys_raw
+ .text.__vector_6
+                0x0000028a       0xcc build/minimal/board.o
+                0x0000028a                __vector_6
+ .text.keys_poll
+                0x00000356       0x10 build/minimal/board.o
+                0x00000356                keys_poll
+ .text.buzzer_set
+                0x00000366        0x2 build/minimal/board.o
+                0x00000366                buzzer_set
+ .text.diagnostic_tick
+                0x00000368        0x2 build/minimal/board.o
+                0x00000368                diagnostic_tick
+ .text.signed_trend
+                0x0000036a       0x20 build/minimal/command.o
+ .text.comma    0x0000038a        0x6 build/minimal/command.o
+ .text.two      0x00000390       0x1a build/minimal/command.o
+ .text.csv_header
+                0x000003aa        0x8 build/minimal/command.o
+                0x000003aa                csv_header
+ .text.csv_send
+                0x000003b2      0x164 build/minimal/command.o
+                0x000003b2                csv_send
+ .text.command_poll
+                0x00000516        0x2 build/minimal/command.o
+                0x00000516                command_poll
+ .text.settings_defaults
+                0x00000518       0x12 build/minimal/core.o
+                0x00000518                settings_defaults
+ .text.settings_valid
+                0x0000052a       0x8c build/minimal/core.o
+                0x0000052a                settings_valid
+ .text.stats_reset
+                0x000005b6        0xc build/minimal/core.o
+                0x000005b6                stats_reset
+ .text.stats_add
+                0x000005c2       0xfe build/minimal/core.o
+                0x000005c2                stats_add
+ .text.stats_trend
+                0x000006c0       0x8e build/minimal/core.o
+                0x000006c0                stats_trend
+ .text.alarm_update
+                0x0000074e       0xc6 build/minimal/core.o
+                0x0000074e                alarm_update
+ .text.alarm_ack
+                0x00000814        0x8 build/minimal/core.o
+                0x00000814                alarm_ack
+ .text.dht_decode
+                0x0000081c       0x62 build/minimal/core.o
+                0x0000081c                dht_decode
+ .text.due      0x0000087e       0x14 build/minimal/core.o
+                0x0000087e                due
+ .text.level.constprop.0
+                0x00000892       0x2a build/minimal/dht.o
+ .text.dht_init
+                0x000008bc        0x6 build/minimal/dht.o
+                0x000008bc                dht_init
+ .text.dht_start
+                0x000008c2        0x6 build/minimal/dht.o
+                0x000008c2                dht_start
+ .text.dht_finish
+                0x000008c8       0xe2 build/minimal/dht.o
+                0x000008c8                dht_finish
+ .text.i2c_init
+                0x000009aa        0x2 build/minimal/i2c.o
+                0x000009aa                i2c_init
+ .text.lcd_init
+                0x000009ac        0x2 build/minimal/lcd.o
+                0x000009ac                lcd_init
+ .text.app_ack  0x000009ae       0x12 build/minimal/main.o
+                0x000009ae                app_ack
+ .text.app_save
+                0x000009c0       0x1c build/minimal/main.o
+                0x000009c0                app_save
+ .text.startup.main
+                0x000009dc      0x366 build/minimal/main.o
+                0x000009dc                main
+ .text.nv_save  0x00000d42        0x4 build/minimal/storage.o
+                0x00000d42                nv_save
+ .text.uart_init
+                0x00000d46        0x2 build/minimal/uart.o
+                0x00000d46                uart_init
+ .text.uart_rx_poll
+                0x00000d48        0x2 build/minimal/uart.o
+                0x00000d48                uart_rx_poll
+ .text.uart_put
+                0x00000d4a        0x4 build/minimal/uart.o
+                0x00000d4a                uart_put
+ .text.uart_text_P
+                0x00000d4e        0x6 build/minimal/uart.o
+                0x00000d4e                uart_text_P
+ .text.uart_uint
+                0x00000d54       0x48 build/minimal/uart.o
+                0x00000d54                uart_uint
+ .text.uart_fixed
+                0x00000d9c       0x54 build/minimal/uart.o
+                0x00000d9c                uart_fixed
+ .text.uart_errors
+                0x00000df0        0x4 build/minimal/uart.o
+                0x00000df0                uart_errors
+ .text.menu_adjust
+                0x00000df4      0x134 build/minimal/ui.o
+ .text.ui_keys  0x00000f28       0xc4 build/minimal/ui.o
+                0x00000f28                ui_keys
+ .text.ui_render
+                0x00000fec        0x2 build/minimal/ui.o
+                0x00000fec                ui_render
+ .text.libgcc.div
+                0x00000fee       0x18 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodqi4.o)
+                0x00000fee                __udivmodqi4
+ .text.libgcc.div
+                0x00001006       0x28 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodhi4.o)
+                0x00001006                __udivmodhi4
+ .text.libgcc.div
+                0x0000102e       0x28 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_divmodhi4.o)
+                0x0000102e                __divmodhi4
+                0x0000102e                _div
+ .text.libgcc.div
+                0x00001056       0x44 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodsi4.o)
+                0x00001056                __udivmodsi4
+ .text.libgcc   0x0000109a        0xc /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_tablejump2.o)
+                0x0000109a                __tablejump2__
+ .text.libgcc.mul
+                0x000010a6       0x1e /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_umulhisi3.o)
+                0x000010a6                __umulhisi3
+                0x000010c4                        . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x000010c4        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_exit.o)
+                0x000010c4                exit
+                0x000010c4                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x000010c4        0x4 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_exit.o)
+ *(.fini0)
+ *(.hightext)
+ *(.hightext*)
+ *(.progmemx.*)
+                0x000010c8                        . = ALIGN (0x2)
+ *(.jumptables)
+ *(.jumptables*)
+ .jumptables.gcc.menu_adjust
+                0x000010c8       0x20 build/minimal/ui.o
+                0x000010e8                        _etext = .
+
+.data           0x00800060        0xe load address 0x000010e8
+                0x00800060                        PROVIDE (__data_start = .)
+ *(.data)
+ *(.data*)
+ *(.gnu.linkonce.d*)
+ *(.rodata)
+ .rodata        0x00800060        0xe build/minimal/core.o
+ *(.rodata*)
+ *(.gnu.linkonce.r*)
+                0x0080006e                        . = ALIGN (0x2)
+                0x0080006e                        _edata = .
+                0x0080006e                        PROVIDE (__data_end = .)
+
+.bss            0x0080006e       0x80
+                0x0080006e                        PROVIDE (__bss_start = .)
+ *(.bss)
+ *(.bss*)
+ .bss.state.0   0x0080006e        0x1 build/minimal/board.o
+ .bss.counts.1  0x0080006f        0x4 build/minimal/board.o
+ .bss.key_events
+                0x00800073        0x1 build/minimal/board.o
+ .bss.fraction_us
+                0x00800074        0x2 build/minimal/board.o
+ .bss.base_ms   0x00800076        0x4 build/minimal/board.o
+ .bss.app       0x0080007a       0x65 build/minimal/main.o
+                0x0080007a                app
+ .bss.edit      0x008000df        0xe build/minimal/ui.o
+ .bss.menu      0x008000ed        0x1 build/minimal/ui.o
+ *(COMMON)
+                0x008000ee                        PROVIDE (__bss_end = .)
+                0x000010e8                        __data_load_start = LOADADDR (.data)
+                0x000010f6                        __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x008000ee        0x1
+                [!provide]                        PROVIDE (__noinit_start = .)
+ *(.noinit .noinit.* .gnu.linkonce.n.*)
+ .noinit        0x008000ee        0x1 build/minimal/reset.o
+                0x008000ee                reset_cause
+                [!provide]                        PROVIDE (__noinit_end = .)
+                0x008000ef                        _end = .
+                [!provide]                        PROVIDE (__heap_start = .)
+                0x00000000                        __flmap_init_label = DEFINED (__flmap_noinit_start)?__flmap_noinit_start:0x0
+                0x00000000                        __flmap = DEFINED (__flmap)?__flmap:0x0
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                        __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x12
+ *(.comment)
+ .comment       0x00000000       0x12 build/minimal/board.o
+                                 0x13 (size before relaxing)
+ .comment       0x00000012       0x13 build/minimal/command.o
+ .comment       0x00000012       0x13 build/minimal/core.o
+ .comment       0x00000012       0x13 build/minimal/dht.o
+ .comment       0x00000012       0x13 build/minimal/i2c.o
+ .comment       0x00000012       0x13 build/minimal/lcd.o
+ .comment       0x00000012       0x13 build/minimal/main.o
+ .comment       0x00000012       0x13 build/minimal/reset.o
+ .comment       0x00000012       0x13 build/minimal/storage.o
+ .comment       0x00000012       0x13 build/minimal/uart.o
+ .comment       0x00000012       0x13 build/minimal/ui.o
+
+.note.gnu.avr.deviceinfo
+                0x00000000       0x3c
+ .note.gnu.avr.deviceinfo
+                0x00000000       0x3c /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/crtatmega16.o
+
+.gnu.build.attributes
+ *(.gnu.build.attributes .gnu.build.attributes.*)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x310
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x60 build/minimal/board.o
+ .debug_aranges
+                0x00000060       0x48 build/minimal/command.o
+ .debug_aranges
+                0x000000a8       0xb0 build/minimal/core.o
+ .debug_aranges
+                0x00000158       0x38 build/minimal/dht.o
+ .debug_aranges
+                0x00000190       0x38 build/minimal/i2c.o
+ .debug_aranges
+                0x000001c8       0x28 build/minimal/lcd.o
+ .debug_aranges
+                0x000001f0       0x38 build/minimal/main.o
+ .debug_aranges
+                0x00000228       0x20 build/minimal/reset.o
+ .debug_aranges
+                0x00000248       0x28 build/minimal/storage.o
+ .debug_aranges
+                0x00000270       0x68 build/minimal/uart.o
+ .debug_aranges
+                0x000002d8       0x38 build/minimal/ui.o
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000     0x3a8c
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000      0x52e /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/crtatmega16.o
+ .debug_info    0x0000052e      0x3c7 build/minimal/board.o
+ .debug_info    0x000008f5      0x75f build/minimal/command.o
+ .debug_info    0x00001054     0x106f build/minimal/core.o
+ .debug_info    0x000020c3      0x34c build/minimal/dht.o
+ .debug_info    0x0000240f      0x174 build/minimal/i2c.o
+ .debug_info    0x00002583       0xc7 build/minimal/lcd.o
+ .debug_info    0x0000264a      0xa58 build/minimal/main.o
+ .debug_info    0x000030a2       0xf6 build/minimal/reset.o
+ .debug_info    0x00003198      0x161 build/minimal/storage.o
+ .debug_info    0x000032f9      0x25c build/minimal/uart.o
+ .debug_info    0x00003555      0x537 build/minimal/ui.o
+
+.debug_abbrev   0x00000000     0x16ce
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x4e7 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/crtatmega16.o
+ .debug_abbrev  0x000004e7      0x1c8 build/minimal/board.o
+ .debug_abbrev  0x000006af      0x1bc build/minimal/command.o
+ .debug_abbrev  0x0000086b      0x2d6 build/minimal/core.o
+ .debug_abbrev  0x00000b41      0x220 build/minimal/dht.o
+ .debug_abbrev  0x00000d61      0x118 build/minimal/i2c.o
+ .debug_abbrev  0x00000e79       0x9f build/minimal/lcd.o
+ .debug_abbrev  0x00000f18      0x246 build/minimal/main.o
+ .debug_abbrev  0x0000115e       0xce build/minimal/reset.o
+ .debug_abbrev  0x0000122c       0xc2 build/minimal/storage.o
+ .debug_abbrev  0x000012ee      0x1bf build/minimal/uart.o
+ .debug_abbrev  0x000014ad      0x221 build/minimal/ui.o
+
+.debug_line     0x00000000     0x3607
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x00000000       0x1d /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/crtatmega16.o
+ .debug_line    0x0000001d      0x661 build/minimal/board.o
+ .debug_line    0x0000067e      0x311 build/minimal/command.o
+ .debug_line    0x0000098f     0x17ec build/minimal/core.o
+ .debug_line    0x0000217b      0x386 build/minimal/dht.o
+ .debug_line    0x00002501       0xef build/minimal/i2c.o
+ .debug_line    0x000025f0       0x86 build/minimal/lcd.o
+ .debug_line    0x00002676      0x6aa build/minimal/main.o
+ .debug_line    0x00002d20       0xc8 build/minimal/reset.o
+ .debug_line    0x00002de8       0x8b build/minimal/storage.o
+ .debug_line    0x00002e73      0x299 build/minimal/uart.o
+ .debug_line    0x0000310c      0x4fb build/minimal/ui.o
+
+.debug_frame    0x00000000      0x7cc
+ *(.debug_frame)
+ .debug_frame   0x00000000      0x11c build/minimal/board.o
+ .debug_frame   0x0000011c       0x84 build/minimal/command.o
+ .debug_frame   0x000001a0      0x2cc build/minimal/core.o
+ .debug_frame   0x0000046c       0xa0 build/minimal/dht.o
+ .debug_frame   0x0000050c       0x54 build/minimal/i2c.o
+ .debug_frame   0x00000560       0x34 build/minimal/lcd.o
+ .debug_frame   0x00000594       0x64 build/minimal/main.o
+ .debug_frame   0x000005f8       0x24 build/minimal/reset.o
+ .debug_frame   0x0000061c       0x34 build/minimal/storage.o
+ .debug_frame   0x00000650      0x104 build/minimal/uart.o
+ .debug_frame   0x00000754       0x78 build/minimal/ui.o
+
+.debug_str      0x00000000      0x92d
+ *(.debug_str)
+ .debug_str     0x00000000      0x1af /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/crtatmega16.o
+ .debug_str     0x000001af      0x77e build/minimal/board.o
+                                0x1e1 (size before relaxing)
+ .debug_str     0x0000092d      0x2ea build/minimal/command.o
+ .debug_str     0x0000092d      0x340 build/minimal/core.o
+ .debug_str     0x0000092d      0x1b5 build/minimal/dht.o
+ .debug_str     0x0000092d      0x134 build/minimal/i2c.o
+ .debug_str     0x0000092d      0x120 build/minimal/lcd.o
+ .debug_str     0x0000092d      0x46c build/minimal/main.o
+ .debug_str     0x0000092d      0x12e build/minimal/reset.o
+ .debug_str     0x0000092d      0x170 build/minimal/storage.o
+ .debug_str     0x0000092d      0x1ae build/minimal/uart.o
+ .debug_str     0x0000092d      0x30c build/minimal/ui.o
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_addr
+ *(.debug_addr)
+
+.debug_line_str
+                0x00000000      0x15c
+ *(.debug_line_str)
+ .debug_line_str
+                0x00000000      0x15c build/minimal/board.o
+                                 0xc1 (size before relaxing)
+ .debug_line_str
+                0x0000015c       0xab build/minimal/command.o
+ .debug_line_str
+                0x0000015c       0x9f build/minimal/core.o
+ .debug_line_str
+                0x0000015c       0xcf build/minimal/dht.o
+ .debug_line_str
+                0x0000015c       0x84 build/minimal/i2c.o
+ .debug_line_str
+                0x0000015c       0x84 build/minimal/lcd.o
+ .debug_line_str
+                0x0000015c       0xd5 build/minimal/main.o
+ .debug_line_str
+                0x0000015c       0xcb build/minimal/reset.o
+ .debug_line_str
+                0x0000015c       0x9f build/minimal/storage.o
+ .debug_line_str
+                0x0000015c       0x87 build/minimal/uart.o
+ .debug_line_str
+                0x0000015c       0x9c build/minimal/ui.o
+
+.debug_loclists
+                0x00000000     0x19c3
+ *(.debug_loclists)
+ .debug_loclists
+                0x00000000      0x13e build/minimal/board.o
+ .debug_loclists
+                0x0000013e       0x4d build/minimal/command.o
+ .debug_loclists
+                0x0000018b     0x11fd build/minimal/core.o
+ .debug_loclists
+                0x00001388      0x116 build/minimal/dht.o
+ .debug_loclists
+                0x0000149e       0x46 build/minimal/i2c.o
+ .debug_loclists
+                0x000014e4      0x2ca build/minimal/main.o
+ .debug_loclists
+                0x000017ae       0x2e build/minimal/storage.o
+ .debug_loclists
+                0x000017dc      0x139 build/minimal/uart.o
+ .debug_loclists
+                0x00001915       0xae build/minimal/ui.o
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_names
+ *(.debug_names)
+
+.debug_rnglists
+                0x00000000      0x2a9
+ *(.debug_rnglists)
+ .debug_rnglists
+                0x00000000       0x64 build/minimal/board.o
+ .debug_rnglists
+                0x00000064       0x32 build/minimal/command.o
+ .debug_rnglists
+                0x00000096       0xba build/minimal/core.o
+ .debug_rnglists
+                0x00000150       0x26 build/minimal/dht.o
+ .debug_rnglists
+                0x00000176       0x25 build/minimal/i2c.o
+ .debug_rnglists
+                0x0000019b       0x19 build/minimal/lcd.o
+ .debug_rnglists
+                0x000001b4       0x3a build/minimal/main.o
+ .debug_rnglists
+                0x000001ee       0x13 build/minimal/reset.o
+ .debug_rnglists
+                0x00000201       0x19 build/minimal/storage.o
+ .debug_rnglists
+                0x0000021a       0x49 build/minimal/uart.o
+ .debug_rnglists
+                0x00000263       0x46 build/minimal/ui.o
+
+.debug_str_offsets
+ *(.debug_str_offsets)
+
+.debug_sup
+ *(.debug_sup)
+OUTPUT(build/minimal/monitor.elf elf32-avr)
+LOAD linker stubs

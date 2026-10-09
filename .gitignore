@@ -1,0 +1,7 @@
+firmware/build/
+firmware/studio/Debug/
+firmware/studio/Release/
+firmware/studio/*.componentinfo.xml
+firmware/studio/*.atsuo
+__pycache__/
+ATmega16_Monitor_C.zip

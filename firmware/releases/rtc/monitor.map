@@ -1,0 +1,1365 @@
+Archive member included to satisfy reference by file (symbol)
+
+/workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodqi4.o)
+                              build/rtc/command.o (__udivmodqi4)
+/workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodhi4.o)
+                              build/rtc/uart.o (__udivmodhi4)
+/workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_divmodhi4.o)
+                              build/rtc/board.o (__divmodhi4)
+/workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodsi4.o)
+                              build/rtc/board.o (__udivmodsi4)
+/workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_exit.o)
+                              /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/crtatmega16.o (exit)
+/workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_tablejump2.o)
+                              build/rtc/ui.o (__tablejump2__)
+/workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_copy_data.o)
+                              build/rtc/command.o (__do_copy_data)
+/workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_clear_bss.o)
+                              build/rtc/board.o (__do_clear_bss)
+/workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_umulhisi3.o)
+                              build/rtc/core.o (__umulhisi3)
+/workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strcmp_P.o)
+                              build/rtc/command.o (strcmp_P)
+/workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strcpy_P.o)
+                              build/rtc/ui.o (strcpy_P)
+/workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strncmp_P.o)
+                              build/rtc/command.o (strncmp_P)
+/workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(memcmp.o)
+                              build/rtc/storage.o (memcmp)
+/workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strchr.o)
+                              build/rtc/command.o (strchr)
+/workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strcmp.o)
+                              build/rtc/core.o (strcmp)
+/workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(snprintf_p.o)
+                              build/rtc/ui.o (snprintf_P)
+/workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+                              /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(snprintf_p.o) (vfprintf)
+/workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strnlen_P.o)
+                              /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(vfprintf_std.o) (strnlen_P)
+/workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strnlen.o)
+                              /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(vfprintf_std.o) (strnlen)
+/workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(fputc.o)
+                              /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(vfprintf_std.o) (fputc)
+/workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(ultoa_invert.o)
+                              /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(vfprintf_std.o) (__ultoa_invert)
+/workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libatmega16.a(eerd_block.o)
+                              build/rtc/storage.o (eeprom_read_block)
+/workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libatmega16.a(eeupd_byte.o)
+                              build/rtc/storage.o (eeprom_update_byte)
+/workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_prologue.o)
+                              /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(snprintf_p.o) (__prologue_saves__)
+/workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_epilogue.o)
+                              /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(snprintf_p.o) (__epilogue_restores__)
+
+Discarded input sections
+
+ .data          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/crtatmega16.o
+ .bss           0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/crtatmega16.o
+ .text          0x00000000        0x0 build/rtc/board.o
+ .data          0x00000000        0x0 build/rtc/board.o
+ .bss           0x00000000        0x0 build/rtc/board.o
+ .text          0x00000000        0x0 build/rtc/command.o
+ .data          0x00000000        0x0 build/rtc/command.o
+ .bss           0x00000000        0x0 build/rtc/command.o
+ .text          0x00000000        0x0 build/rtc/core.o
+ .data          0x00000000        0x0 build/rtc/core.o
+ .bss           0x00000000        0x0 build/rtc/core.o
+ .text          0x00000000        0x0 build/rtc/dht.o
+ .data          0x00000000        0x0 build/rtc/dht.o
+ .bss           0x00000000        0x0 build/rtc/dht.o
+ .text          0x00000000        0x0 build/rtc/i2c.o
+ .data          0x00000000        0x0 build/rtc/i2c.o
+ .bss           0x00000000        0x0 build/rtc/i2c.o
+ .text.i2c_read
+                0x00000000       0x62 build/rtc/i2c.o
+ .text          0x00000000        0x0 build/rtc/lcd.o
+ .data          0x00000000        0x0 build/rtc/lcd.o
+ .bss           0x00000000        0x0 build/rtc/lcd.o
+ .text          0x00000000        0x0 build/rtc/main.o
+ .data          0x00000000        0x0 build/rtc/main.o
+ .bss           0x00000000        0x0 build/rtc/main.o
+ .text          0x00000000        0x0 build/rtc/optional.o
+ .data          0x00000000        0x0 build/rtc/optional.o
+ .bss           0x00000000        0x0 build/rtc/optional.o
+ .text.light_start
+                0x00000000        0x4 build/rtc/optional.o
+ .text.light_read
+                0x00000000        0x4 build/rtc/optional.o
+ .text          0x00000000        0x0 build/rtc/reset.o
+ .data          0x00000000        0x0 build/rtc/reset.o
+ .bss           0x00000000        0x0 build/rtc/reset.o
+ .text          0x00000000        0x0 build/rtc/storage.o
+ .data          0x00000000        0x0 build/rtc/storage.o
+ .bss           0x00000000        0x0 build/rtc/storage.o
+ .text          0x00000000        0x0 build/rtc/uart.o
+ .data          0x00000000        0x0 build/rtc/uart.o
+ .bss           0x00000000        0x0 build/rtc/uart.o
+ .text          0x00000000        0x0 build/rtc/ui.o
+ .data          0x00000000        0x0 build/rtc/ui.o
+ .bss           0x00000000        0x0 build/rtc/ui.o
+ .text          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodqi4.o)
+ .data          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodqi4.o)
+ .bss           0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodqi4.o)
+ .text.libgcc.mul
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodqi4.o)
+ .text.libgcc   0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodqi4.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodqi4.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodqi4.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodqi4.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodqi4.o)
+ .text          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodhi4.o)
+ .data          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodhi4.o)
+ .bss           0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodhi4.o)
+ .text.libgcc.mul
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodhi4.o)
+ .text.libgcc   0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodhi4.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodhi4.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodhi4.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodhi4.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodhi4.o)
+ .text          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_divmodhi4.o)
+ .data          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_divmodhi4.o)
+ .bss           0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_divmodhi4.o)
+ .text.libgcc.mul
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_divmodhi4.o)
+ .text.libgcc   0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_divmodhi4.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_divmodhi4.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_divmodhi4.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_divmodhi4.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_divmodhi4.o)
+ .text          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodsi4.o)
+ .data          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodsi4.o)
+ .bss           0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.mul
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodsi4.o)
+ .text.libgcc   0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodsi4.o)
+ .text          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_exit.o)
+ .data          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_exit.o)
+ .bss           0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_exit.o)
+ .text.libgcc.mul
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_exit.o)
+ .text.libgcc.div
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_exit.o)
+ .text.libgcc   0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_exit.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_exit.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_exit.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_exit.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_exit.o)
+ .text          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_tablejump2.o)
+ .data          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_tablejump2.o)
+ .bss           0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_tablejump2.o)
+ .text.libgcc.mul
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_tablejump2.o)
+ .text.libgcc.div
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_tablejump2.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_tablejump2.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_tablejump2.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_tablejump2.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_tablejump2.o)
+ .text          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_copy_data.o)
+ .data          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_copy_data.o)
+ .bss           0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.mul
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.div
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc   0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_copy_data.o)
+ .text          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_clear_bss.o)
+ .data          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_clear_bss.o)
+ .bss           0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.mul
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.div
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_clear_bss.o)
+ .text          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_umulhisi3.o)
+ .data          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_umulhisi3.o)
+ .bss           0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_umulhisi3.o)
+ .text.libgcc.div
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_umulhisi3.o)
+ .text.libgcc   0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_umulhisi3.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_umulhisi3.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_umulhisi3.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_umulhisi3.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_umulhisi3.o)
+ .text          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strcmp_P.o)
+ .data          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strcmp_P.o)
+ .bss           0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strcmp_P.o)
+ .text          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strcpy_P.o)
+ .data          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strcpy_P.o)
+ .bss           0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strcpy_P.o)
+ .text          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strncmp_P.o)
+ .data          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strncmp_P.o)
+ .bss           0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strncmp_P.o)
+ .text          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(memcmp.o)
+ .data          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(memcmp.o)
+ .bss           0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(memcmp.o)
+ .text          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strchr.o)
+ .data          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strchr.o)
+ .bss           0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strchr.o)
+ .text          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strcmp.o)
+ .data          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strcmp.o)
+ .bss           0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strcmp.o)
+ .text          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(snprintf_p.o)
+ .data          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(snprintf_p.o)
+ .bss           0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(snprintf_p.o)
+ .text          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+ .data          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+ .bss           0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+ .text          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strnlen_P.o)
+ .data          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strnlen_P.o)
+ .bss           0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strnlen_P.o)
+ .text          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strnlen.o)
+ .data          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strnlen.o)
+ .bss           0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strnlen.o)
+ .text          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(fputc.o)
+ .data          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(fputc.o)
+ .bss           0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(fputc.o)
+ .text          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(ultoa_invert.o)
+ .data          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(ultoa_invert.o)
+ .bss           0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(ultoa_invert.o)
+ .text          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libatmega16.a(eerd_block.o)
+ .data          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libatmega16.a(eerd_block.o)
+ .bss           0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libatmega16.a(eerd_block.o)
+ .text          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libatmega16.a(eeupd_byte.o)
+ .data          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libatmega16.a(eeupd_byte.o)
+ .bss           0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libatmega16.a(eeupd_byte.o)
+ .text          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_prologue.o)
+ .data          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_prologue.o)
+ .bss           0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_prologue.o)
+ .text.libgcc.mul
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_prologue.o)
+ .text.libgcc.div
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_prologue.o)
+ .text.libgcc   0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_prologue.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_prologue.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_prologue.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_prologue.o)
+ .text          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_epilogue.o)
+ .data          0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_epilogue.o)
+ .bss           0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_epilogue.o)
+ .text.libgcc.mul
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_epilogue.o)
+ .text.libgcc.div
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_epilogue.o)
+ .text.libgcc   0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_epilogue.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_epilogue.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_epilogue.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_epilogue.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00004000         xr
+data             0x00800060         0x00000400         rw!x
+eeprom           0x00810000         0x00000200         rw!x
+fuse             0x00820000         0x00000002         rw!x
+lock             0x00830000         0x00000400         rw!x
+signature        0x00840000         0x00000400         rw!x
+user_signatures  0x00850000         0x00000400         rw!x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/crtatmega16.o
+LOAD build/rtc/board.o
+LOAD build/rtc/command.o
+LOAD build/rtc/core.o
+LOAD build/rtc/dht.o
+LOAD build/rtc/i2c.o
+LOAD build/rtc/lcd.o
+LOAD build/rtc/main.o
+LOAD build/rtc/optional.o
+LOAD build/rtc/reset.o
+LOAD build/rtc/storage.o
+LOAD build/rtc/uart.o
+LOAD build/rtc/ui.o
+START GROUP
+LOAD /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a
+LOAD /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libm.a
+LOAD /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a
+LOAD /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libatmega16.a
+END GROUP
+                [0x00000000]                      __TEXT_REGION_ORIGIN__ = DEFINED (__TEXT_REGION_ORIGIN__)?__TEXT_REGION_ORIGIN__:0x0
+                [0x00004000]                      __TEXT_REGION_LENGTH__ = DEFINED (__TEXT_REGION_LENGTH__)?__TEXT_REGION_LENGTH__:0x20000
+                [0x00800060]                      __DATA_REGION_ORIGIN__ = DEFINED (__DATA_REGION_ORIGIN__)?__DATA_REGION_ORIGIN__:0x800060
+                [0x00000400]                      __DATA_REGION_LENGTH__ = DEFINED (__DATA_REGION_LENGTH__)?__DATA_REGION_LENGTH__:0xffa0
+                [0x00000200]                      __EEPROM_REGION_LENGTH__ = DEFINED (__EEPROM_REGION_LENGTH__)?__EEPROM_REGION_LENGTH__:0x10000
+                [0x00000002]                      __FUSE_REGION_LENGTH__ = DEFINED (__FUSE_REGION_LENGTH__)?__FUSE_REGION_LENGTH__:0x400
+                0x00000400                        __LOCK_REGION_LENGTH__ = DEFINED (__LOCK_REGION_LENGTH__)?__LOCK_REGION_LENGTH__:0x400
+                0x00000400                        __SIGNATURE_REGION_LENGTH__ = DEFINED (__SIGNATURE_REGION_LENGTH__)?__SIGNATURE_REGION_LENGTH__:0x400
+                0x00000400                        __USER_SIGNATURE_REGION_LENGTH__ = DEFINED (__USER_SIGNATURE_REGION_LENGTH__)?__USER_SIGNATURE_REGION_LENGTH__:0x400
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0x3828
+ *(.vectors)
+ .vectors       0x00000000       0x54 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/crtatmega16.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+                0x00000054                        . = ALIGN (0x2)
+                0x00000054                        __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000054        0x0 linker stubs
+ *(.trampolines*)
+                0x00000054                        __trampolines_end = .
+ *libprintf_flt.a:*(.progmem.data)
+ *libc.a:*(.progmem.data)
+ *(.progmem.*)
+ .progmem.data.__c.0
+                0x00000054        0x3 build/rtc/command.o
+ .progmem.data.__c.1
+                0x00000057       0x13 build/rtc/command.o
+ .progmem.data.__c.2
+                0x0000006a       0x11 build/rtc/command.o
+ .progmem.data.__c.3
+                0x0000007b       0x15 build/rtc/command.o
+ .progmem.data.__c.4
+                0x00000090        0x3 build/rtc/command.o
+ .progmem.data.__c.5
+                0x00000093        0x9 build/rtc/command.o
+ .progmem.data.__c.6
+                0x0000009c        0x3 build/rtc/command.o
+ .progmem.data.__c.7
+                0x0000009f        0x8 build/rtc/command.o
+ .progmem.data.__c.8
+                0x000000a7        0x9 build/rtc/command.o
+ .progmem.data.__c.9
+                0x000000b0        0x8 build/rtc/command.o
+ .progmem.data.__c.10
+                0x000000b8        0xb build/rtc/command.o
+ .progmem.data.__c.11
+                0x000000c3        0x8 build/rtc/command.o
+ .progmem.data.__c.12
+                0x000000cb        0x7 build/rtc/command.o
+ .progmem.data.__c.13
+                0x000000d2        0x8 build/rtc/command.o
+ .progmem.data.__c.14
+                0x000000da        0x8 build/rtc/command.o
+ .progmem.data.__c.15
+                0x000000e2        0x5 build/rtc/command.o
+ .progmem.data.__c.16
+                0x000000e7        0x9 build/rtc/command.o
+ .progmem.data.__c.17
+                0x000000f0        0x8 build/rtc/command.o
+ .progmem.data.__c.18
+                0x000000f8        0x3 build/rtc/command.o
+ .progmem.data.__c.19
+                0x000000fb        0x7 build/rtc/command.o
+ .progmem.data.__c.20
+                0x00000102        0x8 build/rtc/command.o
+ .progmem.data.__c.21
+                0x0000010a        0x7 build/rtc/command.o
+ .progmem.data.__c.22
+                0x00000111        0x5 build/rtc/command.o
+ .progmem.data.__c.23
+                0x00000116        0x6 build/rtc/command.o
+ .progmem.data.__c.24
+                0x0000011c        0x5 build/rtc/command.o
+ .progmem.data.__c.25
+                0x00000121        0x8 build/rtc/command.o
+ .progmem.data.__c.26
+                0x00000129        0x7 build/rtc/command.o
+ .progmem.data.__c.27
+                0x00000130        0x9 build/rtc/command.o
+ .progmem.data.__c.28
+                0x00000139        0xb build/rtc/command.o
+ .progmem.data.__c.29
+                0x00000144        0x9 build/rtc/command.o
+ .progmem.data.__c.30
+                0x0000014d        0x5 build/rtc/command.o
+ .progmem.data.__c.31
+                0x00000152        0x5 build/rtc/command.o
+ .progmem.data.__c.32
+                0x00000157        0x4 build/rtc/command.o
+ .progmem.data.__c.33
+                0x0000015b        0x6 build/rtc/command.o
+ .progmem.data.__c.34
+                0x00000161        0x7 build/rtc/command.o
+ .progmem.data.__c.35
+                0x00000168        0x7 build/rtc/command.o
+ .progmem.data.__c.36
+                0x0000016f       0x2e build/rtc/command.o
+ .progmem.data.__c.37
+                0x0000019d       0x25 build/rtc/command.o
+ .progmem.data.__c.38
+                0x000001c2       0x45 build/rtc/command.o
+ .progmem.data.__c.39
+                0x00000207       0x3a build/rtc/command.o
+ .progmem.data.__c.40
+                0x00000241        0x5 build/rtc/command.o
+ .progmem.data.__c.41
+                0x00000246       0x1d build/rtc/command.o
+ .progmem.data.__c.42
+                0x00000263        0x7 build/rtc/command.o
+ .progmem.data.__c.45
+                0x0000026a       0x17 build/rtc/command.o
+ .progmem.data.__c.47
+                0x00000281        0x3 build/rtc/command.o
+ .progmem.data.__c.48
+                0x00000284        0x3 build/rtc/command.o
+ .progmem.data.__c.49
+                0x00000287       0x50 build/rtc/command.o
+ .progmem.data.__c.0
+                0x000002d7       0x2f build/rtc/main.o
+ .progmem.data.__c.0
+                0x00000306        0xf build/rtc/ui.o
+ .progmem.data.__c.1
+                0x00000315        0xf build/rtc/ui.o
+ .progmem.data.__c.2
+                0x00000324        0xf build/rtc/ui.o
+ .progmem.data.__c.3
+                0x00000333        0x8 build/rtc/ui.o
+ .progmem.data.__c.4
+                0x0000033b        0xd build/rtc/ui.o
+ .progmem.data.__c.5
+                0x00000348       0x12 build/rtc/ui.o
+ .progmem.data.__c.6
+                0x0000035a        0xb build/rtc/ui.o
+ .progmem.data.__c.7
+                0x00000365       0x13 build/rtc/ui.o
+ .progmem.data.__c.8
+                0x00000378       0x11 build/rtc/ui.o
+ .progmem.data.__c.9
+                0x00000389        0xa build/rtc/ui.o
+ .progmem.data.__c.10
+                0x00000393        0xd build/rtc/ui.o
+ .progmem.data.__c.11
+                0x000003a0       0x10 build/rtc/ui.o
+ .progmem.data.__c.12
+                0x000003b0       0x10 build/rtc/ui.o
+ .progmem.data.__c.13
+                0x000003c0       0x14 build/rtc/ui.o
+ .progmem.data.__c.14
+                0x000003d4       0x10 build/rtc/ui.o
+ .progmem.data.__c.15
+                0x000003e4        0xc build/rtc/ui.o
+ .progmem.data.__c.16
+                0x000003f0       0x12 build/rtc/ui.o
+ .progmem.data.__c.17
+                0x00000402        0xe build/rtc/ui.o
+ .progmem.data.__c.18
+                0x00000410        0xf build/rtc/ui.o
+ .progmem.data.__c.19
+                0x0000041f        0xf build/rtc/ui.o
+ .progmem.data.__c.20
+                0x0000042e        0xf build/rtc/ui.o
+ .progmem.data.__c.21
+                0x0000043d       0x15 build/rtc/ui.o
+ .progmem.data.__c.22
+                0x00000452        0xe build/rtc/ui.o
+ .progmem.data.__c.23
+                0x00000460       0x11 build/rtc/ui.o
+ .progmem.data.__c.24
+                0x00000471       0x11 build/rtc/ui.o
+ .progmem.data.__c.25
+                0x00000482        0x6 build/rtc/ui.o
+ .progmem.data.__c.26
+                0x00000488        0x6 build/rtc/ui.o
+ .progmem.data.__c.27
+                0x0000048e        0x7 build/rtc/ui.o
+ .progmem.data.__c.28
+                0x00000495        0x6 build/rtc/ui.o
+ .progmem.data.__c.29
+                0x0000049b        0x6 build/rtc/ui.o
+ .progmem.data.__c.30
+                0x000004a1        0x6 build/rtc/ui.o
+ .progmem.data.__c.31
+                0x000004a7        0x5 build/rtc/ui.o
+ .progmem.data.__c.32
+                0x000004ac        0x6 build/rtc/ui.o
+ .progmem.data.__c.33
+                0x000004b2        0x5 build/rtc/ui.o
+                0x000004b8                        . = ALIGN (0x2)
+ *fill*         0x000004b7        0x1 
+ *(.lowtext)
+ *(.lowtext*)
+                0x000004b8                        __ctors_start = .
+ *(.ctors)
+                0x000004b8                        __ctors_end = .
+                0x000004b8                        __dtors_start = .
+ *(.dtors)
+                0x000004b8                        __dtors_end = .
+ SORT_BY_NAME(*)(.ctors)
+ SORT_BY_NAME(*)(.dtors)
+ *(.init0)
+ .init0         0x000004b8        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/crtatmega16.o
+                0x000004b8                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x000004b8        0xc /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/crtatmega16.o
+ *(.init2)
+ *(.init3)
+ .init3         0x000004c4       0x18 build/rtc/reset.o
+                0x000004c4                early_reset
+ *(.init3)
+ *(.init4)
+ .init4         0x000004dc       0x16 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_copy_data.o)
+                0x000004dc                __do_copy_data
+ .init4         0x000004f2       0x10 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_clear_bss.o)
+                0x000004f2                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000502        0x8 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/crtatmega16.o
+ *(.init9)
+ *(.text)
+ .text          0x0000050a        0x4 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/crtatmega16.o
+                0x0000050a                __vector_1
+                0x0000050a                __bad_interrupt
+                0x0000050a                __vector_3
+                0x0000050a                __vector_13
+                0x0000050a                __vector_17
+                0x0000050a                __vector_19
+                0x0000050a                __vector_7
+                0x0000050a                __vector_5
+                0x0000050a                __vector_4
+                0x0000050a                __vector_9
+                0x0000050a                __vector_2
+                0x0000050a                __vector_15
+                0x0000050a                __vector_14
+                0x0000050a                __vector_10
+                0x0000050a                __vector_16
+                0x0000050a                __vector_18
+                0x0000050a                __vector_20
+                0x0000050e                        . = ALIGN (0x2)
+ *(.text.*)
+ .text.__vector_8
+                0x0000050e       0xa8 build/rtc/board.o
+                0x0000050e                __vector_8
+ .text.clock_ms
+                0x000005b6       0x74 build/rtc/board.o
+                0x000005b6                clock_ms
+ .text.board_init
+                0x0000062a       0x36 build/rtc/board.o
+                0x0000062a                board_init
+ .text.keys_raw
+                0x00000660        0x8 build/rtc/board.o
+                0x00000660                keys_raw
+ .text.__vector_6
+                0x00000668       0xcc build/rtc/board.o
+                0x00000668                __vector_6
+ .text.keys_poll
+                0x00000734       0x10 build/rtc/board.o
+                0x00000734                keys_poll
+ .text.buzzer_set
+                0x00000744        0x2 build/rtc/board.o
+                0x00000744                buzzer_set
+ .text.adc_read
+                0x00000746       0x58 build/rtc/board.o
+                0x00000746                adc_read
+ .text.diagnostic_tick
+                0x0000079e       0x96 build/rtc/board.o
+                0x0000079e                diagnostic_tick
+ .text.signed_trend
+                0x00000834       0x20 build/rtc/command.o
+ .text.comma    0x00000854        0x6 build/rtc/command.o
+ .text.two      0x0000085a       0x1a build/rtc/command.o
+ .text.csv_header
+                0x00000874        0x8 build/rtc/command.o
+                0x00000874                csv_header
+ .text.csv_send
+                0x0000087c      0x164 build/rtc/command.o
+                0x0000087c                csv_send
+ .text.command_poll
+                0x000009e0      0x618 build/rtc/command.o
+                0x000009e0                command_poll
+ .text.bcd      0x00000ff8       0x28 build/rtc/core.o
+ .text.settings_defaults
+                0x00001020       0x12 build/rtc/core.o
+                0x00001020                settings_defaults
+ .text.settings_valid
+                0x00001032       0x8c build/rtc/core.o
+                0x00001032                settings_valid
+ .text.settings_set
+                0x000010be      0x1bc build/rtc/core.o
+                0x000010be                settings_set
+ .text.stats_reset
+                0x0000127a        0xc build/rtc/core.o
+                0x0000127a                stats_reset
+ .text.stats_add
+                0x00001286       0xfe build/rtc/core.o
+                0x00001286                stats_add
+ .text.stats_trend
+                0x00001384       0x8e build/rtc/core.o
+                0x00001384                stats_trend
+ .text.alarm_update
+                0x00001412       0xc6 build/rtc/core.o
+                0x00001412                alarm_update
+ .text.alarm_ack
+                0x000014d8        0x8 build/rtc/core.o
+                0x000014d8                alarm_ack
+ .text.crc16    0x000014e0       0x2e build/rtc/core.o
+                0x000014e0                crc16
+ .text.sequence_newer
+                0x0000150e       0x1a build/rtc/core.o
+                0x0000150e                sequence_newer
+ .text.record_pack
+                0x00001528       0x6c build/rtc/core.o
+                0x00001528                record_pack
+ .text.record_unpack
+                0x00001594      0x130 build/rtc/core.o
+                0x00001594                record_unpack
+ .text.rtc_valid
+                0x000016c4       0x50 build/rtc/core.o
+                0x000016c4                rtc_valid
+ .text.rtc_decode
+                0x00001714      0x14a build/rtc/core.o
+                0x00001714                rtc_decode
+ .text.rtc_encode
+                0x0000185e       0x7a build/rtc/core.o
+                0x0000185e                rtc_encode
+ .text.dht_decode
+                0x000018d8       0x62 build/rtc/core.o
+                0x000018d8                dht_decode
+ .text.due      0x0000193a       0x14 build/rtc/core.o
+                0x0000193a                due
+ .text.parse_i16
+                0x0000194e       0xb6 build/rtc/core.o
+                0x0000194e                parse_i16
+ .text.level.constprop.0
+                0x00001a04       0x2a build/rtc/dht.o
+ .text.dht_init
+                0x00001a2e        0x6 build/rtc/dht.o
+                0x00001a2e                dht_init
+ .text.dht_start
+                0x00001a34        0x6 build/rtc/dht.o
+                0x00001a34                dht_start
+ .text.dht_finish
+                0x00001a3a       0xe2 build/rtc/dht.o
+                0x00001a3a                dht_finish
+ .text.wait_twi
+                0x00001b1c       0x1e build/rtc/i2c.o
+ .text.put      0x00001b3a       0x1c build/rtc/i2c.o
+ .text.get      0x00001b56       0x46 build/rtc/i2c.o
+ .text.recover  0x00001b9c       0x4c build/rtc/i2c.o
+ .text.stop     0x00001be8       0x26 build/rtc/i2c.o
+ .text.start    0x00001c0e       0x50 build/rtc/i2c.o
+ .text.i2c_init
+                0x00001c5e       0x18 build/rtc/i2c.o
+                0x00001c5e                i2c_init
+ .text.i2c_write
+                0x00001c76       0x54 build/rtc/i2c.o
+                0x00001c76                i2c_write
+ .text.i2c_regs
+                0x00001cca       0x84 build/rtc/i2c.o
+                0x00001cca                i2c_regs
+ .text.nibble   0x00001d4e       0x28 build/rtc/lcd.o
+ .text.send     0x00001d76       0x2c build/rtc/lcd.o
+ .text.lcd_init
+                0x00001da2       0x9a build/rtc/lcd.o
+                0x00001da2                lcd_init
+ .text.lcd_line
+                0x00001e3c       0x44 build/rtc/lcd.o
+                0x00001e3c                lcd_line
+ .text.app_ack  0x00001e80       0x12 build/rtc/main.o
+                0x00001e80                app_ack
+ .text.app_save
+                0x00001e92       0x1c build/rtc/main.o
+                0x00001e92                app_save
+ .text.app_load
+                0x00001eae       0x2c build/rtc/main.o
+                0x00001eae                app_load
+ .text.startup.main
+                0x00001eda      0x3c2 build/rtc/main.o
+                0x00001eda                main
+ .text.rtc_read
+                0x0000229c       0x6c build/rtc/optional.o
+                0x0000229c                rtc_read
+ .text.rtc_set  0x00002308       0xc4 build/rtc/optional.o
+                0x00002308                rtc_set
+ .text.nv_load  0x000023cc       0xe4 build/rtc/storage.o
+                0x000023cc                nv_load
+ .text.nv_save  0x000024b0      0x142 build/rtc/storage.o
+                0x000024b0                nv_save
+ .text.receive  0x000025f2       0x38 build/rtc/uart.o
+ .text.__vector_11
+                0x0000262a       0x48 build/rtc/uart.o
+                0x0000262a                __vector_11
+ .text.__vector_12
+                0x00002672       0x44 build/rtc/uart.o
+                0x00002672                __vector_12
+ .text.uart_init
+                0x000026b6       0x12 build/rtc/uart.o
+                0x000026b6                uart_init
+ .text.uart_rx_poll
+                0x000026c8        0x8 build/rtc/uart.o
+                0x000026c8                uart_rx_poll
+ .text.uart_get
+                0x000026d0       0x30 build/rtc/uart.o
+                0x000026d0                uart_get
+ .text.uart_put
+                0x00002700       0x70 build/rtc/uart.o
+                0x00002700                uart_put
+ .text.uart_text_P
+                0x00002770       0x1e build/rtc/uart.o
+                0x00002770                uart_text_P
+ .text.uart_uint
+                0x0000278e       0xbe build/rtc/uart.o
+                0x0000278e                uart_uint
+ .text.uart_fixed
+                0x0000284c       0x24 build/rtc/uart.o
+                0x0000284c                uart_fixed
+ .text.uart_errors
+                0x00002870        0x6 build/rtc/uart.o
+                0x00002870                uart_errors
+ .text.uart_clear_errors
+                0x00002876        0xc build/rtc/uart.o
+                0x00002876                uart_clear_errors
+ .text.uart_take_rx_fault
+                0x00002882       0x18 build/rtc/uart.o
+                0x00002882                uart_take_rx_fault
+ .text.menu_value
+                0x0000289a       0x64 build/rtc/ui.o
+ .text.menu_adjust
+                0x000028fe       0xd4 build/rtc/ui.o
+ .text.ui_cancel
+                0x000029d2        0x6 build/rtc/ui.o
+                0x000029d2                ui_cancel
+ .text.ui_keys  0x000029d8       0xc4 build/rtc/ui.o
+                0x000029d8                ui_keys
+ .text.ui_render
+                0x00002a9c      0x5d2 build/rtc/ui.o
+                0x00002a9c                ui_render
+ .text.libgcc.div
+                0x0000306e       0x18 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodqi4.o)
+                0x0000306e                __udivmodqi4
+ .text.libgcc.div
+                0x00003086       0x28 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodhi4.o)
+                0x00003086                __udivmodhi4
+ .text.libgcc.div
+                0x000030ae       0x28 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_divmodhi4.o)
+                0x000030ae                __divmodhi4
+                0x000030ae                _div
+ .text.libgcc.div
+                0x000030d6       0x44 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodsi4.o)
+                0x000030d6                __udivmodsi4
+ .text.libgcc   0x0000311a        0xc /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_tablejump2.o)
+                0x0000311a                __tablejump2__
+ .text.libgcc.mul
+                0x00003126       0x1e /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_umulhisi3.o)
+                0x00003126                __umulhisi3
+ .text.avr-libc
+                0x00003144       0x12 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strcmp_P.o)
+                0x00003144                strcmp_P
+ .text.avr-libc
+                0x00003156        0xe /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strcpy_P.o)
+                0x00003156                strcpy_P
+ .text.avr-libc
+                0x00003164       0x1c /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strncmp_P.o)
+                0x00003164                strncmp_P
+ .text.avr-libc
+                0x00003180       0x1a /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(memcmp.o)
+                0x00003180                memcmp
+ .text.avr-libc
+                0x0000319a       0x16 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strchr.o)
+                0x0000319a                strchr
+ .text.avr-libc
+                0x000031b0       0x12 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strcmp.o)
+                0x000031b0                strcmp
+ .text.avr-libc
+                0x000031c2       0x64 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(snprintf_p.o)
+                0x000031c2                snprintf_P
+ .text.avr-libc
+                0x00003226      0x3d6 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+                0x00003226                vfprintf
+ .text.avr-libc
+                0x000035fc       0x16 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strnlen_P.o)
+                0x000035fc                strnlen_P
+ .text.avr-libc
+                0x00003612       0x16 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strnlen.o)
+                0x00003612                strnlen
+ .text.avr-libc
+                0x00003628       0x60 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(fputc.o)
+                0x00003628                fputc
+ .text.avr-libc
+                0x00003688       0xbc /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(ultoa_invert.o)
+                0x00003688                __ultoa_invert
+ .text.avr-libc
+                0x00003744       0x20 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libatmega16.a(eerd_block.o)
+                0x00003744                eeprom_read_block
+                0x00003748                eeprom_read_blraw
+ .text.avr-libc
+                0x00003764       0x22 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libatmega16.a(eeupd_byte.o)
+                0x00003764                eeprom_update_byte
+                0x00003766                eeprom_update_r18
+ .text.libgcc.prologue
+                0x00003786       0x38 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_prologue.o)
+                0x00003786                __prologue_saves__
+ .text.libgcc.prologue
+                0x000037be       0x36 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_epilogue.o)
+                0x000037be                __epilogue_restores__
+                0x000037f4                        . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x000037f4        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_exit.o)
+                0x000037f4                exit
+                0x000037f4                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x000037f4        0x4 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_exit.o)
+ *(.fini0)
+ *(.hightext)
+ *(.hightext*)
+ *(.progmemx.*)
+                0x000037f8                        . = ALIGN (0x2)
+ *(.jumptables)
+ *(.jumptables*)
+ .jumptables.gcc.menu_value
+                0x000037f8       0x10 build/rtc/ui.o
+ .jumptables.gcc.menu_adjust
+                0x00003808       0x10 build/rtc/ui.o
+ .jumptables.gcc.ui_render
+                0x00003818       0x10 build/rtc/ui.o
+                0x00003828                        _etext = .
+
+.data           0x00800060       0x7a load address 0x00003828
+                0x00800060                        PROVIDE (__data_start = .)
+ *(.data)
+ *(.data*)
+ .data.selected
+                0x00800060        0x1 build/rtc/storage.o
+ *(.gnu.linkonce.d*)
+ *(.rodata)
+ .rodata        0x00800061        0x6 build/rtc/command.o
+ .rodata        0x00800067        0xe build/rtc/core.o
+ *(.rodata*)
+ .rodata.settings_set.str1.1
+                0x00800075       0x4a build/rtc/core.o
+                                 0x2f (size before relaxing)
+ .rodata.days.0
+                0x008000bf        0xc build/rtc/core.o
+ .rodata.ui_render.str1.1
+                0x008000cb       0x1b build/rtc/ui.o
+ .rodata.CSWTCH.30
+                0x008000cb        0xe build/rtc/ui.o
+ *(.gnu.linkonce.r*)
+                0x008000e6                        . = ALIGN (0x2)
+ *fill*         0x008000d9        0x1 
+                0x008000da                        _edata = .
+                0x008000da                        PROVIDE (__data_end = .)
+
+.bss            0x008000da      0x181
+                0x008000da                        PROVIDE (__bss_start = .)
+ *(.bss)
+ *(.bss*)
+ .bss.step.0    0x008000da        0x1 build/rtc/board.o
+ .bss.next.1    0x008000db        0x4 build/rtc/board.o
+ .bss.state.2   0x008000df        0x1 build/rtc/board.o
+ .bss.counts.3  0x008000e0        0x4 build/rtc/board.o
+ .bss.key_events
+                0x008000e4        0x1 build/rtc/board.o
+ .bss.fraction_us
+                0x008000e5        0x2 build/rtc/board.o
+ .bss.base_ms   0x008000e7        0x4 build/rtc/board.o
+ .bss.line.43   0x008000eb       0x30 build/rtc/command.o
+ .bss.used.44   0x0080011b        0x1 build/rtc/command.o
+ .bss.discard.46
+                0x0080011c        0x1 build/rtc/command.o
+ .bss.app       0x0080011d       0x65 build/rtc/main.o
+                0x0080011d                app
+ .bss.sequence  0x00800182        0x4 build/rtc/storage.o
+ .bss.tx        0x00800186       0x80 build/rtc/uart.o
+ .bss.rx        0x00800206       0x40 build/rtc/uart.o
+ .bss.rx_fault  0x00800246        0x1 build/rtc/uart.o
+ .bss.errors    0x00800247        0x1 build/rtc/uart.o
+ .bss.tx_tail   0x00800248        0x1 build/rtc/uart.o
+ .bss.tx_head   0x00800249        0x1 build/rtc/uart.o
+ .bss.rx_tail   0x0080024a        0x1 build/rtc/uart.o
+ .bss.rx_head   0x0080024b        0x1 build/rtc/uart.o
+ .bss.edit      0x0080024c        0xe build/rtc/ui.o
+ .bss.menu      0x0080025a        0x1 build/rtc/ui.o
+ *(COMMON)
+                0x0080025b                        PROVIDE (__bss_end = .)
+                0x00003828                        __data_load_start = LOADADDR (.data)
+                0x000038a2                        __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x0080025b        0x1
+                [!provide]                        PROVIDE (__noinit_start = .)
+ *(.noinit .noinit.* .gnu.linkonce.n.*)
+ .noinit        0x0080025b        0x1 build/rtc/reset.o
+                0x0080025b                reset_cause
+                [!provide]                        PROVIDE (__noinit_end = .)
+                0x0080025c                        _end = .
+                [!provide]                        PROVIDE (__heap_start = .)
+                0x00000000                        __flmap_init_label = DEFINED (__flmap_noinit_start)?__flmap_noinit_start:0x0
+                0x00000000                        __flmap = DEFINED (__flmap)?__flmap:0x0
+
+.eeprom         0x00810000       0x30
+ *(.eeprom*)
+ .eeprom        0x00810000       0x30 build/rtc/storage.o
+                0x00810030                        __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x12
+ *(.comment)
+ .comment       0x00000000       0x12 build/rtc/board.o
+                                 0x13 (size before relaxing)
+ .comment       0x00000012       0x13 build/rtc/command.o
+ .comment       0x00000012       0x13 build/rtc/core.o
+ .comment       0x00000012       0x13 build/rtc/dht.o
+ .comment       0x00000012       0x13 build/rtc/i2c.o
+ .comment       0x00000012       0x13 build/rtc/lcd.o
+ .comment       0x00000012       0x13 build/rtc/main.o
+ .comment       0x00000012       0x13 build/rtc/optional.o
+ .comment       0x00000012       0x13 build/rtc/reset.o
+ .comment       0x00000012       0x13 build/rtc/storage.o
+ .comment       0x00000012       0x13 build/rtc/uart.o
+ .comment       0x00000012       0x13 build/rtc/ui.o
+ .comment       0x00000012       0x13 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(snprintf_p.o)
+ .comment       0x00000012       0x13 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+ .comment       0x00000012       0x13 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(fputc.o)
+
+.note.gnu.avr.deviceinfo
+                0x00000000       0x3c
+ .note.gnu.avr.deviceinfo
+                0x00000000       0x3c /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/crtatmega16.o
+
+.gnu.build.attributes
+ *(.gnu.build.attributes .gnu.build.attributes.*)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x3a8
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x60 build/rtc/board.o
+ .debug_aranges
+                0x00000060       0x48 build/rtc/command.o
+ .debug_aranges
+                0x000000a8       0xb0 build/rtc/core.o
+ .debug_aranges
+                0x00000158       0x38 build/rtc/dht.o
+ .debug_aranges
+                0x00000190       0x68 build/rtc/i2c.o
+ .debug_aranges
+                0x000001f8       0x38 build/rtc/lcd.o
+ .debug_aranges
+                0x00000230       0x38 build/rtc/main.o
+ .debug_aranges
+                0x00000268       0x38 build/rtc/optional.o
+ .debug_aranges
+                0x000002a0       0x20 build/rtc/reset.o
+ .debug_aranges
+                0x000002c0       0x28 build/rtc/storage.o
+ .debug_aranges
+                0x000002e8       0x80 build/rtc/uart.o
+ .debug_aranges
+                0x00000368       0x40 build/rtc/ui.o
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000     0x6a5d
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000      0x52e /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/crtatmega16.o
+ .debug_info    0x0000052e      0x46c build/rtc/board.o
+ .debug_info    0x0000099a     0x1798 build/rtc/command.o
+ .debug_info    0x00002132     0x106f build/rtc/core.o
+ .debug_info    0x000031a1      0x34c build/rtc/dht.o
+ .debug_info    0x000034ed      0x64a build/rtc/i2c.o
+ .debug_info    0x00003b37      0x56a build/rtc/lcd.o
+ .debug_info    0x000040a1      0xadb build/rtc/main.o
+ .debug_info    0x00004b7c      0x3df build/rtc/optional.o
+ .debug_info    0x00004f5b       0xf6 build/rtc/reset.o
+ .debug_info    0x00005051      0x4ce build/rtc/storage.o
+ .debug_info    0x0000551f      0x5ef build/rtc/uart.o
+ .debug_info    0x00005b0e      0xf4f build/rtc/ui.o
+
+.debug_abbrev   0x00000000     0x1ddb
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x4e7 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/crtatmega16.o
+ .debug_abbrev  0x000004e7      0x20a build/rtc/board.o
+ .debug_abbrev  0x000006f1      0x31f build/rtc/command.o
+ .debug_abbrev  0x00000a10      0x2d6 build/rtc/core.o
+ .debug_abbrev  0x00000ce6      0x220 build/rtc/dht.o
+ .debug_abbrev  0x00000f06      0x22f build/rtc/i2c.o
+ .debug_abbrev  0x00001135      0x1a5 build/rtc/lcd.o
+ .debug_abbrev  0x000012da      0x246 build/rtc/main.o
+ .debug_abbrev  0x00001520      0x15b build/rtc/optional.o
+ .debug_abbrev  0x0000167b       0xce build/rtc/reset.o
+ .debug_abbrev  0x00001749      0x18f build/rtc/storage.o
+ .debug_abbrev  0x000018d8      0x274 build/rtc/uart.o
+ .debug_abbrev  0x00001b4c      0x28f build/rtc/ui.o
+
+.debug_line     0x00000000     0x64bf
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x00000000       0x1d /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/crtatmega16.o
+ .debug_line    0x0000001d      0x820 build/rtc/board.o
+ .debug_line    0x0000083d      0xf71 build/rtc/command.o
+ .debug_line    0x000017ae     0x17ec build/rtc/core.o
+ .debug_line    0x00002f9a      0x386 build/rtc/dht.o
+ .debug_line    0x00003320      0xa5c build/rtc/i2c.o
+ .debug_line    0x00003d7c      0x5ae build/rtc/lcd.o
+ .debug_line    0x0000432a      0x79a build/rtc/main.o
+ .debug_line    0x00004ac4      0x271 build/rtc/optional.o
+ .debug_line    0x00004d35       0xc8 build/rtc/reset.o
+ .debug_line    0x00004dfd      0x2ff build/rtc/storage.o
+ .debug_line    0x000050fc      0x822 build/rtc/uart.o
+ .debug_line    0x0000591e      0xba1 build/rtc/ui.o
+
+.debug_frame    0x00000000      0xb34
+ *(.debug_frame)
+ .debug_frame   0x00000000      0x150 build/rtc/board.o
+ .debug_frame   0x00000150       0xa4 build/rtc/command.o
+ .debug_frame   0x000001f4      0x2cc build/rtc/core.o
+ .debug_frame   0x000004c0       0xa0 build/rtc/dht.o
+ .debug_frame   0x00000560      0x120 build/rtc/i2c.o
+ .debug_frame   0x00000680       0x70 build/rtc/lcd.o
+ .debug_frame   0x000006f0       0x64 build/rtc/main.o
+ .debug_frame   0x00000754       0x94 build/rtc/optional.o
+ .debug_frame   0x000007e8       0x24 build/rtc/reset.o
+ .debug_frame   0x0000080c       0x94 build/rtc/storage.o
+ .debug_frame   0x000008a0      0x1c4 build/rtc/uart.o
+ .debug_frame   0x00000a64       0xd0 build/rtc/ui.o
+
+.debug_str      0x00000000      0xad2
+ *(.debug_str)
+ .debug_str     0x00000000      0x1af /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/crtatmega16.o
+ .debug_str     0x000001af      0x923 build/rtc/board.o
+                                0x1f9 (size before relaxing)
+ .debug_str     0x00000ad2      0x44b build/rtc/command.o
+ .debug_str     0x00000ad2      0x340 build/rtc/core.o
+ .debug_str     0x00000ad2      0x1b5 build/rtc/dht.o
+ .debug_str     0x00000ad2      0x1ac build/rtc/i2c.o
+ .debug_str     0x00000ad2      0x18c build/rtc/lcd.o
+ .debug_str     0x00000ad2      0x47e build/rtc/main.o
+ .debug_str     0x00000ad2      0x1ae build/rtc/optional.o
+ .debug_str     0x00000ad2      0x12e build/rtc/reset.o
+ .debug_str     0x00000ad2      0x210 build/rtc/storage.o
+ .debug_str     0x00000ad2      0x244 build/rtc/uart.o
+ .debug_str     0x00000ad2      0x35c build/rtc/ui.o
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_addr
+ *(.debug_addr)
+
+.debug_line_str
+                0x00000000      0x1c4
+ *(.debug_line_str)
+ .debug_line_str
+                0x00000000      0x1c4 build/rtc/board.o
+                                 0xd0 (size before relaxing)
+ .debug_line_str
+                0x000001c4      0x129 build/rtc/command.o
+ .debug_line_str
+                0x000001c4       0x9f build/rtc/core.o
+ .debug_line_str
+                0x000001c4       0xcf build/rtc/dht.o
+ .debug_line_str
+                0x000001c4       0xba build/rtc/i2c.o
+ .debug_line_str
+                0x000001c4       0xba build/rtc/lcd.o
+ .debug_line_str
+                0x000001c4       0xd5 build/rtc/main.o
+ .debug_line_str
+                0x000001c4       0xa8 build/rtc/optional.o
+ .debug_line_str
+                0x000001c4       0xcb build/rtc/reset.o
+ .debug_line_str
+                0x000001c4      0x11b build/rtc/storage.o
+ .debug_line_str
+                0x000001c4       0xd3 build/rtc/uart.o
+ .debug_line_str
+                0x000001c4      0x119 build/rtc/ui.o
+
+.debug_loclists
+                0x00000000     0x25f2
+ *(.debug_loclists)
+ .debug_loclists
+                0x00000000      0x200 build/rtc/board.o
+ .debug_loclists
+                0x00000200       0xa5 build/rtc/command.o
+ .debug_loclists
+                0x000002a5     0x11fd build/rtc/core.o
+ .debug_loclists
+                0x000014a2      0x116 build/rtc/dht.o
+ .debug_loclists
+                0x000015b8      0x4b7 build/rtc/i2c.o
+ .debug_loclists
+                0x00001a6f      0x310 build/rtc/lcd.o
+ .debug_loclists
+                0x00001d7f      0x322 build/rtc/main.o
+ .debug_loclists
+                0x000020a1       0xa3 build/rtc/optional.o
+ .debug_loclists
+                0x00002144      0x102 build/rtc/storage.o
+ .debug_loclists
+                0x00002246      0x268 build/rtc/uart.o
+ .debug_loclists
+                0x000024ae      0x144 build/rtc/ui.o
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_names
+ *(.debug_names)
+
+.debug_rnglists
+                0x00000000      0x3b7
+ *(.debug_rnglists)
+ .debug_rnglists
+                0x00000000       0x65 build/rtc/board.o
+ .debug_rnglists
+                0x00000065       0x66 build/rtc/command.o
+ .debug_rnglists
+                0x000000cb       0xba build/rtc/core.o
+ .debug_rnglists
+                0x00000185       0x26 build/rtc/dht.o
+ .debug_rnglists
+                0x000001ab       0x80 build/rtc/i2c.o
+ .debug_rnglists
+                0x0000022b       0x35 build/rtc/lcd.o
+ .debug_rnglists
+                0x00000260       0x3a build/rtc/main.o
+ .debug_rnglists
+                0x0000029a       0x26 build/rtc/optional.o
+ .debug_rnglists
+                0x000002c0       0x13 build/rtc/reset.o
+ .debug_rnglists
+                0x000002d3       0x3b build/rtc/storage.o
+ .debug_rnglists
+                0x0000030e       0x5c build/rtc/uart.o
+ .debug_rnglists
+                0x0000036a       0x4d build/rtc/ui.o
+
+.debug_str_offsets
+ *(.debug_str_offsets)
+
+.debug_sup
+ *(.debug_sup)
+OUTPUT(build/rtc/monitor.elf elf32-avr)
+LOAD linker stubs
