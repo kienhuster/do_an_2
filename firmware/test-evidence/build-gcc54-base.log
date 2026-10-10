@@ -1,0 +1,19 @@
+make: Entering directory '/workspace/do_an_2/firmware'
+/workspace/.avr/legacy/root/usr/bin/avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude  -MMD -MP -c src/board.c -o build/legacy-base/board.o
+/workspace/.avr/legacy/root/usr/bin/avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude  -MMD -MP -c src/command.c -o build/legacy-base/command.o
+/workspace/.avr/legacy/root/usr/bin/avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude  -MMD -MP -c src/core.c -o build/legacy-base/core.o
+/workspace/.avr/legacy/root/usr/bin/avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude  -MMD -MP -c src/dht.c -o build/legacy-base/dht.o
+/workspace/.avr/legacy/root/usr/bin/avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude  -MMD -MP -c src/i2c.c -o build/legacy-base/i2c.o
+/workspace/.avr/legacy/root/usr/bin/avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude  -MMD -MP -c src/lcd.c -o build/legacy-base/lcd.o
+/workspace/.avr/legacy/root/usr/bin/avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude  -MMD -MP -c src/main.c -o build/legacy-base/main.o
+/workspace/.avr/legacy/root/usr/bin/avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude  -MMD -MP -c src/optional.c -o build/legacy-base/optional.o
+/workspace/.avr/legacy/root/usr/bin/avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -Iinclude -MMD -MP -c src/reset.c -o build/legacy-base/reset.o
+/workspace/.avr/legacy/root/usr/bin/avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude  -MMD -MP -c src/storage.c -o build/legacy-base/storage.o
+/workspace/.avr/legacy/root/usr/bin/avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude  -MMD -MP -c src/uart.c -o build/legacy-base/uart.o
+/workspace/.avr/legacy/root/usr/bin/avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude  -MMD -MP -c src/ui.c -o build/legacy-base/ui.o
+/workspace/.avr/legacy/root/usr/bin/avr-gcc -mmcu=atmega16 -Wl,--gc-sections,-Map,build/legacy-base/monitor.map build/legacy-base/board.o build/legacy-base/command.o build/legacy-base/core.o build/legacy-base/dht.o build/legacy-base/i2c.o build/legacy-base/lcd.o build/legacy-base/main.o build/legacy-base/optional.o build/legacy-base/reset.o build/legacy-base/storage.o build/legacy-base/uart.o build/legacy-base/ui.o -o build/legacy-base/monitor.elf
+/workspace/.avr/legacy/root/usr/bin/avr-objcopy -O ihex -R .eeprom build/legacy-base/monitor.elf build/legacy-base/monitor.hex
+/workspace/.avr/legacy/root/usr/bin/avr-objcopy -O ihex -j .eeprom --change-section-lma .eeprom=0 build/legacy-base/monitor.elf build/legacy-base/monitor.eep
+python3 tools/check_size.py /workspace/.avr/legacy/root/usr/bin/avr-size build/legacy-base/monitor.elf
+Flash 8638/16384 bytes; static SRAM 194/1024; EEPROM 48/512; stack headroom 830
+make: Leaving directory '/workspace/do_an_2/firmware'

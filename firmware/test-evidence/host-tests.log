@@ -1,0 +1,8 @@
+make: Entering directory '/workspace/do_an_2/firmware'
+cc -std=c99 -g -Wall -Wextra -Werror -fsanitize=address,undefined -Iinclude tests/test_core.c src/core.c -o build/tests/test_core
+./build/tests/test_core
+PASS: 308 assertions in 6 groups (settings, alarm, stats, EEPROM, RTC, DHT/time)
+cc -std=c99 -g -Wall -Wextra -Werror -fsanitize=address,undefined -Itests/fakes -Iinclude tests/test_ui.c src/ui.c src/core.c -o build/tests/test_ui
+./build/tests/test_ui
+PASS: 20 UI assertions (four keys, pages, cancel, thresholds, save, ACK, ADC)
+make: Leaving directory '/workspace/do_an_2/firmware'

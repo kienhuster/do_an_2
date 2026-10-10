@@ -1,0 +1,11 @@
+Flash 8638/16384 bytes; static SRAM 194/1024; EEPROM 48/512; stack headroom 830
+Flash 14864/16384 bytes; static SRAM 508/1024; EEPROM 48/512; stack headroom 516
+Flash 8638/16384 bytes; static SRAM 194/1024; EEPROM 48/512; stack headroom 830
+Flash 12550/16384 bytes; static SRAM 490/1024; EEPROM 48/512; stack headroom 534
+Flash 14864/16384 bytes; static SRAM 508/1024; EEPROM 48/512; stack headroom 516
+Flash 14342/16384 bytes; static SRAM 508/1024; EEPROM 48/512; stack headroom 516
+Flash 13418/16384 bytes; static SRAM 490/1024; EEPROM 48/512; stack headroom 534
+Flash 14924/16384 bytes; static SRAM 508/1024; EEPROM 48/512; stack headroom 516
+Flash 8794/16384 bytes; static SRAM 448/1024; EEPROM 48/512; stack headroom 576
+Flash 3222/16384 bytes; static SRAM 143/1024; EEPROM 0/512; stack headroom 881
+PASS: all 10 Studio XML configurations compile/link from configuration working directories; avr-gcc (GCC) 5.4.0

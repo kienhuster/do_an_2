@@ -1,9 +1,7 @@
 Archive member included to satisfy reference by file (symbol)
 
 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodqi4.o)
-                              build/legacy-minimal/command.o (__udivmodqi4)
-/workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodhi4.o)
-                              build/legacy-minimal/uart.o (__udivmodhi4)
+                              build/legacy-minimal/core.o (__udivmodqi4)
 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_divmodhi4.o)
                               build/legacy-minimal/ui.o (__divmodhi4)
 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodsi4.o)
@@ -16,10 +14,12 @@ Archive member included to satisfy reference by file (symbol)
                               build/legacy-minimal/core.o (__do_copy_data)
 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_clear_bss.o)
                               build/legacy-minimal/board.o (__do_clear_bss)
-/workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_umulhisi3.o)
-                              build/legacy-minimal/main.o (__umulhisi3)
 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_muluhisi3.o)
                               build/legacy-minimal/core.o (__muluhisi3)
+/workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodhi4.o)
+                              /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_divmodhi4.o) (__udivmodhi4)
+/workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_umulhisi3.o)
+                              /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_muluhisi3.o) (__umulhisi3)
 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(strcmp.o)
                               build/legacy-minimal/core.o (strcmp)
 
@@ -40,6 +40,15 @@ Discarded input sections
  .text          0x0000000000000000        0x0 build/legacy-minimal/command.o
  .data          0x0000000000000000        0x0 build/legacy-minimal/command.o
  .bss           0x0000000000000000        0x0 build/legacy-minimal/command.o
+ .stab          0x0000000000000000      0x3b4 build/legacy-minimal/command.o
+                                        0x600 (size before relaxing)
+ .text.csv_header
+                0x0000000000000000        0x2 build/legacy-minimal/command.o
+ .text.csv_send
+                0x0000000000000000        0x2 build/legacy-minimal/command.o
+ .text.command_poll
+                0x0000000000000000        0x2 build/legacy-minimal/command.o
+ .comment       0x0000000000000000       0x12 build/legacy-minimal/command.o
  .text          0x0000000000000000        0x0 build/legacy-minimal/core.o
  .data          0x0000000000000000        0x0 build/legacy-minimal/core.o
  .bss           0x0000000000000000        0x0 build/legacy-minimal/core.o
@@ -48,6 +57,8 @@ Discarded input sections
                 0x0000000000000000       0x2f build/legacy-minimal/core.o
  .text.settings_set
                 0x0000000000000000      0x132 build/legacy-minimal/core.o
+ .text.stats_trend
+                0x0000000000000000       0x82 build/legacy-minimal/core.o
  .text.crc16    0x0000000000000000       0x30 build/legacy-minimal/core.o
  .text.sequence_newer
                 0x0000000000000000       0x1e build/legacy-minimal/core.o
@@ -86,7 +97,7 @@ Discarded input sections
  .data          0x0000000000000000        0x0 build/legacy-minimal/main.o
  .bss           0x0000000000000000        0x0 build/legacy-minimal/main.o
  .text.app_load
-                0x0000000000000000       0x2c build/legacy-minimal/main.o
+                0x0000000000000000        0x4 build/legacy-minimal/main.o
  .text          0x0000000000000000        0x0 build/legacy-minimal/optional.o
  .data          0x0000000000000000        0x0 build/legacy-minimal/optional.o
  .bss           0x0000000000000000        0x0 build/legacy-minimal/optional.o
@@ -106,11 +117,27 @@ Discarded input sections
  .text          0x0000000000000000        0x0 build/legacy-minimal/storage.o
  .data          0x0000000000000000        0x0 build/legacy-minimal/storage.o
  .bss           0x0000000000000000        0x0 build/legacy-minimal/storage.o
+ .stab          0x0000000000000000      0x384 build/legacy-minimal/storage.o
+                                        0x5d0 (size before relaxing)
  .text.nv_load  0x0000000000000000        0x4 build/legacy-minimal/storage.o
+ .text.nv_save  0x0000000000000000        0x4 build/legacy-minimal/storage.o
+ .comment       0x0000000000000000       0x12 build/legacy-minimal/storage.o
  .text          0x0000000000000000        0x0 build/legacy-minimal/uart.o
  .data          0x0000000000000000        0x0 build/legacy-minimal/uart.o
  .bss           0x0000000000000000        0x0 build/legacy-minimal/uart.o
+ .text.uart_rx_poll
+                0x0000000000000000        0x2 build/legacy-minimal/uart.o
  .text.uart_get
+                0x0000000000000000        0x4 build/legacy-minimal/uart.o
+ .text.uart_put
+                0x0000000000000000        0x4 build/legacy-minimal/uart.o
+ .text.uart_text_P
+                0x0000000000000000        0x2 build/legacy-minimal/uart.o
+ .text.uart_uint
+                0x0000000000000000        0x2 build/legacy-minimal/uart.o
+ .text.uart_fixed
+                0x0000000000000000        0x2 build/legacy-minimal/uart.o
+ .text.uart_errors
                 0x0000000000000000        0x4 build/legacy-minimal/uart.o
  .text.uart_clear_errors
                 0x0000000000000000        0x2 build/legacy-minimal/uart.o
@@ -126,6 +153,8 @@ Discarded input sections
  .bss           0x0000000000000000        0x0 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodqi4.o)
  .text.libgcc.mul
                 0x0000000000000000        0x0 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodqi4.o)
+ .text.libgcc.div
+                0x0000000000000000       0x18 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodqi4.o)
  .text.libgcc   0x0000000000000000        0x0 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodqi4.o)
  .text.libgcc.prologue
                 0x0000000000000000        0x0 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodqi4.o)
@@ -135,20 +164,6 @@ Discarded input sections
                 0x0000000000000000        0x0 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodqi4.o)
  .text.libgcc.fixed
                 0x0000000000000000        0x0 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodqi4.o)
- .text          0x0000000000000000        0x0 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodhi4.o)
- .data          0x0000000000000000        0x0 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodhi4.o)
- .bss           0x0000000000000000        0x0 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodhi4.o)
- .text.libgcc.mul
-                0x0000000000000000        0x0 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodhi4.o)
- .text.libgcc   0x0000000000000000        0x0 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodhi4.o)
- .text.libgcc.prologue
-                0x0000000000000000        0x0 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodhi4.o)
- .text.libgcc.builtins
-                0x0000000000000000        0x0 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodhi4.o)
- .text.libgcc.fmul
-                0x0000000000000000        0x0 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodhi4.o)
- .text.libgcc.fixed
-                0x0000000000000000        0x0 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodhi4.o)
  .text          0x0000000000000000        0x0 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_divmodhi4.o)
  .data          0x0000000000000000        0x0 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_divmodhi4.o)
  .bss           0x0000000000000000        0x0 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_divmodhi4.o)
@@ -240,20 +255,6 @@ Discarded input sections
                 0x0000000000000000        0x0 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_clear_bss.o)
  .text.libgcc.fixed
                 0x0000000000000000        0x0 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_clear_bss.o)
- .text          0x0000000000000000        0x0 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_umulhisi3.o)
- .data          0x0000000000000000        0x0 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_umulhisi3.o)
- .bss           0x0000000000000000        0x0 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_umulhisi3.o)
- .text.libgcc.div
-                0x0000000000000000        0x0 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_umulhisi3.o)
- .text.libgcc   0x0000000000000000        0x0 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_umulhisi3.o)
- .text.libgcc.prologue
-                0x0000000000000000        0x0 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_umulhisi3.o)
- .text.libgcc.builtins
-                0x0000000000000000        0x0 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_umulhisi3.o)
- .text.libgcc.fmul
-                0x0000000000000000        0x0 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_umulhisi3.o)
- .text.libgcc.fixed
-                0x0000000000000000        0x0 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_umulhisi3.o)
  .text          0x0000000000000000        0x0 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_muluhisi3.o)
  .data          0x0000000000000000        0x0 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_muluhisi3.o)
  .bss           0x0000000000000000        0x0 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_muluhisi3.o)
@@ -270,6 +271,36 @@ Discarded input sections
                 0x0000000000000000        0x0 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_muluhisi3.o)
  .text.libgcc.fixed
                 0x0000000000000000        0x0 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_muluhisi3.o)
+ .text          0x0000000000000000        0x0 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodhi4.o)
+ .data          0x0000000000000000        0x0 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodhi4.o)
+ .bss           0x0000000000000000        0x0 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodhi4.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodhi4.o)
+ .text.libgcc   0x0000000000000000        0x0 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodhi4.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodhi4.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodhi4.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodhi4.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodhi4.o)
+ .text          0x0000000000000000        0x0 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_umulhisi3.o)
+ .data          0x0000000000000000        0x0 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_umulhisi3.o)
+ .bss           0x0000000000000000        0x0 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_umulhisi3.o)
+ .text.libgcc.mul
+                0x0000000000000000       0x1e /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_umulhisi3.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_umulhisi3.o)
+ .text.libgcc   0x0000000000000000        0x0 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_umulhisi3.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_umulhisi3.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_umulhisi3.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_umulhisi3.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_umulhisi3.o)
  .text          0x0000000000000000        0x0 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(strcmp.o)
  .data          0x0000000000000000        0x0 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(strcmp.o)
  .bss           0x0000000000000000        0x0 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(strcmp.o)
@@ -409,7 +440,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x0000000000000000     0x109e
+.text           0x0000000000000000      0xc88
  *(.vectors)
  .vectors       0x0000000000000000       0x54 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/crtatmega16.o
                 0x0000000000000000                __vectors
@@ -427,46 +458,37 @@ END GROUP
  *libprintf_flt.a:*(.progmem.data)
  *libc.a:*(.progmem.data)
  *(.progmem*)
- .progmem.data.__c.2337
-                0x0000000000000074        0x3 build/legacy-minimal/command.o
- .progmem.data.__c.2335
-                0x0000000000000077        0x3 build/legacy-minimal/command.o
- .progmem.data.__c.2330
-                0x000000000000007a       0x50 build/legacy-minimal/command.o
- .progmem.data.__c.2015
-                0x00000000000000ca       0x2f build/legacy-minimal/main.o
-                0x00000000000000fa                . = ALIGN (0x2)
- *fill*         0x00000000000000f9        0x1 
+                0x0000000000000074                . = ALIGN (0x2)
  *(.jumptables)
  *(.jumptables*)
  *(.lowtext)
  *(.lowtext*)
-                0x00000000000000fa                __ctors_start = .
+                0x0000000000000074                __ctors_start = .
  *(.ctors)
-                0x00000000000000fa                __ctors_end = .
-                0x00000000000000fa                __dtors_start = .
+                0x0000000000000074                __ctors_end = .
+                0x0000000000000074                __dtors_start = .
  *(.dtors)
-                0x00000000000000fa                __dtors_end = .
+                0x0000000000000074                __dtors_end = .
  SORT(*)(.ctors)
  SORT(*)(.dtors)
  *(.init0)
- .init0         0x00000000000000fa        0x0 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/crtatmega16.o
-                0x00000000000000fa                __init
+ .init0         0x0000000000000074        0x0 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/crtatmega16.o
+                0x0000000000000074                __init
  *(.init0)
  *(.init1)
  *(.init1)
  *(.init2)
- .init2         0x00000000000000fa        0xc /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/crtatmega16.o
+ .init2         0x0000000000000074        0xc /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/crtatmega16.o
  *(.init2)
  *(.init3)
- .init3         0x0000000000000106       0x18 build/legacy-minimal/reset.o
-                0x0000000000000106                early_reset
+ .init3         0x0000000000000080       0x18 build/legacy-minimal/reset.o
+                0x0000000000000080                early_reset
  *(.init3)
  *(.init4)
- .init4         0x000000000000011e       0x16 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_copy_data.o)
-                0x000000000000011e                __do_copy_data
- .init4         0x0000000000000134       0x10 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_clear_bss.o)
-                0x0000000000000134                __do_clear_bss
+ .init4         0x0000000000000098       0x16 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_copy_data.o)
+                0x0000000000000098                __do_copy_data
+ .init4         0x00000000000000ae       0x10 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_clear_bss.o)
+                0x00000000000000ae                __do_clear_bss
  *(.init4)
  *(.init5)
  *(.init5)
@@ -477,172 +499,130 @@ END GROUP
  *(.init8)
  *(.init8)
  *(.init9)
- .init9         0x0000000000000144        0x8 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/crtatmega16.o
+ .init9         0x00000000000000be        0x8 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/crtatmega16.o
  *(.init9)
  *(.text)
- .text          0x000000000000014c        0x4 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/crtatmega16.o
-                0x000000000000014c                __vector_1
-                0x000000000000014c                __vector_12
-                0x000000000000014c                __bad_interrupt
-                0x000000000000014c                __vector_3
-                0x000000000000014c                __vector_11
-                0x000000000000014c                __vector_13
-                0x000000000000014c                __vector_17
-                0x000000000000014c                __vector_19
-                0x000000000000014c                __vector_7
-                0x000000000000014c                __vector_5
-                0x000000000000014c                __vector_4
-                0x000000000000014c                __vector_9
-                0x000000000000014c                __vector_2
-                0x000000000000014c                __vector_15
-                0x000000000000014c                __vector_14
-                0x000000000000014c                __vector_10
-                0x000000000000014c                __vector_16
-                0x000000000000014c                __vector_18
-                0x000000000000014c                __vector_20
-                0x0000000000000150                . = ALIGN (0x2)
+ .text          0x00000000000000c6        0x4 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/crtatmega16.o
+                0x00000000000000c6                __vector_1
+                0x00000000000000c6                __vector_12
+                0x00000000000000c6                __bad_interrupt
+                0x00000000000000c6                __vector_3
+                0x00000000000000c6                __vector_11
+                0x00000000000000c6                __vector_13
+                0x00000000000000c6                __vector_17
+                0x00000000000000c6                __vector_19
+                0x00000000000000c6                __vector_7
+                0x00000000000000c6                __vector_5
+                0x00000000000000c6                __vector_4
+                0x00000000000000c6                __vector_9
+                0x00000000000000c6                __vector_2
+                0x00000000000000c6                __vector_15
+                0x00000000000000c6                __vector_14
+                0x00000000000000c6                __vector_10
+                0x00000000000000c6                __vector_16
+                0x00000000000000c6                __vector_18
+                0x00000000000000c6                __vector_20
+                0x00000000000000ca                . = ALIGN (0x2)
  *(.text.*)
  .text.__vector_8
-                0x0000000000000150       0xac build/legacy-minimal/board.o
-                0x0000000000000150                __vector_8
+                0x00000000000000ca       0xac build/legacy-minimal/board.o
+                0x00000000000000ca                __vector_8
  .text.clock_ms
-                0x00000000000001fc       0x76 build/legacy-minimal/board.o
-                0x00000000000001fc                clock_ms
+                0x0000000000000176       0x76 build/legacy-minimal/board.o
+                0x0000000000000176                clock_ms
  .text.board_init
-                0x0000000000000272       0x36 build/legacy-minimal/board.o
-                0x0000000000000272                board_init
+                0x00000000000001ec       0x36 build/legacy-minimal/board.o
+                0x00000000000001ec                board_init
  .text.keys_raw
-                0x00000000000002a8        0x8 build/legacy-minimal/board.o
-                0x00000000000002a8                keys_raw
+                0x0000000000000222        0x8 build/legacy-minimal/board.o
+                0x0000000000000222                keys_raw
  .text.__vector_6
-                0x00000000000002b0       0xba build/legacy-minimal/board.o
-                0x00000000000002b0                __vector_6
+                0x000000000000022a       0xba build/legacy-minimal/board.o
+                0x000000000000022a                __vector_6
  .text.keys_poll
-                0x000000000000036a       0x10 build/legacy-minimal/board.o
-                0x000000000000036a                keys_poll
+                0x00000000000002e4       0x10 build/legacy-minimal/board.o
+                0x00000000000002e4                keys_poll
  .text.buzzer_set
-                0x000000000000037a        0x2 build/legacy-minimal/board.o
-                0x000000000000037a                buzzer_set
+                0x00000000000002f4        0x2 build/legacy-minimal/board.o
+                0x00000000000002f4                buzzer_set
  .text.diagnostic_tick
-                0x000000000000037c        0x2 build/legacy-minimal/board.o
-                0x000000000000037c                diagnostic_tick
- .text.signed_trend
-                0x000000000000037e       0x2c build/legacy-minimal/command.o
- .text.comma    0x00000000000003aa        0x6 build/legacy-minimal/command.o
- .text.two      0x00000000000003b0       0x1a build/legacy-minimal/command.o
- .text.csv_header
-                0x00000000000003ca        0x8 build/legacy-minimal/command.o
-                0x00000000000003ca                csv_header
- .text.csv_send
-                0x00000000000003d2      0x164 build/legacy-minimal/command.o
-                0x00000000000003d2                csv_send
- .text.command_poll
-                0x0000000000000536        0x2 build/legacy-minimal/command.o
-                0x0000000000000536                command_poll
+                0x00000000000002f6        0x2 build/legacy-minimal/board.o
+                0x00000000000002f6                diagnostic_tick
  .text.settings_defaults
-                0x0000000000000538       0x12 build/legacy-minimal/core.o
-                0x0000000000000538                settings_defaults
+                0x00000000000002f8       0x12 build/legacy-minimal/core.o
+                0x00000000000002f8                settings_defaults
  .text.settings_valid
-                0x000000000000054a       0x92 build/legacy-minimal/core.o
-                0x000000000000054a                settings_valid
+                0x000000000000030a       0x92 build/legacy-minimal/core.o
+                0x000000000000030a                settings_valid
  .text.stats_reset
-                0x00000000000005dc        0xc build/legacy-minimal/core.o
-                0x00000000000005dc                stats_reset
+                0x000000000000039c        0xc build/legacy-minimal/core.o
+                0x000000000000039c                stats_reset
  .text.stats_add
-                0x00000000000005e8       0xec build/legacy-minimal/core.o
-                0x00000000000005e8                stats_add
- .text.stats_trend
-                0x00000000000006d4       0x82 build/legacy-minimal/core.o
-                0x00000000000006d4                stats_trend
+                0x00000000000003a8       0xec build/legacy-minimal/core.o
+                0x00000000000003a8                stats_add
  .text.alarm_update
-                0x0000000000000756       0xa8 build/legacy-minimal/core.o
-                0x0000000000000756                alarm_update
+                0x0000000000000494       0xa8 build/legacy-minimal/core.o
+                0x0000000000000494                alarm_update
  .text.alarm_ack
-                0x00000000000007fe        0x8 build/legacy-minimal/core.o
-                0x00000000000007fe                alarm_ack
+                0x000000000000053c        0x8 build/legacy-minimal/core.o
+                0x000000000000053c                alarm_ack
  .text.dht_decode
-                0x0000000000000806       0x5e build/legacy-minimal/core.o
-                0x0000000000000806                dht_decode
- .text.due      0x0000000000000864       0x22 build/legacy-minimal/core.o
-                0x0000000000000864                due
+                0x0000000000000544       0x5e build/legacy-minimal/core.o
+                0x0000000000000544                dht_decode
+ .text.due      0x00000000000005a2       0x22 build/legacy-minimal/core.o
+                0x00000000000005a2                due
  .text.level.constprop.0
-                0x0000000000000886       0x2a build/legacy-minimal/dht.o
+                0x00000000000005c4       0x1c build/legacy-minimal/dht.o
  .text.dht_init
-                0x00000000000008b0        0x6 build/legacy-minimal/dht.o
-                0x00000000000008b0                dht_init
+                0x00000000000005e0        0x6 build/legacy-minimal/dht.o
+                0x00000000000005e0                dht_init
  .text.dht_start
-                0x00000000000008b6        0x6 build/legacy-minimal/dht.o
-                0x00000000000008b6                dht_start
+                0x00000000000005e6        0x6 build/legacy-minimal/dht.o
+                0x00000000000005e6                dht_start
  .text.dht_finish
-                0x00000000000008bc       0xdc build/legacy-minimal/dht.o
-                0x00000000000008bc                dht_finish
+                0x00000000000005ec       0xd4 build/legacy-minimal/dht.o
+                0x00000000000005ec                dht_finish
  .text.i2c_init
-                0x0000000000000998        0x2 build/legacy-minimal/i2c.o
-                0x0000000000000998                i2c_init
+                0x00000000000006c0        0x2 build/legacy-minimal/i2c.o
+                0x00000000000006c0                i2c_init
  .text.lcd_init
-                0x000000000000099a        0x2 build/legacy-minimal/lcd.o
-                0x000000000000099a                lcd_init
- .text.app_ack  0x000000000000099c       0x12 build/legacy-minimal/main.o
-                0x000000000000099c                app_ack
+                0x00000000000006c2        0x2 build/legacy-minimal/lcd.o
+                0x00000000000006c2                lcd_init
+ .text.app_ack  0x00000000000006c4       0x12 build/legacy-minimal/main.o
+                0x00000000000006c4                app_ack
  .text.app_save
-                0x00000000000009ae       0x1c build/legacy-minimal/main.o
-                0x00000000000009ae                app_save
+                0x00000000000006d6        0x4 build/legacy-minimal/main.o
+                0x00000000000006d6                app_save
  .text.startup.main
-                0x00000000000009ca      0x374 build/legacy-minimal/main.o
-                0x00000000000009ca                main
- .text.nv_save  0x0000000000000d3e        0x4 build/legacy-minimal/storage.o
-                0x0000000000000d3e                nv_save
+                0x00000000000006da      0x302 build/legacy-minimal/main.o
+                0x00000000000006da                main
  .text.uart_init
-                0x0000000000000d42        0x2 build/legacy-minimal/uart.o
-                0x0000000000000d42                uart_init
- .text.uart_rx_poll
-                0x0000000000000d44        0x2 build/legacy-minimal/uart.o
-                0x0000000000000d44                uart_rx_poll
- .text.uart_put
-                0x0000000000000d46        0x4 build/legacy-minimal/uart.o
-                0x0000000000000d46                uart_put
- .text.uart_text_P
-                0x0000000000000d4a        0x6 build/legacy-minimal/uart.o
-                0x0000000000000d4a                uart_text_P
- .text.uart_uint
-                0x0000000000000d50       0x30 build/legacy-minimal/uart.o
-                0x0000000000000d50                uart_uint
- .text.uart_fixed
-                0x0000000000000d80       0x3c build/legacy-minimal/uart.o
-                0x0000000000000d80                uart_fixed
- .text.uart_errors
-                0x0000000000000dbc        0x4 build/legacy-minimal/uart.o
-                0x0000000000000dbc                uart_errors
+                0x00000000000009dc        0x4 build/legacy-minimal/uart.o
+                0x00000000000009dc                uart_init
  .text.menu_adjust
-                0x0000000000000dc0      0x130 build/legacy-minimal/ui.o
- .text.ui_keys  0x0000000000000ef0       0xd2 build/legacy-minimal/ui.o
-                0x0000000000000ef0                ui_keys
+                0x00000000000009e0      0x130 build/legacy-minimal/ui.o
+ .text.ui_keys  0x0000000000000b10       0xd2 build/legacy-minimal/ui.o
+                0x0000000000000b10                ui_keys
  .text.ui_render
-                0x0000000000000fc2        0x2 build/legacy-minimal/ui.o
-                0x0000000000000fc2                ui_render
+                0x0000000000000be2        0x2 build/legacy-minimal/ui.o
+                0x0000000000000be2                ui_render
  .text.libgcc.div
-                0x0000000000000fc4       0x18 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodqi4.o)
-                0x0000000000000fc4                __udivmodqi4
+                0x0000000000000be4       0x28 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_divmodhi4.o)
+                0x0000000000000be4                __divmodhi4
+                0x0000000000000be4                _div
  .text.libgcc.div
-                0x0000000000000fdc       0x28 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodhi4.o)
-                0x0000000000000fdc                __udivmodhi4
+                0x0000000000000c0c       0x44 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodsi4.o)
+                0x0000000000000c0c                __udivmodsi4
+ .text.libgcc   0x0000000000000c50        0xc /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_tablejump2.o)
+                0x0000000000000c50                __tablejump2__
  .text.libgcc.div
-                0x0000000000001004       0x28 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_divmodhi4.o)
-                0x0000000000001004                __divmodhi4
-                0x0000000000001004                _div
- .text.libgcc.div
-                0x000000000000102c       0x44 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodsi4.o)
-                0x000000000000102c                __udivmodsi4
- .text.libgcc   0x0000000000001070        0xc /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_tablejump2.o)
-                0x0000000000001070                __tablejump2__
- .text.libgcc.mul
-                0x000000000000107c       0x1e /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_umulhisi3.o)
-                0x000000000000107c                __umulhisi3
-                0x000000000000109a                . = ALIGN (0x2)
+                0x0000000000000c5c       0x28 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodhi4.o)
+                0x0000000000000c5c                __udivmodhi4
+                0x0000000000000c84                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x000000000000109a        0x0 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_exit.o)
-                0x000000000000109a                exit
-                0x000000000000109a                _exit
+ .fini9         0x0000000000000c84        0x0 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_exit.o)
+                0x0000000000000c84                exit
+                0x0000000000000c84                _exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -661,11 +641,11 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x000000000000109a        0x4 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_exit.o)
+ .fini0         0x0000000000000c84        0x4 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_exit.o)
  *(.fini0)
-                0x000000000000109e                _etext = .
+                0x0000000000000c88                _etext = .
 
-.data           0x0000000000800060        0xe load address 0x000000000000109e
+.data           0x0000000000800060        0xe load address 0x0000000000000c88
                 0x0000000000800060                PROVIDE (__data_start, .)
  *(.data)
  *(.data*)
@@ -697,8 +677,8 @@ END GROUP
  COMMON         0x0000000000800089       0x65 build/legacy-minimal/main.o
                 0x0000000000800089                app
                 0x00000000008000ee                PROVIDE (__bss_end, .)
-                0x000000000000109e                __data_load_start = LOADADDR (.data)
-                0x00000000000010ac                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x0000000000000c88                __data_load_start = LOADADDR (.data)
+                0x0000000000000c96                __data_load_end = (__data_load_start + SIZEOF (.data))
 
 .noinit         0x00000000008000ee        0x1
                 [!provide]                        PROVIDE (__noinit_start, .)
@@ -728,34 +708,30 @@ END GROUP
 .user_signatures
  *(.user_signatures*)
 
-.stab           0x0000000000000000     0x4578
+.stab           0x0000000000000000     0x3678
  *(.stab)
  .stab          0x0000000000000000      0xba0 build/legacy-minimal/board.o
                                         0xbe8 (size before relaxing)
- .stab          0x0000000000000ba0      0x774 build/legacy-minimal/command.o
-                                        0x9c0 (size before relaxing)
- .stab          0x0000000000001314      0xb1c build/legacy-minimal/core.o
+ .stab          0x0000000000000ba0      0x978 build/legacy-minimal/core.o
                                        0x17d0 (size before relaxing)
- .stab          0x0000000000001e30      0x63c build/legacy-minimal/dht.o
-                                        0x888 (size before relaxing)
- .stab          0x000000000000246c      0x33c build/legacy-minimal/i2c.o
+ .stab          0x0000000000001518      0x624 build/legacy-minimal/dht.o
+                                        0x870 (size before relaxing)
+ .stab          0x0000000000001b3c      0x33c build/legacy-minimal/i2c.o
                                         0x654 (size before relaxing)
- .stab          0x00000000000027a8      0x330 build/legacy-minimal/lcd.o
+ .stab          0x0000000000001e78      0x330 build/legacy-minimal/lcd.o
                                         0x5c4 (size before relaxing)
- .stab          0x0000000000002ad8      0x7a4 build/legacy-minimal/main.o
-                                        0xa80 (size before relaxing)
- .stab          0x000000000000327c      0x378 build/legacy-minimal/reset.o
+ .stab          0x00000000000021a8      0x6d8 build/legacy-minimal/main.o
+                                        0x978 (size before relaxing)
+ .stab          0x0000000000002880      0x378 build/legacy-minimal/reset.o
                                         0x5c4 (size before relaxing)
- .stab          0x00000000000035f4      0x384 build/legacy-minimal/storage.o
-                                        0x5d0 (size before relaxing)
- .stab          0x0000000000003978      0x510 build/legacy-minimal/uart.o
-                                        0x810 (size before relaxing)
- .stab          0x0000000000003e88      0x6f0 build/legacy-minimal/ui.o
+ .stab          0x0000000000002bf8      0x390 build/legacy-minimal/uart.o
+                                        0x7c8 (size before relaxing)
+ .stab          0x0000000000002f88      0x6f0 build/legacy-minimal/ui.o
                                         0x9e4 (size before relaxing)
 
-.stabstr        0x0000000000000000     0x209a
+.stabstr        0x0000000000000000     0x203d
  *(.stabstr)
- .stabstr       0x0000000000000000     0x209a build/legacy-minimal/board.o
+ .stabstr       0x0000000000000000     0x203d build/legacy-minimal/board.o
 
 .stab.excl
  *(.stab.excl)
@@ -773,14 +749,12 @@ END GROUP
  *(.comment)
  .comment       0x0000000000000000       0x11 build/legacy-minimal/board.o
                                          0x12 (size before relaxing)
- .comment       0x0000000000000011       0x12 build/legacy-minimal/command.o
  .comment       0x0000000000000011       0x12 build/legacy-minimal/core.o
  .comment       0x0000000000000011       0x12 build/legacy-minimal/dht.o
  .comment       0x0000000000000011       0x12 build/legacy-minimal/i2c.o
  .comment       0x0000000000000011       0x12 build/legacy-minimal/lcd.o
  .comment       0x0000000000000011       0x12 build/legacy-minimal/main.o
  .comment       0x0000000000000011       0x12 build/legacy-minimal/reset.o
- .comment       0x0000000000000011       0x12 build/legacy-minimal/storage.o
  .comment       0x0000000000000011       0x12 build/legacy-minimal/uart.o
  .comment       0x0000000000000011       0x12 build/legacy-minimal/ui.o
 

@@ -43,13 +43,20 @@ PB4/SS và PB5–PB7 được để dành; không có motor driver hoặc PWM đ
    LCD trong chế độ 4 bit bỏ qua chúng và R/W luôn LOW, không xuất dữ liệu lên bus.
 2. Với vận hành bình thường dùng UART/LCD/buzzer, tháo JP1 của dãy LED đơn nếu dãy LED
    làm tăng tải GPIO hoặc gây nhiễu. Muốn thử LED đơn thì lắp JP1 sau khi đối chiếu sơ đồ.
-   Diagnostic chỉ điều khiển chân trống: base dùng PD2–PD4; full dùng PD3–PD4;
+   Diagnostic chỉ điều khiển chân trống: base UART OFF dùng PD0–PD4; UART dùng PD2–PD4; full dùng PD3–PD4;
    diagnostic riêng dùng PD2–PD7. PD0/PD1 có thể nháy do UART khi JP1 lắp, không được
    firmware chiếm làm LED diagnostic.
 3. Muốn thử toàn bộ LED 7 đoạn: nạp cấu hình `diagnostic`, tháo LCD và các module I²C,
    rồi lắp JP2. Các đoạn lần lượt a=PC5, b=PC4, c=PC2, d=PC1, e=PC0, f=PC6,
    g=PC7, dấu chấm=PC3; anode chung, LOW sáng. Hiển thị vòng 0–9, mỗi bước 300 ms.
 4. Tháo mọi mạch công suất/động cơ cũ. Không đưa điện áp động cơ vào kit hay chân ADC.
+
+## Điểm chưa xác minh trên PCB thật
+
+Đã đối chiếu sơ đồ PDF trang 30 và layout DOCX. Sơ đồ in nhãn PD3 tại chân MCU 16
+(vốn là PD2 theo datasheet) và 17. Trước khi dùng buzzer, cần đo thông mạch đến DIP-40
+chân 16 và xác nhận không nhầm/chập chân 17. Không kết luận PCB hỏng chỉ từ nhãn này.
+Xem [checklist phần cứng](../HARDWARE_TEST_GUIDE.md); Base giữ buzzer tắt.
 
 ## Module tùy chọn
 

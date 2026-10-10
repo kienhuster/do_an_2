@@ -428,7 +428,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000     0x3a3c
+.text           0x00000000     0x3a52
  *(.vectors)
  .vectors       0x00000000       0x54 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/crtatmega16.o
                 0x00000000                __vectors
@@ -697,260 +697,260 @@ END GROUP
                 0x00000782       0x58 build/passive/board.o
                 0x00000782                adc_read
  .text.diagnostic_tick
-                0x000007da       0x96 build/passive/board.o
+                0x000007da       0xa4 build/passive/board.o
                 0x000007da                diagnostic_tick
  .text.signed_trend
-                0x00000870       0x20 build/passive/command.o
- .text.comma    0x00000890        0x6 build/passive/command.o
- .text.two      0x00000896       0x1a build/passive/command.o
+                0x0000087e       0x20 build/passive/command.o
+ .text.comma    0x0000089e        0x6 build/passive/command.o
+ .text.two      0x000008a4       0x1a build/passive/command.o
  .text.csv_header
-                0x000008b0        0x8 build/passive/command.o
-                0x000008b0                csv_header
+                0x000008be        0x8 build/passive/command.o
+                0x000008be                csv_header
  .text.csv_send
-                0x000008b8      0x164 build/passive/command.o
-                0x000008b8                csv_send
+                0x000008c6      0x164 build/passive/command.o
+                0x000008c6                csv_send
  .text.command_poll
-                0x00000a1c      0x618 build/passive/command.o
-                0x00000a1c                command_poll
- .text.bcd      0x00001034       0x28 build/passive/core.o
+                0x00000a2a      0x618 build/passive/command.o
+                0x00000a2a                command_poll
+ .text.bcd      0x00001042       0x28 build/passive/core.o
  .text.settings_defaults
-                0x0000105c       0x12 build/passive/core.o
-                0x0000105c                settings_defaults
+                0x0000106a       0x12 build/passive/core.o
+                0x0000106a                settings_defaults
  .text.settings_valid
-                0x0000106e       0x8c build/passive/core.o
-                0x0000106e                settings_valid
+                0x0000107c       0x8c build/passive/core.o
+                0x0000107c                settings_valid
  .text.settings_set
-                0x000010fa      0x1bc build/passive/core.o
-                0x000010fa                settings_set
+                0x00001108      0x1bc build/passive/core.o
+                0x00001108                settings_set
  .text.stats_reset
-                0x000012b6        0xc build/passive/core.o
-                0x000012b6                stats_reset
+                0x000012c4        0xc build/passive/core.o
+                0x000012c4                stats_reset
  .text.stats_add
-                0x000012c2       0xfe build/passive/core.o
-                0x000012c2                stats_add
+                0x000012d0       0xfe build/passive/core.o
+                0x000012d0                stats_add
  .text.stats_trend
-                0x000013c0       0x8e build/passive/core.o
-                0x000013c0                stats_trend
+                0x000013ce       0x8e build/passive/core.o
+                0x000013ce                stats_trend
  .text.alarm_update
-                0x0000144e       0xc6 build/passive/core.o
-                0x0000144e                alarm_update
+                0x0000145c       0xc6 build/passive/core.o
+                0x0000145c                alarm_update
  .text.alarm_ack
-                0x00001514        0x8 build/passive/core.o
-                0x00001514                alarm_ack
- .text.crc16    0x0000151c       0x2e build/passive/core.o
-                0x0000151c                crc16
+                0x00001522        0x8 build/passive/core.o
+                0x00001522                alarm_ack
+ .text.crc16    0x0000152a       0x2e build/passive/core.o
+                0x0000152a                crc16
  .text.sequence_newer
-                0x0000154a       0x1a build/passive/core.o
-                0x0000154a                sequence_newer
+                0x00001558       0x1a build/passive/core.o
+                0x00001558                sequence_newer
  .text.record_pack
-                0x00001564       0x6c build/passive/core.o
-                0x00001564                record_pack
+                0x00001572       0x6c build/passive/core.o
+                0x00001572                record_pack
  .text.record_unpack
-                0x000015d0      0x130 build/passive/core.o
-                0x000015d0                record_unpack
+                0x000015de      0x130 build/passive/core.o
+                0x000015de                record_unpack
  .text.rtc_valid
-                0x00001700       0x50 build/passive/core.o
-                0x00001700                rtc_valid
+                0x0000170e       0x50 build/passive/core.o
+                0x0000170e                rtc_valid
  .text.rtc_decode
-                0x00001750      0x14a build/passive/core.o
-                0x00001750                rtc_decode
+                0x0000175e      0x14a build/passive/core.o
+                0x0000175e                rtc_decode
  .text.rtc_encode
-                0x0000189a       0x7a build/passive/core.o
-                0x0000189a                rtc_encode
+                0x000018a8       0x7a build/passive/core.o
+                0x000018a8                rtc_encode
  .text.dht_decode
-                0x00001914       0x62 build/passive/core.o
-                0x00001914                dht_decode
- .text.due      0x00001976       0x14 build/passive/core.o
-                0x00001976                due
+                0x00001922       0x62 build/passive/core.o
+                0x00001922                dht_decode
+ .text.due      0x00001984       0x14 build/passive/core.o
+                0x00001984                due
  .text.parse_i16
-                0x0000198a       0xb6 build/passive/core.o
-                0x0000198a                parse_i16
+                0x00001998       0xb6 build/passive/core.o
+                0x00001998                parse_i16
  .text.level.constprop.0
-                0x00001a40       0x2a build/passive/dht.o
+                0x00001a4e       0x2a build/passive/dht.o
  .text.dht_init
-                0x00001a6a        0x6 build/passive/dht.o
-                0x00001a6a                dht_init
+                0x00001a78        0x6 build/passive/dht.o
+                0x00001a78                dht_init
  .text.dht_start
-                0x00001a70        0x6 build/passive/dht.o
-                0x00001a70                dht_start
+                0x00001a7e        0x6 build/passive/dht.o
+                0x00001a7e                dht_start
  .text.dht_finish
-                0x00001a76       0xe2 build/passive/dht.o
-                0x00001a76                dht_finish
+                0x00001a84       0xe2 build/passive/dht.o
+                0x00001a84                dht_finish
  .text.wait_twi
-                0x00001b58       0x1e build/passive/i2c.o
- .text.put      0x00001b76       0x1c build/passive/i2c.o
- .text.get      0x00001b92       0x46 build/passive/i2c.o
- .text.recover  0x00001bd8       0x4c build/passive/i2c.o
- .text.stop     0x00001c24       0x26 build/passive/i2c.o
- .text.start    0x00001c4a       0x50 build/passive/i2c.o
+                0x00001b66       0x1e build/passive/i2c.o
+ .text.put      0x00001b84       0x1c build/passive/i2c.o
+ .text.get      0x00001ba0       0x46 build/passive/i2c.o
+ .text.recover  0x00001be6       0x4c build/passive/i2c.o
+ .text.stop     0x00001c32       0x26 build/passive/i2c.o
+ .text.start    0x00001c58       0x50 build/passive/i2c.o
  .text.i2c_init
-                0x00001c9a       0x18 build/passive/i2c.o
-                0x00001c9a                i2c_init
+                0x00001ca8       0x18 build/passive/i2c.o
+                0x00001ca8                i2c_init
  .text.i2c_write
-                0x00001cb2       0x54 build/passive/i2c.o
-                0x00001cb2                i2c_write
+                0x00001cc0       0x54 build/passive/i2c.o
+                0x00001cc0                i2c_write
  .text.i2c_read
-                0x00001d06       0x62 build/passive/i2c.o
-                0x00001d06                i2c_read
+                0x00001d14       0x62 build/passive/i2c.o
+                0x00001d14                i2c_read
  .text.i2c_regs
-                0x00001d68       0x84 build/passive/i2c.o
-                0x00001d68                i2c_regs
- .text.nibble   0x00001dec       0x28 build/passive/lcd.o
- .text.send     0x00001e14       0x2c build/passive/lcd.o
+                0x00001d76       0x84 build/passive/i2c.o
+                0x00001d76                i2c_regs
+ .text.nibble   0x00001dfa       0x28 build/passive/lcd.o
+ .text.send     0x00001e22       0x2c build/passive/lcd.o
  .text.lcd_init
-                0x00001e40       0x9a build/passive/lcd.o
-                0x00001e40                lcd_init
+                0x00001e4e       0x9a build/passive/lcd.o
+                0x00001e4e                lcd_init
  .text.lcd_line
-                0x00001eda       0x44 build/passive/lcd.o
-                0x00001eda                lcd_line
- .text.app_ack  0x00001f1e       0x12 build/passive/main.o
-                0x00001f1e                app_ack
+                0x00001ee8       0x44 build/passive/lcd.o
+                0x00001ee8                lcd_line
+ .text.app_ack  0x00001f2c       0x12 build/passive/main.o
+                0x00001f2c                app_ack
  .text.app_save
-                0x00001f30       0x1c build/passive/main.o
-                0x00001f30                app_save
+                0x00001f3e       0x1c build/passive/main.o
+                0x00001f3e                app_save
  .text.app_load
-                0x00001f4c       0x2c build/passive/main.o
-                0x00001f4c                app_load
+                0x00001f5a       0x2c build/passive/main.o
+                0x00001f5a                app_load
  .text.startup.main
-                0x00001f78      0x484 build/passive/main.o
-                0x00001f78                main
+                0x00001f86      0x484 build/passive/main.o
+                0x00001f86                main
  .text.rtc_read
-                0x000023fc       0x6c build/passive/optional.o
-                0x000023fc                rtc_read
- .text.rtc_set  0x00002468       0xc4 build/passive/optional.o
-                0x00002468                rtc_set
+                0x0000240a       0x6c build/passive/optional.o
+                0x0000240a                rtc_read
+ .text.rtc_set  0x00002476       0xc4 build/passive/optional.o
+                0x00002476                rtc_set
  .text.light_start
-                0x0000252c       0x54 build/passive/optional.o
-                0x0000252c                light_start
+                0x0000253a       0x54 build/passive/optional.o
+                0x0000253a                light_start
  .text.light_read
-                0x00002580       0x60 build/passive/optional.o
-                0x00002580                light_read
- .text.nv_load  0x000025e0       0xe4 build/passive/storage.o
-                0x000025e0                nv_load
- .text.nv_save  0x000026c4      0x142 build/passive/storage.o
-                0x000026c4                nv_save
- .text.receive  0x00002806       0x38 build/passive/uart.o
+                0x0000258e       0x60 build/passive/optional.o
+                0x0000258e                light_read
+ .text.nv_load  0x000025ee       0xe4 build/passive/storage.o
+                0x000025ee                nv_load
+ .text.nv_save  0x000026d2      0x142 build/passive/storage.o
+                0x000026d2                nv_save
+ .text.receive  0x00002814       0x38 build/passive/uart.o
  .text.__vector_11
-                0x0000283e       0x48 build/passive/uart.o
-                0x0000283e                __vector_11
+                0x0000284c       0x48 build/passive/uart.o
+                0x0000284c                __vector_11
  .text.__vector_12
-                0x00002886       0x44 build/passive/uart.o
-                0x00002886                __vector_12
+                0x00002894       0x44 build/passive/uart.o
+                0x00002894                __vector_12
  .text.uart_init
-                0x000028ca       0x12 build/passive/uart.o
-                0x000028ca                uart_init
+                0x000028d8       0x1a build/passive/uart.o
+                0x000028d8                uart_init
  .text.uart_rx_poll
-                0x000028dc        0x8 build/passive/uart.o
-                0x000028dc                uart_rx_poll
+                0x000028f2        0x8 build/passive/uart.o
+                0x000028f2                uart_rx_poll
  .text.uart_get
-                0x000028e4       0x30 build/passive/uart.o
-                0x000028e4                uart_get
+                0x000028fa       0x30 build/passive/uart.o
+                0x000028fa                uart_get
  .text.uart_put
-                0x00002914       0x70 build/passive/uart.o
-                0x00002914                uart_put
+                0x0000292a       0x70 build/passive/uart.o
+                0x0000292a                uart_put
  .text.uart_text_P
-                0x00002984       0x1e build/passive/uart.o
-                0x00002984                uart_text_P
+                0x0000299a       0x1e build/passive/uart.o
+                0x0000299a                uart_text_P
  .text.uart_uint
-                0x000029a2       0xbe build/passive/uart.o
-                0x000029a2                uart_uint
+                0x000029b8       0xbe build/passive/uart.o
+                0x000029b8                uart_uint
  .text.uart_fixed
-                0x00002a60       0x24 build/passive/uart.o
-                0x00002a60                uart_fixed
+                0x00002a76       0x24 build/passive/uart.o
+                0x00002a76                uart_fixed
  .text.uart_errors
-                0x00002a84        0x6 build/passive/uart.o
-                0x00002a84                uart_errors
+                0x00002a9a        0x6 build/passive/uart.o
+                0x00002a9a                uart_errors
  .text.uart_clear_errors
-                0x00002a8a        0xc build/passive/uart.o
-                0x00002a8a                uart_clear_errors
+                0x00002aa0        0xc build/passive/uart.o
+                0x00002aa0                uart_clear_errors
  .text.uart_take_rx_fault
-                0x00002a96       0x18 build/passive/uart.o
-                0x00002a96                uart_take_rx_fault
+                0x00002aac       0x18 build/passive/uart.o
+                0x00002aac                uart_take_rx_fault
  .text.menu_value
-                0x00002aae       0x64 build/passive/ui.o
+                0x00002ac4       0x64 build/passive/ui.o
  .text.menu_adjust
-                0x00002b12       0xd4 build/passive/ui.o
+                0x00002b28       0xd4 build/passive/ui.o
  .text.ui_cancel
-                0x00002be6        0x6 build/passive/ui.o
-                0x00002be6                ui_cancel
- .text.ui_keys  0x00002bec       0xc4 build/passive/ui.o
-                0x00002bec                ui_keys
+                0x00002bfc        0x6 build/passive/ui.o
+                0x00002bfc                ui_cancel
+ .text.ui_keys  0x00002c02       0xc4 build/passive/ui.o
+                0x00002c02                ui_keys
  .text.ui_render
-                0x00002cb0      0x5d2 build/passive/ui.o
-                0x00002cb0                ui_render
+                0x00002cc6      0x5d2 build/passive/ui.o
+                0x00002cc6                ui_render
  .text.libgcc.div
-                0x00003282       0x18 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodqi4.o)
-                0x00003282                __udivmodqi4
+                0x00003298       0x18 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodqi4.o)
+                0x00003298                __udivmodqi4
  .text.libgcc.div
-                0x0000329a       0x28 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodhi4.o)
-                0x0000329a                __udivmodhi4
+                0x000032b0       0x28 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodhi4.o)
+                0x000032b0                __udivmodhi4
  .text.libgcc.div
-                0x000032c2       0x28 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_divmodhi4.o)
-                0x000032c2                __divmodhi4
-                0x000032c2                _div
+                0x000032d8       0x28 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_divmodhi4.o)
+                0x000032d8                __divmodhi4
+                0x000032d8                _div
  .text.libgcc.div
-                0x000032ea       0x44 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodsi4.o)
-                0x000032ea                __udivmodsi4
- .text.libgcc   0x0000332e        0xc /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_tablejump2.o)
-                0x0000332e                __tablejump2__
+                0x00003300       0x44 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodsi4.o)
+                0x00003300                __udivmodsi4
+ .text.libgcc   0x00003344        0xc /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_tablejump2.o)
+                0x00003344                __tablejump2__
  .text.libgcc.mul
-                0x0000333a       0x1e /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_umulhisi3.o)
-                0x0000333a                __umulhisi3
+                0x00003350       0x1e /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_umulhisi3.o)
+                0x00003350                __umulhisi3
  .text.avr-libc
-                0x00003358       0x12 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strcmp_P.o)
-                0x00003358                strcmp_P
+                0x0000336e       0x12 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strcmp_P.o)
+                0x0000336e                strcmp_P
  .text.avr-libc
-                0x0000336a        0xe /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strcpy_P.o)
-                0x0000336a                strcpy_P
+                0x00003380        0xe /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strcpy_P.o)
+                0x00003380                strcpy_P
  .text.avr-libc
-                0x00003378       0x1c /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strncmp_P.o)
-                0x00003378                strncmp_P
+                0x0000338e       0x1c /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strncmp_P.o)
+                0x0000338e                strncmp_P
  .text.avr-libc
-                0x00003394       0x1a /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(memcmp.o)
-                0x00003394                memcmp
+                0x000033aa       0x1a /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(memcmp.o)
+                0x000033aa                memcmp
  .text.avr-libc
-                0x000033ae       0x16 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strchr.o)
-                0x000033ae                strchr
+                0x000033c4       0x16 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strchr.o)
+                0x000033c4                strchr
  .text.avr-libc
-                0x000033c4       0x12 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strcmp.o)
-                0x000033c4                strcmp
+                0x000033da       0x12 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strcmp.o)
+                0x000033da                strcmp
  .text.avr-libc
-                0x000033d6       0x64 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(snprintf_p.o)
-                0x000033d6                snprintf_P
+                0x000033ec       0x64 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(snprintf_p.o)
+                0x000033ec                snprintf_P
  .text.avr-libc
-                0x0000343a      0x3d6 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(vfprintf_std.o)
-                0x0000343a                vfprintf
+                0x00003450      0x3d6 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+                0x00003450                vfprintf
  .text.avr-libc
-                0x00003810       0x16 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strnlen_P.o)
-                0x00003810                strnlen_P
+                0x00003826       0x16 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strnlen_P.o)
+                0x00003826                strnlen_P
  .text.avr-libc
-                0x00003826       0x16 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strnlen.o)
-                0x00003826                strnlen
+                0x0000383c       0x16 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strnlen.o)
+                0x0000383c                strnlen
  .text.avr-libc
-                0x0000383c       0x60 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(fputc.o)
-                0x0000383c                fputc
+                0x00003852       0x60 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(fputc.o)
+                0x00003852                fputc
  .text.avr-libc
-                0x0000389c       0xbc /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(ultoa_invert.o)
-                0x0000389c                __ultoa_invert
+                0x000038b2       0xbc /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(ultoa_invert.o)
+                0x000038b2                __ultoa_invert
  .text.avr-libc
-                0x00003958       0x20 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libatmega16.a(eerd_block.o)
-                0x00003958                eeprom_read_block
-                0x0000395c                eeprom_read_blraw
+                0x0000396e       0x20 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libatmega16.a(eerd_block.o)
+                0x0000396e                eeprom_read_block
+                0x00003972                eeprom_read_blraw
  .text.avr-libc
-                0x00003978       0x22 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libatmega16.a(eeupd_byte.o)
-                0x00003978                eeprom_update_byte
-                0x0000397a                eeprom_update_r18
+                0x0000398e       0x22 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libatmega16.a(eeupd_byte.o)
+                0x0000398e                eeprom_update_byte
+                0x00003990                eeprom_update_r18
  .text.libgcc.prologue
-                0x0000399a       0x38 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_prologue.o)
-                0x0000399a                __prologue_saves__
+                0x000039b0       0x38 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_prologue.o)
+                0x000039b0                __prologue_saves__
  .text.libgcc.prologue
-                0x000039d2       0x36 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_epilogue.o)
-                0x000039d2                __epilogue_restores__
-                0x00003a08                        . = ALIGN (0x2)
+                0x000039e8       0x36 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_epilogue.o)
+                0x000039e8                __epilogue_restores__
+                0x00003a1e                        . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x00003a08        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_exit.o)
-                0x00003a08                exit
-                0x00003a08                _exit
+ .fini9         0x00003a1e        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_exit.o)
+                0x00003a1e                exit
+                0x00003a1e                _exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -969,23 +969,23 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x00003a08        0x4 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_exit.o)
+ .fini0         0x00003a1e        0x4 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_exit.o)
  *(.fini0)
  *(.hightext)
  *(.hightext*)
  *(.progmemx.*)
-                0x00003a0c                        . = ALIGN (0x2)
+                0x00003a22                        . = ALIGN (0x2)
  *(.jumptables)
  *(.jumptables*)
  .jumptables.gcc.menu_value
-                0x00003a0c       0x10 build/passive/ui.o
+                0x00003a22       0x10 build/passive/ui.o
  .jumptables.gcc.menu_adjust
-                0x00003a1c       0x10 build/passive/ui.o
+                0x00003a32       0x10 build/passive/ui.o
  .jumptables.gcc.ui_render
-                0x00003a2c       0x10 build/passive/ui.o
-                0x00003a3c                        _etext = .
+                0x00003a42       0x10 build/passive/ui.o
+                0x00003a52                        _etext = .
 
-.data           0x00800060       0x7a load address 0x00003a3c
+.data           0x00800060       0x7a load address 0x00003a52
                 0x00800060                        PROVIDE (__data_start = .)
  *(.data)
  *(.data*)
@@ -1043,8 +1043,8 @@ END GROUP
  .bss.menu      0x0080025a        0x1 build/passive/ui.o
  *(COMMON)
                 0x0080025b                        PROVIDE (__bss_end = .)
-                0x00003a3c                        __data_load_start = LOADADDR (.data)
-                0x00003ab6                        __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x00003a52                        __data_load_start = LOADADDR (.data)
+                0x00003acc                        __data_load_end = (__data_load_start + SIZEOF (.data))
 
 .noinit         0x0080025b        0x1
                 [!provide]                        PROVIDE (__noinit_start = .)
@@ -1164,53 +1164,53 @@ END GROUP
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0x6c3b
+.debug_info     0x00000000     0x6d12
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000      0x52e /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/crtatmega16.o
- .debug_info    0x0000052e      0x4e1 build/passive/board.o
- .debug_info    0x00000a0f     0x1798 build/passive/command.o
- .debug_info    0x000021a7     0x106f build/passive/core.o
- .debug_info    0x00003216      0x34c build/passive/dht.o
- .debug_info    0x00003562      0x64a build/passive/i2c.o
- .debug_info    0x00003bac      0x56a build/passive/lcd.o
- .debug_info    0x00004116      0xb8a build/passive/main.o
- .debug_info    0x00004ca0      0x499 build/passive/optional.o
- .debug_info    0x00005139       0xf6 build/passive/reset.o
- .debug_info    0x0000522f      0x4ce build/passive/storage.o
- .debug_info    0x000056fd      0x5ef build/passive/uart.o
- .debug_info    0x00005cec      0xf4f build/passive/ui.o
+ .debug_info    0x0000052e      0x5b8 build/passive/board.o
+ .debug_info    0x00000ae6     0x1798 build/passive/command.o
+ .debug_info    0x0000227e     0x106f build/passive/core.o
+ .debug_info    0x000032ed      0x34c build/passive/dht.o
+ .debug_info    0x00003639      0x64a build/passive/i2c.o
+ .debug_info    0x00003c83      0x56a build/passive/lcd.o
+ .debug_info    0x000041ed      0xb8a build/passive/main.o
+ .debug_info    0x00004d77      0x499 build/passive/optional.o
+ .debug_info    0x00005210       0xf6 build/passive/reset.o
+ .debug_info    0x00005306      0x4ce build/passive/storage.o
+ .debug_info    0x000057d4      0x5ef build/passive/uart.o
+ .debug_info    0x00005dc3      0xf4f build/passive/ui.o
 
-.debug_abbrev   0x00000000     0x1dc1
+.debug_abbrev   0x00000000     0x1de0
  *(.debug_abbrev)
  .debug_abbrev  0x00000000      0x4e7 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/crtatmega16.o
- .debug_abbrev  0x000004e7      0x20b build/passive/board.o
- .debug_abbrev  0x000006f2      0x31f build/passive/command.o
- .debug_abbrev  0x00000a11      0x2d6 build/passive/core.o
- .debug_abbrev  0x00000ce7      0x220 build/passive/dht.o
- .debug_abbrev  0x00000f07      0x22f build/passive/i2c.o
- .debug_abbrev  0x00001136      0x1a5 build/passive/lcd.o
- .debug_abbrev  0x000012db      0x246 build/passive/main.o
- .debug_abbrev  0x00001521      0x140 build/passive/optional.o
- .debug_abbrev  0x00001661       0xce build/passive/reset.o
- .debug_abbrev  0x0000172f      0x18f build/passive/storage.o
- .debug_abbrev  0x000018be      0x274 build/passive/uart.o
- .debug_abbrev  0x00001b32      0x28f build/passive/ui.o
+ .debug_abbrev  0x000004e7      0x22a build/passive/board.o
+ .debug_abbrev  0x00000711      0x31f build/passive/command.o
+ .debug_abbrev  0x00000a30      0x2d6 build/passive/core.o
+ .debug_abbrev  0x00000d06      0x220 build/passive/dht.o
+ .debug_abbrev  0x00000f26      0x22f build/passive/i2c.o
+ .debug_abbrev  0x00001155      0x1a5 build/passive/lcd.o
+ .debug_abbrev  0x000012fa      0x246 build/passive/main.o
+ .debug_abbrev  0x00001540      0x140 build/passive/optional.o
+ .debug_abbrev  0x00001680       0xce build/passive/reset.o
+ .debug_abbrev  0x0000174e      0x18f build/passive/storage.o
+ .debug_abbrev  0x000018dd      0x274 build/passive/uart.o
+ .debug_abbrev  0x00001b51      0x28f build/passive/ui.o
 
-.debug_line     0x00000000     0x6859
+.debug_line     0x00000000     0x697c
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x00000000       0x1d /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/crtatmega16.o
- .debug_line    0x0000001d      0x956 build/passive/board.o
- .debug_line    0x00000973      0xf71 build/passive/command.o
- .debug_line    0x000018e4     0x17ec build/passive/core.o
- .debug_line    0x000030d0      0x386 build/passive/dht.o
- .debug_line    0x00003456      0xa5c build/passive/i2c.o
- .debug_line    0x00003eb2      0x5ae build/passive/lcd.o
- .debug_line    0x00004460      0x92e build/passive/main.o
- .debug_line    0x00004d8e      0x341 build/passive/optional.o
- .debug_line    0x000050cf       0xc8 build/passive/reset.o
- .debug_line    0x00005197      0x2ff build/passive/storage.o
- .debug_line    0x00005496      0x822 build/passive/uart.o
- .debug_line    0x00005cb8      0xba1 build/passive/ui.o
+ .debug_line    0x0000001d      0xa4d build/passive/board.o
+ .debug_line    0x00000a6a      0xf71 build/passive/command.o
+ .debug_line    0x000019db     0x17ec build/passive/core.o
+ .debug_line    0x000031c7      0x386 build/passive/dht.o
+ .debug_line    0x0000354d      0xa5c build/passive/i2c.o
+ .debug_line    0x00003fa9      0x5ae build/passive/lcd.o
+ .debug_line    0x00004557      0x932 build/passive/main.o
+ .debug_line    0x00004e89      0x341 build/passive/optional.o
+ .debug_line    0x000051ca       0xc8 build/passive/reset.o
+ .debug_line    0x00005292      0x2ff build/passive/storage.o
+ .debug_line    0x00005591      0x84a build/passive/uart.o
+ .debug_line    0x00005ddb      0xba1 build/passive/ui.o
 
 .debug_frame    0x00000000      0xb7c
  *(.debug_frame)
@@ -1301,30 +1301,30 @@ END GROUP
                 0x000001c4      0x119 build/passive/ui.o
 
 .debug_loclists
-                0x00000000     0x2836
+                0x00000000     0x2898
  *(.debug_loclists)
  .debug_loclists
-                0x00000000      0x276 build/passive/board.o
+                0x00000000      0x2d8 build/passive/board.o
  .debug_loclists
-                0x00000276       0xa5 build/passive/command.o
+                0x000002d8       0xa5 build/passive/command.o
  .debug_loclists
-                0x0000031b     0x11fd build/passive/core.o
+                0x0000037d     0x11fd build/passive/core.o
  .debug_loclists
-                0x00001518      0x116 build/passive/dht.o
+                0x0000157a      0x116 build/passive/dht.o
  .debug_loclists
-                0x0000162e      0x4b7 build/passive/i2c.o
+                0x00001690      0x4b7 build/passive/i2c.o
  .debug_loclists
-                0x00001ae5      0x310 build/passive/lcd.o
+                0x00001b47      0x310 build/passive/lcd.o
  .debug_loclists
-                0x00001df5      0x4e4 build/passive/main.o
+                0x00001e57      0x4e4 build/passive/main.o
  .debug_loclists
-                0x000022d9       0xaf build/passive/optional.o
+                0x0000233b       0xaf build/passive/optional.o
  .debug_loclists
-                0x00002388      0x102 build/passive/storage.o
+                0x000023ea      0x102 build/passive/storage.o
  .debug_loclists
-                0x0000248a      0x268 build/passive/uart.o
+                0x000024ec      0x268 build/passive/uart.o
  .debug_loclists
-                0x000026f2      0x144 build/passive/ui.o
+                0x00002754      0x144 build/passive/ui.o
 
 .debug_macro
  *(.debug_macro)
@@ -1333,32 +1333,32 @@ END GROUP
  *(.debug_names)
 
 .debug_rnglists
-                0x00000000      0x3c9
+                0x00000000      0x3e3
  *(.debug_rnglists)
  .debug_rnglists
-                0x00000000       0x77 build/passive/board.o
+                0x00000000       0x91 build/passive/board.o
  .debug_rnglists
-                0x00000077       0x66 build/passive/command.o
+                0x00000091       0x66 build/passive/command.o
  .debug_rnglists
-                0x000000dd       0xba build/passive/core.o
+                0x000000f7       0xba build/passive/core.o
  .debug_rnglists
-                0x00000197       0x26 build/passive/dht.o
+                0x000001b1       0x26 build/passive/dht.o
  .debug_rnglists
-                0x000001bd       0x80 build/passive/i2c.o
+                0x000001d7       0x80 build/passive/i2c.o
  .debug_rnglists
-                0x0000023d       0x35 build/passive/lcd.o
+                0x00000257       0x35 build/passive/lcd.o
  .debug_rnglists
-                0x00000272       0x3a build/passive/main.o
+                0x0000028c       0x3a build/passive/main.o
  .debug_rnglists
-                0x000002ac       0x26 build/passive/optional.o
+                0x000002c6       0x26 build/passive/optional.o
  .debug_rnglists
-                0x000002d2       0x13 build/passive/reset.o
+                0x000002ec       0x13 build/passive/reset.o
  .debug_rnglists
-                0x000002e5       0x3b build/passive/storage.o
+                0x000002ff       0x3b build/passive/storage.o
  .debug_rnglists
-                0x00000320       0x5c build/passive/uart.o
+                0x0000033a       0x5c build/passive/uart.o
  .debug_rnglists
-                0x0000037c       0x4d build/passive/ui.o
+                0x00000396       0x4d build/passive/ui.o
 
 .debug_str_offsets
  *(.debug_str_offsets)

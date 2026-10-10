@@ -7,20 +7,24 @@ void app_ack(void) {
     app.fault_ack = app.errors;
 }
 bool app_save(void) {
+#if ENABLE_EEPROM
     if (nv_save(&app.settings)) {
         app.errors &= ~ERR_EEPROM;
         return true;
     }
     app.errors |= ERR_EEPROM;
+#endif
     return false;
 }
 bool app_load(void) {
+#if ENABLE_EEPROM
     if (nv_load(&app.settings)) {
         app.errors &= ~ERR_EEPROM;
         ui_cancel();
         return true;
     }
     app.errors |= ERR_EEPROM;
+#endif
     return false;
 }
 int main(void) {
@@ -42,8 +46,11 @@ int main(void) {
     if (DIAG_LED7)
         app.page = 8;
     uint32_t now = clock_ms(), prev = now, subsecond = 0;
-    uint32_t next_dht = now + 2000, next_ui = now, next_adc = now, next_csv = now + 2000,
+    uint32_t next_dht = now + 2000, next_ui = now, next_adc = now,
              next_optional = now;
+#if ENABLE_UART
+    uint32_t next_csv = now + 2000;
+#endif
 #if ENABLE_BH1750
     bool light_ready = light_start();
     uint32_t light_next = clock_ms() + (light_ready ? 200 : 5000);
@@ -57,8 +64,10 @@ int main(void) {
     (void)next_dht;
 #endif
     wdt_enable(WDTO_1S);
+#if ENABLE_UART
     uart_text_P(PSTR("# ATmega16 monitor C 8MHz; HELP for commands\r\n"));
     csv_header();
+#endif
     for (;;) {
         now = clock_ms();
         subsecond += now - prev;
@@ -67,7 +76,9 @@ int main(void) {
             subsecond -= 1000;
             app.uptime++;
         }
+#if ENABLE_UART
         command_poll();
+#endif
         ui_keys(keys_poll(now));
 #if ENABLE_DHT11
         if (!dht_pending && due(now, next_dht)) {
@@ -128,8 +139,10 @@ int main(void) {
                 app.errors |= ERR_LIGHT;
         }
 #endif
+#if ENABLE_UART
         if (uart_errors())
             app.errors |= ERR_UART;
+#endif
         app.fault_ack &= app.errors;
         bool ring = (app.alarm.active & ~app.alarm.ack) ||
                     (app.errors & ~app.fault_ack &
@@ -140,11 +153,13 @@ int main(void) {
             next_ui = now + 250;
             ui_render();
         }
+#if ENABLE_UART
         if (due(now, next_csv)) {
             next_csv = now + (uint32_t)app.settings.csv_seconds * 1000;
             if (app.csv)
                 csv_send();
         }
+#endif
         wdt_reset();
     }
 }

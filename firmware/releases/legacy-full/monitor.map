@@ -449,7 +449,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x0000000000000000     0x397e
+.text           0x0000000000000000     0x3996
  *(.vectors)
  .vectors       0x0000000000000000       0x54 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/crtatmega16.o
                 0x0000000000000000                __vectors
@@ -724,262 +724,262 @@ END GROUP
                 0x0000000000000774       0x5a build/legacy-full/board.o
                 0x0000000000000774                adc_read
  .text.diagnostic_tick
-                0x00000000000007ce       0x96 build/legacy-full/board.o
+                0x00000000000007ce       0xa6 build/legacy-full/board.o
                 0x00000000000007ce                diagnostic_tick
  .text.signed_trend
-                0x0000000000000864       0x2c build/legacy-full/command.o
- .text.comma    0x0000000000000890        0x6 build/legacy-full/command.o
- .text.two      0x0000000000000896       0x1a build/legacy-full/command.o
+                0x0000000000000874       0x2c build/legacy-full/command.o
+ .text.comma    0x00000000000008a0        0x6 build/legacy-full/command.o
+ .text.two      0x00000000000008a6       0x1a build/legacy-full/command.o
  .text.csv_header
-                0x00000000000008b0        0x8 build/legacy-full/command.o
-                0x00000000000008b0                csv_header
+                0x00000000000008c0        0x8 build/legacy-full/command.o
+                0x00000000000008c0                csv_header
  .text.csv_send
-                0x00000000000008b8      0x164 build/legacy-full/command.o
-                0x00000000000008b8                csv_send
+                0x00000000000008c8      0x164 build/legacy-full/command.o
+                0x00000000000008c8                csv_send
  .text.command_poll
-                0x0000000000000a1c      0x63a build/legacy-full/command.o
-                0x0000000000000a1c                command_poll
- .text.bcd      0x0000000000001056       0x24 build/legacy-full/core.o
+                0x0000000000000a2c      0x63a build/legacy-full/command.o
+                0x0000000000000a2c                command_poll
+ .text.bcd      0x0000000000001066       0x24 build/legacy-full/core.o
  .text.settings_defaults
-                0x000000000000107a       0x12 build/legacy-full/core.o
-                0x000000000000107a                settings_defaults
+                0x000000000000108a       0x12 build/legacy-full/core.o
+                0x000000000000108a                settings_defaults
  .text.settings_valid
-                0x000000000000108c       0x92 build/legacy-full/core.o
-                0x000000000000108c                settings_valid
+                0x000000000000109c       0x92 build/legacy-full/core.o
+                0x000000000000109c                settings_valid
  .text.settings_set
-                0x000000000000111e      0x132 build/legacy-full/core.o
-                0x000000000000111e                settings_set
+                0x000000000000112e      0x132 build/legacy-full/core.o
+                0x000000000000112e                settings_set
  .text.stats_reset
-                0x0000000000001250        0xc build/legacy-full/core.o
-                0x0000000000001250                stats_reset
+                0x0000000000001260        0xc build/legacy-full/core.o
+                0x0000000000001260                stats_reset
  .text.stats_add
-                0x000000000000125c       0xec build/legacy-full/core.o
-                0x000000000000125c                stats_add
+                0x000000000000126c       0xec build/legacy-full/core.o
+                0x000000000000126c                stats_add
  .text.stats_trend
-                0x0000000000001348       0x82 build/legacy-full/core.o
-                0x0000000000001348                stats_trend
+                0x0000000000001358       0x82 build/legacy-full/core.o
+                0x0000000000001358                stats_trend
  .text.alarm_update
-                0x00000000000013ca       0xa8 build/legacy-full/core.o
-                0x00000000000013ca                alarm_update
+                0x00000000000013da       0xa8 build/legacy-full/core.o
+                0x00000000000013da                alarm_update
  .text.alarm_ack
-                0x0000000000001472        0x8 build/legacy-full/core.o
-                0x0000000000001472                alarm_ack
- .text.crc16    0x000000000000147a       0x30 build/legacy-full/core.o
-                0x000000000000147a                crc16
+                0x0000000000001482        0x8 build/legacy-full/core.o
+                0x0000000000001482                alarm_ack
+ .text.crc16    0x000000000000148a       0x30 build/legacy-full/core.o
+                0x000000000000148a                crc16
  .text.sequence_newer
-                0x00000000000014aa       0x1e build/legacy-full/core.o
-                0x00000000000014aa                sequence_newer
+                0x00000000000014ba       0x1e build/legacy-full/core.o
+                0x00000000000014ba                sequence_newer
  .text.record_pack
-                0x00000000000014c8       0x6e build/legacy-full/core.o
-                0x00000000000014c8                record_pack
+                0x00000000000014d8       0x6e build/legacy-full/core.o
+                0x00000000000014d8                record_pack
  .text.record_unpack
-                0x0000000000001536      0x112 build/legacy-full/core.o
-                0x0000000000001536                record_unpack
+                0x0000000000001546      0x112 build/legacy-full/core.o
+                0x0000000000001546                record_unpack
  .text.rtc_valid
-                0x0000000000001648       0x56 build/legacy-full/core.o
-                0x0000000000001648                rtc_valid
+                0x0000000000001658       0x56 build/legacy-full/core.o
+                0x0000000000001658                rtc_valid
  .text.rtc_decode
-                0x000000000000169e      0x126 build/legacy-full/core.o
-                0x000000000000169e                rtc_decode
+                0x00000000000016ae      0x126 build/legacy-full/core.o
+                0x00000000000016ae                rtc_decode
  .text.rtc_encode
-                0x00000000000017c4       0x9e build/legacy-full/core.o
-                0x00000000000017c4                rtc_encode
+                0x00000000000017d4       0x9e build/legacy-full/core.o
+                0x00000000000017d4                rtc_encode
  .text.dht_decode
-                0x0000000000001862       0x5e build/legacy-full/core.o
-                0x0000000000001862                dht_decode
- .text.due      0x00000000000018c0       0x22 build/legacy-full/core.o
-                0x00000000000018c0                due
+                0x0000000000001872       0x5e build/legacy-full/core.o
+                0x0000000000001872                dht_decode
+ .text.due      0x00000000000018d0       0x22 build/legacy-full/core.o
+                0x00000000000018d0                due
  .text.parse_i16
-                0x00000000000018e2       0xc0 build/legacy-full/core.o
-                0x00000000000018e2                parse_i16
+                0x00000000000018f2       0xc0 build/legacy-full/core.o
+                0x00000000000018f2                parse_i16
  .text.level.constprop.0
-                0x00000000000019a2       0x2a build/legacy-full/dht.o
+                0x00000000000019b2       0x2a build/legacy-full/dht.o
  .text.dht_init
-                0x00000000000019cc        0x6 build/legacy-full/dht.o
-                0x00000000000019cc                dht_init
+                0x00000000000019dc        0x6 build/legacy-full/dht.o
+                0x00000000000019dc                dht_init
  .text.dht_start
-                0x00000000000019d2        0x6 build/legacy-full/dht.o
-                0x00000000000019d2                dht_start
+                0x00000000000019e2        0x6 build/legacy-full/dht.o
+                0x00000000000019e2                dht_start
  .text.dht_finish
-                0x00000000000019d8       0xdc build/legacy-full/dht.o
-                0x00000000000019d8                dht_finish
+                0x00000000000019e8       0xdc build/legacy-full/dht.o
+                0x00000000000019e8                dht_finish
  .text.wait_twi
-                0x0000000000001ab4       0x1e build/legacy-full/i2c.o
- .text.put      0x0000000000001ad2       0x1e build/legacy-full/i2c.o
- .text.recover  0x0000000000001af0       0x4c build/legacy-full/i2c.o
- .text.stop     0x0000000000001b3c       0x26 build/legacy-full/i2c.o
- .text.start    0x0000000000001b62       0x50 build/legacy-full/i2c.o
+                0x0000000000001ac4       0x1e build/legacy-full/i2c.o
+ .text.put      0x0000000000001ae2       0x1e build/legacy-full/i2c.o
+ .text.recover  0x0000000000001b00       0x4c build/legacy-full/i2c.o
+ .text.stop     0x0000000000001b4c       0x26 build/legacy-full/i2c.o
+ .text.start    0x0000000000001b72       0x50 build/legacy-full/i2c.o
  .text.i2c_init
-                0x0000000000001bb2       0x18 build/legacy-full/i2c.o
-                0x0000000000001bb2                i2c_init
+                0x0000000000001bc2       0x18 build/legacy-full/i2c.o
+                0x0000000000001bc2                i2c_init
  .text.i2c_write
-                0x0000000000001bca       0x54 build/legacy-full/i2c.o
-                0x0000000000001bca                i2c_write
+                0x0000000000001bda       0x54 build/legacy-full/i2c.o
+                0x0000000000001bda                i2c_write
  .text.i2c_read
-                0x0000000000001c1e       0x84 build/legacy-full/i2c.o
-                0x0000000000001c1e                i2c_read
+                0x0000000000001c2e       0x84 build/legacy-full/i2c.o
+                0x0000000000001c2e                i2c_read
  .text.i2c_regs
-                0x0000000000001ca2       0xa6 build/legacy-full/i2c.o
-                0x0000000000001ca2                i2c_regs
- .text.nibble   0x0000000000001d48       0x28 build/legacy-full/lcd.o
- .text.send     0x0000000000001d70       0x2c build/legacy-full/lcd.o
+                0x0000000000001cb2       0xa6 build/legacy-full/i2c.o
+                0x0000000000001cb2                i2c_regs
+ .text.nibble   0x0000000000001d58       0x28 build/legacy-full/lcd.o
+ .text.send     0x0000000000001d80       0x2c build/legacy-full/lcd.o
  .text.lcd_init
-                0x0000000000001d9c       0x9a build/legacy-full/lcd.o
-                0x0000000000001d9c                lcd_init
+                0x0000000000001dac       0x9a build/legacy-full/lcd.o
+                0x0000000000001dac                lcd_init
  .text.lcd_line
-                0x0000000000001e36       0x44 build/legacy-full/lcd.o
-                0x0000000000001e36                lcd_line
- .text.app_ack  0x0000000000001e7a       0x12 build/legacy-full/main.o
-                0x0000000000001e7a                app_ack
+                0x0000000000001e46       0x44 build/legacy-full/lcd.o
+                0x0000000000001e46                lcd_line
+ .text.app_ack  0x0000000000001e8a       0x12 build/legacy-full/main.o
+                0x0000000000001e8a                app_ack
  .text.app_save
-                0x0000000000001e8c       0x1c build/legacy-full/main.o
-                0x0000000000001e8c                app_save
+                0x0000000000001e9c       0x1c build/legacy-full/main.o
+                0x0000000000001e9c                app_save
  .text.app_load
-                0x0000000000001ea8       0x2c build/legacy-full/main.o
-                0x0000000000001ea8                app_load
+                0x0000000000001eb8       0x2c build/legacy-full/main.o
+                0x0000000000001eb8                app_load
  .text.startup.main
-                0x0000000000001ed4      0x490 build/legacy-full/main.o
-                0x0000000000001ed4                main
+                0x0000000000001ee4      0x490 build/legacy-full/main.o
+                0x0000000000001ee4                main
  .text.rtc_read
-                0x0000000000002364       0x6c build/legacy-full/optional.o
-                0x0000000000002364                rtc_read
- .text.rtc_set  0x00000000000023d0       0xc4 build/legacy-full/optional.o
-                0x00000000000023d0                rtc_set
+                0x0000000000002374       0x6c build/legacy-full/optional.o
+                0x0000000000002374                rtc_read
+ .text.rtc_set  0x00000000000023e0       0xc4 build/legacy-full/optional.o
+                0x00000000000023e0                rtc_set
  .text.light_start
-                0x0000000000002494       0x54 build/legacy-full/optional.o
-                0x0000000000002494                light_start
+                0x00000000000024a4       0x54 build/legacy-full/optional.o
+                0x00000000000024a4                light_start
  .text.light_read
-                0x00000000000024e8       0x60 build/legacy-full/optional.o
-                0x00000000000024e8                light_read
- .text.nv_load  0x0000000000002548       0xd6 build/legacy-full/storage.o
-                0x0000000000002548                nv_load
- .text.nv_save  0x000000000000261e      0x16a build/legacy-full/storage.o
-                0x000000000000261e                nv_save
- .text.receive  0x0000000000002788       0x36 build/legacy-full/uart.o
+                0x00000000000024f8       0x60 build/legacy-full/optional.o
+                0x00000000000024f8                light_read
+ .text.nv_load  0x0000000000002558       0xd6 build/legacy-full/storage.o
+                0x0000000000002558                nv_load
+ .text.nv_save  0x000000000000262e      0x16a build/legacy-full/storage.o
+                0x000000000000262e                nv_save
+ .text.receive  0x0000000000002798       0x36 build/legacy-full/uart.o
  .text.__vector_11
-                0x00000000000027be       0x48 build/legacy-full/uart.o
-                0x00000000000027be                __vector_11
+                0x00000000000027ce       0x48 build/legacy-full/uart.o
+                0x00000000000027ce                __vector_11
  .text.__vector_12
-                0x0000000000002806       0x4e build/legacy-full/uart.o
-                0x0000000000002806                __vector_12
+                0x0000000000002816       0x4e build/legacy-full/uart.o
+                0x0000000000002816                __vector_12
  .text.uart_init
-                0x0000000000002854       0x12 build/legacy-full/uart.o
-                0x0000000000002854                uart_init
+                0x0000000000002864       0x1a build/legacy-full/uart.o
+                0x0000000000002864                uart_init
  .text.uart_rx_poll
-                0x0000000000002866        0x8 build/legacy-full/uart.o
-                0x0000000000002866                uart_rx_poll
+                0x000000000000287e        0x8 build/legacy-full/uart.o
+                0x000000000000287e                uart_rx_poll
  .text.uart_get
-                0x000000000000286e       0x30 build/legacy-full/uart.o
-                0x000000000000286e                uart_get
+                0x0000000000002886       0x30 build/legacy-full/uart.o
+                0x0000000000002886                uart_get
  .text.uart_put
-                0x000000000000289e       0x72 build/legacy-full/uart.o
-                0x000000000000289e                uart_put
+                0x00000000000028b6       0x72 build/legacy-full/uart.o
+                0x00000000000028b6                uart_put
  .text.uart_text_P
-                0x0000000000002910       0x1e build/legacy-full/uart.o
-                0x0000000000002910                uart_text_P
+                0x0000000000002928       0x1e build/legacy-full/uart.o
+                0x0000000000002928                uart_text_P
  .text.uart_uint
-                0x000000000000292e       0x98 build/legacy-full/uart.o
-                0x000000000000292e                uart_uint
+                0x0000000000002946       0x98 build/legacy-full/uart.o
+                0x0000000000002946                uart_uint
  .text.uart_fixed
-                0x00000000000029c6       0x24 build/legacy-full/uart.o
-                0x00000000000029c6                uart_fixed
+                0x00000000000029de       0x24 build/legacy-full/uart.o
+                0x00000000000029de                uart_fixed
  .text.uart_errors
-                0x00000000000029ea        0x6 build/legacy-full/uart.o
-                0x00000000000029ea                uart_errors
+                0x0000000000002a02        0x6 build/legacy-full/uart.o
+                0x0000000000002a02                uart_errors
  .text.uart_clear_errors
-                0x00000000000029f0        0xc build/legacy-full/uart.o
-                0x00000000000029f0                uart_clear_errors
+                0x0000000000002a08        0xc build/legacy-full/uart.o
+                0x0000000000002a08                uart_clear_errors
  .text.uart_take_rx_fault
-                0x00000000000029fc       0x18 build/legacy-full/uart.o
-                0x00000000000029fc                uart_take_rx_fault
+                0x0000000000002a14       0x18 build/legacy-full/uart.o
+                0x0000000000002a14                uart_take_rx_fault
  .text.menu_value
-                0x0000000000002a14       0x6a build/legacy-full/ui.o
+                0x0000000000002a2c       0x6a build/legacy-full/ui.o
  .text.menu_adjust
-                0x0000000000002a7e       0xda build/legacy-full/ui.o
+                0x0000000000002a96       0xda build/legacy-full/ui.o
  .text.ui_cancel
-                0x0000000000002b58        0x6 build/legacy-full/ui.o
-                0x0000000000002b58                ui_cancel
- .text.ui_keys  0x0000000000002b5e       0xd2 build/legacy-full/ui.o
-                0x0000000000002b5e                ui_keys
+                0x0000000000002b70        0x6 build/legacy-full/ui.o
+                0x0000000000002b70                ui_cancel
+ .text.ui_keys  0x0000000000002b76       0xd2 build/legacy-full/ui.o
+                0x0000000000002b76                ui_keys
  .text.ui_render
-                0x0000000000002c30      0x5ae build/legacy-full/ui.o
-                0x0000000000002c30                ui_render
+                0x0000000000002c48      0x5ae build/legacy-full/ui.o
+                0x0000000000002c48                ui_render
  .text.libgcc.div
-                0x00000000000031de       0x18 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodqi4.o)
-                0x00000000000031de                __udivmodqi4
+                0x00000000000031f6       0x18 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodqi4.o)
+                0x00000000000031f6                __udivmodqi4
  .text.libgcc.div
-                0x00000000000031f6       0x28 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodhi4.o)
-                0x00000000000031f6                __udivmodhi4
+                0x000000000000320e       0x28 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodhi4.o)
+                0x000000000000320e                __udivmodhi4
  .text.libgcc.div
-                0x000000000000321e       0x28 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_divmodhi4.o)
-                0x000000000000321e                __divmodhi4
-                0x000000000000321e                _div
+                0x0000000000003236       0x28 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_divmodhi4.o)
+                0x0000000000003236                __divmodhi4
+                0x0000000000003236                _div
  .text.libgcc.div
-                0x0000000000003246       0x44 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodsi4.o)
-                0x0000000000003246                __udivmodsi4
- .text.libgcc   0x000000000000328a        0xc /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_tablejump2.o)
-                0x000000000000328a                __tablejump2__
+                0x000000000000325e       0x44 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodsi4.o)
+                0x000000000000325e                __udivmodsi4
+ .text.libgcc   0x00000000000032a2        0xc /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_tablejump2.o)
+                0x00000000000032a2                __tablejump2__
  .text.libgcc.mul
-                0x0000000000003296       0x1e /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_umulhisi3.o)
-                0x0000000000003296                __umulhisi3
+                0x00000000000032ae       0x1e /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_umulhisi3.o)
+                0x00000000000032ae                __umulhisi3
  .text.libgcc.mul
-                0x00000000000032b4       0x16 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_muluhisi3.o)
-                0x00000000000032b4                __muluhisi3
+                0x00000000000032cc       0x16 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_muluhisi3.o)
+                0x00000000000032cc                __muluhisi3
  .text.avr-libc
-                0x00000000000032ca       0x12 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(strcmp_P.o)
-                0x00000000000032ca                strcmp_P
+                0x00000000000032e2       0x12 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(strcmp_P.o)
+                0x00000000000032e2                strcmp_P
  .text.avr-libc
-                0x00000000000032dc        0xe /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(strcpy_P.o)
-                0x00000000000032dc                strcpy_P
+                0x00000000000032f4        0xe /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(strcpy_P.o)
+                0x00000000000032f4                strcpy_P
  .text.avr-libc
-                0x00000000000032ea       0x1c /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(strncmp_P.o)
-                0x00000000000032ea                strncmp_P
+                0x0000000000003302       0x1c /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(strncmp_P.o)
+                0x0000000000003302                strncmp_P
  .text.avr-libc
-                0x0000000000003306       0x1a /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(memcmp.o)
-                0x0000000000003306                memcmp
+                0x000000000000331e       0x1a /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(memcmp.o)
+                0x000000000000331e                memcmp
  .text.avr-libc
-                0x0000000000003320       0x16 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(strchr.o)
-                0x0000000000003320                strchr
+                0x0000000000003338       0x16 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(strchr.o)
+                0x0000000000003338                strchr
  .text.avr-libc
-                0x0000000000003336       0x12 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(strcmp.o)
-                0x0000000000003336                strcmp
+                0x000000000000334e       0x12 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(strcmp.o)
+                0x000000000000334e                strcmp
  .text.avr-libc
-                0x0000000000003348       0x60 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(snprintf_p.o)
-                0x0000000000003348                snprintf_P
+                0x0000000000003360       0x60 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(snprintf_p.o)
+                0x0000000000003360                snprintf_P
  .text.avr-libc
-                0x00000000000033a8      0x3c2 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(vfprintf_std.o)
-                0x00000000000033a8                vfprintf
+                0x00000000000033c0      0x3c2 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+                0x00000000000033c0                vfprintf
  .text.avr-libc
-                0x000000000000376a       0x16 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(strnlen_P.o)
-                0x000000000000376a                strnlen_P
+                0x0000000000003782       0x16 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(strnlen_P.o)
+                0x0000000000003782                strnlen_P
  .text.avr-libc
-                0x0000000000003780       0x16 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(strnlen.o)
-                0x0000000000003780                strnlen
+                0x0000000000003798       0x16 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(strnlen.o)
+                0x0000000000003798                strnlen
  .text.avr-libc
-                0x0000000000003796       0x78 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(fputc.o)
-                0x0000000000003796                fputc
+                0x00000000000037ae       0x78 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(fputc.o)
+                0x00000000000037ae                fputc
  .text.avr-libc
-                0x000000000000380e       0xbc /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(ultoa_invert.o)
-                0x000000000000380e                __ultoa_invert
+                0x0000000000003826       0xbc /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(ultoa_invert.o)
+                0x0000000000003826                __ultoa_invert
  .text.avr-libc
-                0x00000000000038ca       0x20 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libatmega16.a(eerd_block.o)
-                0x00000000000038ca                eeprom_read_block
-                0x00000000000038ce                eeprom_read_blraw
+                0x00000000000038e2       0x20 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libatmega16.a(eerd_block.o)
+                0x00000000000038e2                eeprom_read_block
+                0x00000000000038e6                eeprom_read_blraw
  .text.avr-libc
-                0x00000000000038ea       0x22 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libatmega16.a(eeupd_byte.o)
-                0x00000000000038ea                eeprom_update_byte
-                0x00000000000038ec                eeprom_update_r18
+                0x0000000000003902       0x22 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libatmega16.a(eeupd_byte.o)
+                0x0000000000003902                eeprom_update_byte
+                0x0000000000003904                eeprom_update_r18
  .text.libgcc.prologue
-                0x000000000000390c       0x38 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_prologue.o)
-                0x000000000000390c                __prologue_saves__
+                0x0000000000003924       0x38 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_prologue.o)
+                0x0000000000003924                __prologue_saves__
  .text.libgcc.prologue
-                0x0000000000003944       0x36 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_epilogue.o)
-                0x0000000000003944                __epilogue_restores__
-                0x000000000000397a                . = ALIGN (0x2)
+                0x000000000000395c       0x36 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_epilogue.o)
+                0x000000000000395c                __epilogue_restores__
+                0x0000000000003992                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x000000000000397a        0x0 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_exit.o)
-                0x000000000000397a                exit
-                0x000000000000397a                _exit
+ .fini9         0x0000000000003992        0x0 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_exit.o)
+                0x0000000000003992                exit
+                0x0000000000003992                _exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -998,11 +998,11 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x000000000000397a        0x4 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_exit.o)
+ .fini0         0x0000000000003992        0x4 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_exit.o)
  *(.fini0)
-                0x000000000000397e                _etext = .
+                0x0000000000003996                _etext = .
 
-.data           0x0000000000800060       0x7a load address 0x000000000000397e
+.data           0x0000000000800060       0x7a load address 0x0000000000003996
                 0x0000000000800060                PROVIDE (__data_start, .)
  *(.data)
  *(.data*)
@@ -1065,8 +1065,8 @@ END GROUP
  COMMON         0x00000000008001f6       0x65 build/legacy-full/main.o
                 0x00000000008001f6                app
                 0x000000000080025b                PROVIDE (__bss_end, .)
-                0x000000000000397e                __data_load_start = LOADADDR (.data)
-                0x00000000000039f8                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x0000000000003996                __data_load_start = LOADADDR (.data)
+                0x0000000000003a10                __data_load_end = (__data_load_start + SIZEOF (.data))
 
 .noinit         0x000000000080025b        0x1
                 [!provide]                        PROVIDE (__noinit_start, .)
@@ -1097,30 +1097,30 @@ END GROUP
 .user_signatures
  *(.user_signatures*)
 
-.stab           0x0000000000000000     0x7a88
+.stab           0x0000000000000000     0x7ba8
  *(.stab)
- .stab          0x0000000000000000      0xd50 build/legacy-full/board.o
- .stab          0x0000000000000d50      0xeb8 build/legacy-full/command.o
+ .stab          0x0000000000000000      0xe4c build/legacy-full/board.o
+ .stab          0x0000000000000e4c      0xeb8 build/legacy-full/command.o
                                        0x1104 (size before relaxing)
- .stab          0x0000000000001c08     0x15f0 build/legacy-full/core.o
+ .stab          0x0000000000001d04     0x15f0 build/legacy-full/core.o
                                        0x17d0 (size before relaxing)
- .stab          0x00000000000031f8      0x63c build/legacy-full/dht.o
+ .stab          0x00000000000032f4      0x63c build/legacy-full/dht.o
                                         0x888 (size before relaxing)
- .stab          0x0000000000003834      0xa80 build/legacy-full/i2c.o
+ .stab          0x0000000000003930      0xa80 build/legacy-full/i2c.o
                                         0xccc (size before relaxing)
- .stab          0x00000000000042b4      0x714 build/legacy-full/lcd.o
+ .stab          0x00000000000043b0      0x714 build/legacy-full/lcd.o
                                         0x960 (size before relaxing)
- .stab          0x00000000000049c8      0x960 build/legacy-full/main.o
-                                        0xbc4 (size before relaxing)
- .stab          0x0000000000005328      0x624 build/legacy-full/optional.o
+ .stab          0x0000000000004ac4      0x96c build/legacy-full/main.o
+                                        0xbd0 (size before relaxing)
+ .stab          0x0000000000005430      0x624 build/legacy-full/optional.o
                                         0x870 (size before relaxing)
- .stab          0x000000000000594c      0x378 build/legacy-full/reset.o
+ .stab          0x0000000000005a54      0x378 build/legacy-full/reset.o
                                         0x5c4 (size before relaxing)
- .stab          0x0000000000005cc4      0x618 build/legacy-full/storage.o
+ .stab          0x0000000000005dcc      0x618 build/legacy-full/storage.o
                                         0x864 (size before relaxing)
- .stab          0x00000000000062dc      0xbe8 build/legacy-full/uart.o
-                                        0xe34 (size before relaxing)
- .stab          0x0000000000006ec4      0xbc4 build/legacy-full/ui.o
+ .stab          0x00000000000063e4      0xc00 build/legacy-full/uart.o
+                                        0xe4c (size before relaxing)
+ .stab          0x0000000000006fe4      0xbc4 build/legacy-full/ui.o
                                         0xe7c (size before relaxing)
 
 .stabstr        0x0000000000000000     0x25aa

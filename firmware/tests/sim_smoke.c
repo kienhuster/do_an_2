@@ -24,6 +24,9 @@ typedef struct {
     avr_cycle_count_t low_start;
     uint8_t selected, index, reg, rtc[32];
     unsigned rtc_reads, light_reads, light_commands, buzzer_edges;
+    bool stream_on_dht;
+    uint8_t stream_index;
+    unsigned overlapping_bytes;
 } model_t;
 static unsigned checks;
 #define CHECK(x)                                                                                   \
@@ -66,6 +69,23 @@ static void command(model_t *m, const char *s) {
 static void clear(model_t *m) {
     m->used = 0;
     m->output[0] = 0;
+}
+static void button(model_t *m, uint8_t pin, uint32_t hold) {
+    avr_irq_t *key = avr_io_getirq(m->avr, AVR_IOCTL_IOPORT_GETIRQ('B'), pin);
+    avr_raise_irq(key, 0);
+    run_ms(m, hold);
+    avr_raise_irq(key, 1);
+    run_ms(m, 300);
+}
+static avr_cycle_count_t uart_stream(avr_t *avr, avr_cycle_count_t when, void *p) {
+    model_t *m = p;
+    const char *text = "CONFIG\n";
+    if (!text[m->stream_index])
+        return 0;
+    if (!avr->sreg[S_I])
+        m->overlapping_bytes++;
+    avr_raise_irq(m->uart, (uint8_t)text[m->stream_index++]);
+    return when + 1100 * 8;
 }
 static avr_cycle_count_t pulse(avr_t *avr, avr_cycle_count_t when, void *p) {
     (void)avr;
@@ -110,6 +130,11 @@ static void direction(struct avr_irq_t *irq, uint32_t v, void *p) {
         m->frame[4] = m->humidity + m->temperature + (m->corrupt ? 1 : 0);
         m->phase = 0;
         avr_cycle_timer_register_usec(m->avr, 20, pulse, m);
+        if (m->stream_on_dht) {
+            m->stream_on_dht = false;
+            m->stream_index = 0;
+            avr_cycle_timer_register_usec(m->avr, 100, uart_stream, m);
+        }
     }
     m->was_output = out;
 }
@@ -273,6 +298,62 @@ int main(int argc, char **argv) {
     avr_irq_register_notify(avr_io_getirq(m.avr, AVR_IOCTL_TWI_GETIRQ(0), TWI_IRQ_STATUS),
                             status_trace, &m);
     run_ms(&m, 500);
+    /* ATmega16 UCSRB is IO 0x0a, data-space 0x2a. RXEN/TXEN must stay zero. */
+    if (!(m.avr->data[0x2a] & 0x18)) {
+        CHECK(!m.used);
+        CHECK(m.four && !memcmp(m.lcd, "DHT11 no data", 13));
+        CHECK((m.avr->data[0x37] & 0xf0) == 0); /* DDRB: ISP pins undriven */
+        CHECK(m.avr->data[0x54] & 0x80); /* JTD */
+        run_ms(&m, 1800);
+        CHECK(!memcmp(m.lcd, "T25.0C H60.0%", 13));
+        button(&m, 0, 5); CHECK(!memcmp(m.lcd, "T25.0C", 6));
+        button(&m, 0, 800); CHECK(m.lcd[0] == 'T' && m.lcd[1] == ' ');
+        button(&m, 1, 50); CHECK(!memcmp(m.lcd, "T25.0C", 6));
+        button(&m, 2, 50); CHECK(!memcmp(m.lcd, "TLOW=180", 8));
+        button(&m, 0, 50); CHECK(!memcmp(m.lcd, "TLOW=190", 8));
+        button(&m, 3, 50); CHECK(!memcmp(m.lcd, "T25.0C", 6));
+        button(&m, 2, 50); CHECK(!memcmp(m.lcd, "TLOW=180", 8));
+        button(&m, 2, 50); CHECK(!memcmp(m.lcd, "THIGH=350", 9));
+        for (unsigned i = 0; i < 11; i++) button(&m, 1, 50);
+        CHECK(!memcmp(m.lcd, "THIGH=240", 9));
+        for (unsigned i = 0; i < 7; i++) button(&m, 2, 50);
+        CHECK(!memcmp(m.lcd, "SET save & exit", 15));
+        button(&m, 2, 50); run_ms(&m, 2200);
+        CHECK(!memcmp(m.lcd + 0x40, "A:02 ACK:0 E:00", 15));
+        button(&m, 3, 50); CHECK(!memcmp(m.lcd + 0x40, "A:02 ACK:2 E:00", 15));
+        m.temperature = 23; run_ms(&m, 2200);
+        CHECK(!memcmp(m.lcd + 0x40, "A:00 ACK:0 E:00", 15));
+        m.temperature = 25; run_ms(&m, 2200);
+        CHECK(!memcmp(m.lcd + 0x40, "A:02 ACK:0 E:00", 15));
+        m.corrupt = true; run_ms(&m, 6500);
+        CHECK(!memcmp(m.lcd, "DHT11 no data", 13));
+        CHECK(!memcmp(m.lcd + 0x40, "A:02 ACK:0 E:01", 15));
+        m.corrupt = false; run_ms(&m, 2200);
+        CHECK(!memcmp(m.lcd, "T25.0C", 6));
+        m.sensor = false; run_ms(&m, 6500);
+        CHECK(!memcmp(m.lcd + 0x40, "A:02 ACK:0 E:01", 15));
+        m.sensor = true; run_ms(&m, 2200);
+        CHECK(!memcmp(m.lcd + 0x40, "A:02 ACK:0 E:00", 15));
+        for (unsigned i = 0; i < 5; i++) button(&m, 0, 50);
+        CHECK(!memcmp(m.lcd + 0x40, "511 ", 4));
+        button(&m, 1, 50);
+        uint32_t seconds = strtoul((char *)m.lcd + 0x40, NULL, 10);
+        run_ms(&m, 5000);
+        CHECK(strtoul((char *)m.lcd + 0x40, NULL, 10) == seconds + 5);
+        /* UART faults injected at the peripheral must not enter the OFF application. */
+        avr_raise_irq(m.uart, UART_INPUT_FE | '!'); run_ms(&m, 300);
+        CHECK(!m.used && !(m.avr->data[0x2a] & 0x18));
+        m.avr->flash[0x3ffc] = 0xff; m.avr->flash[0x3ffd] = 0xcf;
+        m.avr->pc = 0x3ffc; run_ms(&m, 3500);
+        CHECK(!memcmp(m.lcd + 0x40, "A:02 ACK:0 E:40", 15));
+        button(&m, 2, 50); button(&m, 2, 50);
+        CHECK(!memcmp(m.lcd, "THIGH=240", 9));
+        CHECK(!m.used && !(m.avr->data[0x2a] & 0x18));
+        printf("PASS: %u UART OFF simulator assertions: DHT/LCD, all four buttons, menu "
+               "cancel/save, alarms/ACK/rearm, EEPROM across watchdog, ADC, uptime, ISP/JTAG\n", checks);
+        avr_terminate(m.avr);
+        return 0;
+    }
     CHECK(strstr(m.output, "ATmega16 monitor C"));
     command(&m, "CSV OFF");
     CHECK(strstr(m.output, "# OK"));
@@ -289,7 +370,8 @@ int main(int argc, char **argv) {
     CHECK(strstr(m.output, ",25.0,60.0,"));
     CHECK(strstr(m.output, ",511,"));
     CHECK(m.four && !memcmp(m.lcd, "T25.0C H60.0%", 13));
-    bool full = strstr(argv[1], "/full/") || strstr(argv[1], "/passive/");
+    bool full = strstr(argv[1], "/full/") || strstr(argv[1], "/passive/") ||
+                strstr(argv[1], "/legacy-full/") || strstr(argv[1], "/legacy-passive/");
     if (full) {
         CHECK(m.rtc_reads > 0 && m.light_reads >= 2 && m.light_commands >= 3);
         CHECK(strstr(m.output, ",1000,2026-10-08T14:20:30"));
@@ -327,6 +409,13 @@ int main(int argc, char **argv) {
     m.corrupt = false;
     run_ms(&m, 2200);
     clear(&m);
+    command(&m, "STATUS");
+    CHECK(strstr(m.output, ",25.0,60.0,"));
+    clear(&m);
+    m.stream_on_dht = true;
+    run_ms(&m, 2500);
+    CHECK(m.overlapping_bytes > 0 && strstr(m.output, "TLOW=180 THIGH=240"));
+    CHECK(!strstr(m.output, "# ERR"));
     command(&m, "STATUS");
     CHECK(strstr(m.output, ",25.0,60.0,"));
     CHECK(strstr(m.output, ",2,0,0,"));

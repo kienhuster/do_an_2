@@ -1,5 +1,5 @@
 {
-  "flash": 8900,
+  "flash": 8920,
   "static_sram": 448,
   "eeprom": 48,
   "stack_headroom": 576

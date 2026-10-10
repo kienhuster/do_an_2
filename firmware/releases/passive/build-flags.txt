@@ -1,0 +1,3 @@
+avr-gcc
+-mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -DENABLE_BUZZER=1 -DENABLE_RTC=1 -DENABLE_BH1750=1 -DBUZZER_ACTIVE=0
+-mmcu=atmega16 -Wl,--gc-sections,-Map,build/passive/monitor.map

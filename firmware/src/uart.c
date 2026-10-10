@@ -36,12 +36,18 @@ ISR(USART_UDRE_vect) {
 #endif
 void uart_init(void) {
 #if ENABLE_UART
+    /* RX idle is HIGH even when no USB-UART adapter is connected. */
+    DDRD &= ~_BV(PD0);
+    PORTD |= _BV(PD0) | _BV(PD1);
     uint16_t divisor = F_CPU / (16UL * UART_BAUD) - 1;
     UBRRH = (uint8_t)(divisor >> 8);
     UBRRL = (uint8_t)divisor;
     UCSRA = 0;
     UCSRC = _BV(URSEL) | _BV(UCSZ1) | _BV(UCSZ0);
     UCSRB = _BV(RXEN) | _BV(TXEN) | _BV(RXCIE);
+#else
+    /* Quiesce a USART left enabled by a bootloader as well as its interrupts. */
+    UCSRB = 0;
 #endif
 }
 void uart_rx_poll(void) {
@@ -84,12 +90,17 @@ bool uart_put(char c) {
 #endif
 }
 void uart_text_P(PGM_P p) {
+#if ENABLE_UART
     char c;
     while ((c = pgm_read_byte(p++)))
         if (!uart_put(c))
             break;
+#else
+    (void)p;
+#endif
 }
 void uart_uint(uint32_t n) {
+#if ENABLE_UART
     char b[10];
     uint8_t i = 0;
     do {
@@ -98,11 +109,18 @@ void uart_uint(uint32_t n) {
     } while (n);
     while (i)
         uart_put(b[--i]);
+#else
+    (void)n;
+#endif
 }
 void uart_fixed(uint16_t n) {
+#if ENABLE_UART
     uart_uint(n / 10);
     uart_put('.');
     uart_put('0' + n % 10);
+#else
+    (void)n;
+#endif
 }
 uint8_t uart_errors(void) {
 #if ENABLE_UART

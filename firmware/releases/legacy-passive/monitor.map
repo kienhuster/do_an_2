@@ -449,7 +449,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x0000000000000000     0x39ba
+.text           0x0000000000000000     0x39d2
  *(.vectors)
  .vectors       0x0000000000000000       0x54 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/crtatmega16.o
                 0x0000000000000000                __vectors
@@ -726,262 +726,262 @@ END GROUP
                 0x00000000000007b0       0x5a build/legacy-passive/board.o
                 0x00000000000007b0                adc_read
  .text.diagnostic_tick
-                0x000000000000080a       0x96 build/legacy-passive/board.o
+                0x000000000000080a       0xa6 build/legacy-passive/board.o
                 0x000000000000080a                diagnostic_tick
  .text.signed_trend
-                0x00000000000008a0       0x2c build/legacy-passive/command.o
- .text.comma    0x00000000000008cc        0x6 build/legacy-passive/command.o
- .text.two      0x00000000000008d2       0x1a build/legacy-passive/command.o
+                0x00000000000008b0       0x2c build/legacy-passive/command.o
+ .text.comma    0x00000000000008dc        0x6 build/legacy-passive/command.o
+ .text.two      0x00000000000008e2       0x1a build/legacy-passive/command.o
  .text.csv_header
-                0x00000000000008ec        0x8 build/legacy-passive/command.o
-                0x00000000000008ec                csv_header
+                0x00000000000008fc        0x8 build/legacy-passive/command.o
+                0x00000000000008fc                csv_header
  .text.csv_send
-                0x00000000000008f4      0x164 build/legacy-passive/command.o
-                0x00000000000008f4                csv_send
+                0x0000000000000904      0x164 build/legacy-passive/command.o
+                0x0000000000000904                csv_send
  .text.command_poll
-                0x0000000000000a58      0x63a build/legacy-passive/command.o
-                0x0000000000000a58                command_poll
- .text.bcd      0x0000000000001092       0x24 build/legacy-passive/core.o
+                0x0000000000000a68      0x63a build/legacy-passive/command.o
+                0x0000000000000a68                command_poll
+ .text.bcd      0x00000000000010a2       0x24 build/legacy-passive/core.o
  .text.settings_defaults
-                0x00000000000010b6       0x12 build/legacy-passive/core.o
-                0x00000000000010b6                settings_defaults
+                0x00000000000010c6       0x12 build/legacy-passive/core.o
+                0x00000000000010c6                settings_defaults
  .text.settings_valid
-                0x00000000000010c8       0x92 build/legacy-passive/core.o
-                0x00000000000010c8                settings_valid
+                0x00000000000010d8       0x92 build/legacy-passive/core.o
+                0x00000000000010d8                settings_valid
  .text.settings_set
-                0x000000000000115a      0x132 build/legacy-passive/core.o
-                0x000000000000115a                settings_set
+                0x000000000000116a      0x132 build/legacy-passive/core.o
+                0x000000000000116a                settings_set
  .text.stats_reset
-                0x000000000000128c        0xc build/legacy-passive/core.o
-                0x000000000000128c                stats_reset
+                0x000000000000129c        0xc build/legacy-passive/core.o
+                0x000000000000129c                stats_reset
  .text.stats_add
-                0x0000000000001298       0xec build/legacy-passive/core.o
-                0x0000000000001298                stats_add
+                0x00000000000012a8       0xec build/legacy-passive/core.o
+                0x00000000000012a8                stats_add
  .text.stats_trend
-                0x0000000000001384       0x82 build/legacy-passive/core.o
-                0x0000000000001384                stats_trend
+                0x0000000000001394       0x82 build/legacy-passive/core.o
+                0x0000000000001394                stats_trend
  .text.alarm_update
-                0x0000000000001406       0xa8 build/legacy-passive/core.o
-                0x0000000000001406                alarm_update
+                0x0000000000001416       0xa8 build/legacy-passive/core.o
+                0x0000000000001416                alarm_update
  .text.alarm_ack
-                0x00000000000014ae        0x8 build/legacy-passive/core.o
-                0x00000000000014ae                alarm_ack
- .text.crc16    0x00000000000014b6       0x30 build/legacy-passive/core.o
-                0x00000000000014b6                crc16
+                0x00000000000014be        0x8 build/legacy-passive/core.o
+                0x00000000000014be                alarm_ack
+ .text.crc16    0x00000000000014c6       0x30 build/legacy-passive/core.o
+                0x00000000000014c6                crc16
  .text.sequence_newer
-                0x00000000000014e6       0x1e build/legacy-passive/core.o
-                0x00000000000014e6                sequence_newer
+                0x00000000000014f6       0x1e build/legacy-passive/core.o
+                0x00000000000014f6                sequence_newer
  .text.record_pack
-                0x0000000000001504       0x6e build/legacy-passive/core.o
-                0x0000000000001504                record_pack
+                0x0000000000001514       0x6e build/legacy-passive/core.o
+                0x0000000000001514                record_pack
  .text.record_unpack
-                0x0000000000001572      0x112 build/legacy-passive/core.o
-                0x0000000000001572                record_unpack
+                0x0000000000001582      0x112 build/legacy-passive/core.o
+                0x0000000000001582                record_unpack
  .text.rtc_valid
-                0x0000000000001684       0x56 build/legacy-passive/core.o
-                0x0000000000001684                rtc_valid
+                0x0000000000001694       0x56 build/legacy-passive/core.o
+                0x0000000000001694                rtc_valid
  .text.rtc_decode
-                0x00000000000016da      0x126 build/legacy-passive/core.o
-                0x00000000000016da                rtc_decode
+                0x00000000000016ea      0x126 build/legacy-passive/core.o
+                0x00000000000016ea                rtc_decode
  .text.rtc_encode
-                0x0000000000001800       0x9e build/legacy-passive/core.o
-                0x0000000000001800                rtc_encode
+                0x0000000000001810       0x9e build/legacy-passive/core.o
+                0x0000000000001810                rtc_encode
  .text.dht_decode
-                0x000000000000189e       0x5e build/legacy-passive/core.o
-                0x000000000000189e                dht_decode
- .text.due      0x00000000000018fc       0x22 build/legacy-passive/core.o
-                0x00000000000018fc                due
+                0x00000000000018ae       0x5e build/legacy-passive/core.o
+                0x00000000000018ae                dht_decode
+ .text.due      0x000000000000190c       0x22 build/legacy-passive/core.o
+                0x000000000000190c                due
  .text.parse_i16
-                0x000000000000191e       0xc0 build/legacy-passive/core.o
-                0x000000000000191e                parse_i16
+                0x000000000000192e       0xc0 build/legacy-passive/core.o
+                0x000000000000192e                parse_i16
  .text.level.constprop.0
-                0x00000000000019de       0x2a build/legacy-passive/dht.o
+                0x00000000000019ee       0x2a build/legacy-passive/dht.o
  .text.dht_init
-                0x0000000000001a08        0x6 build/legacy-passive/dht.o
-                0x0000000000001a08                dht_init
+                0x0000000000001a18        0x6 build/legacy-passive/dht.o
+                0x0000000000001a18                dht_init
  .text.dht_start
-                0x0000000000001a0e        0x6 build/legacy-passive/dht.o
-                0x0000000000001a0e                dht_start
+                0x0000000000001a1e        0x6 build/legacy-passive/dht.o
+                0x0000000000001a1e                dht_start
  .text.dht_finish
-                0x0000000000001a14       0xdc build/legacy-passive/dht.o
-                0x0000000000001a14                dht_finish
+                0x0000000000001a24       0xdc build/legacy-passive/dht.o
+                0x0000000000001a24                dht_finish
  .text.wait_twi
-                0x0000000000001af0       0x1e build/legacy-passive/i2c.o
- .text.put      0x0000000000001b0e       0x1e build/legacy-passive/i2c.o
- .text.recover  0x0000000000001b2c       0x4c build/legacy-passive/i2c.o
- .text.stop     0x0000000000001b78       0x26 build/legacy-passive/i2c.o
- .text.start    0x0000000000001b9e       0x50 build/legacy-passive/i2c.o
+                0x0000000000001b00       0x1e build/legacy-passive/i2c.o
+ .text.put      0x0000000000001b1e       0x1e build/legacy-passive/i2c.o
+ .text.recover  0x0000000000001b3c       0x4c build/legacy-passive/i2c.o
+ .text.stop     0x0000000000001b88       0x26 build/legacy-passive/i2c.o
+ .text.start    0x0000000000001bae       0x50 build/legacy-passive/i2c.o
  .text.i2c_init
-                0x0000000000001bee       0x18 build/legacy-passive/i2c.o
-                0x0000000000001bee                i2c_init
+                0x0000000000001bfe       0x18 build/legacy-passive/i2c.o
+                0x0000000000001bfe                i2c_init
  .text.i2c_write
-                0x0000000000001c06       0x54 build/legacy-passive/i2c.o
-                0x0000000000001c06                i2c_write
+                0x0000000000001c16       0x54 build/legacy-passive/i2c.o
+                0x0000000000001c16                i2c_write
  .text.i2c_read
-                0x0000000000001c5a       0x84 build/legacy-passive/i2c.o
-                0x0000000000001c5a                i2c_read
+                0x0000000000001c6a       0x84 build/legacy-passive/i2c.o
+                0x0000000000001c6a                i2c_read
  .text.i2c_regs
-                0x0000000000001cde       0xa6 build/legacy-passive/i2c.o
-                0x0000000000001cde                i2c_regs
- .text.nibble   0x0000000000001d84       0x28 build/legacy-passive/lcd.o
- .text.send     0x0000000000001dac       0x2c build/legacy-passive/lcd.o
+                0x0000000000001cee       0xa6 build/legacy-passive/i2c.o
+                0x0000000000001cee                i2c_regs
+ .text.nibble   0x0000000000001d94       0x28 build/legacy-passive/lcd.o
+ .text.send     0x0000000000001dbc       0x2c build/legacy-passive/lcd.o
  .text.lcd_init
-                0x0000000000001dd8       0x9a build/legacy-passive/lcd.o
-                0x0000000000001dd8                lcd_init
+                0x0000000000001de8       0x9a build/legacy-passive/lcd.o
+                0x0000000000001de8                lcd_init
  .text.lcd_line
-                0x0000000000001e72       0x44 build/legacy-passive/lcd.o
-                0x0000000000001e72                lcd_line
- .text.app_ack  0x0000000000001eb6       0x12 build/legacy-passive/main.o
-                0x0000000000001eb6                app_ack
+                0x0000000000001e82       0x44 build/legacy-passive/lcd.o
+                0x0000000000001e82                lcd_line
+ .text.app_ack  0x0000000000001ec6       0x12 build/legacy-passive/main.o
+                0x0000000000001ec6                app_ack
  .text.app_save
-                0x0000000000001ec8       0x1c build/legacy-passive/main.o
-                0x0000000000001ec8                app_save
+                0x0000000000001ed8       0x1c build/legacy-passive/main.o
+                0x0000000000001ed8                app_save
  .text.app_load
-                0x0000000000001ee4       0x2c build/legacy-passive/main.o
-                0x0000000000001ee4                app_load
+                0x0000000000001ef4       0x2c build/legacy-passive/main.o
+                0x0000000000001ef4                app_load
  .text.startup.main
-                0x0000000000001f10      0x490 build/legacy-passive/main.o
-                0x0000000000001f10                main
+                0x0000000000001f20      0x490 build/legacy-passive/main.o
+                0x0000000000001f20                main
  .text.rtc_read
-                0x00000000000023a0       0x6c build/legacy-passive/optional.o
-                0x00000000000023a0                rtc_read
- .text.rtc_set  0x000000000000240c       0xc4 build/legacy-passive/optional.o
-                0x000000000000240c                rtc_set
+                0x00000000000023b0       0x6c build/legacy-passive/optional.o
+                0x00000000000023b0                rtc_read
+ .text.rtc_set  0x000000000000241c       0xc4 build/legacy-passive/optional.o
+                0x000000000000241c                rtc_set
  .text.light_start
-                0x00000000000024d0       0x54 build/legacy-passive/optional.o
-                0x00000000000024d0                light_start
+                0x00000000000024e0       0x54 build/legacy-passive/optional.o
+                0x00000000000024e0                light_start
  .text.light_read
-                0x0000000000002524       0x60 build/legacy-passive/optional.o
-                0x0000000000002524                light_read
- .text.nv_load  0x0000000000002584       0xd6 build/legacy-passive/storage.o
-                0x0000000000002584                nv_load
- .text.nv_save  0x000000000000265a      0x16a build/legacy-passive/storage.o
-                0x000000000000265a                nv_save
- .text.receive  0x00000000000027c4       0x36 build/legacy-passive/uart.o
+                0x0000000000002534       0x60 build/legacy-passive/optional.o
+                0x0000000000002534                light_read
+ .text.nv_load  0x0000000000002594       0xd6 build/legacy-passive/storage.o
+                0x0000000000002594                nv_load
+ .text.nv_save  0x000000000000266a      0x16a build/legacy-passive/storage.o
+                0x000000000000266a                nv_save
+ .text.receive  0x00000000000027d4       0x36 build/legacy-passive/uart.o
  .text.__vector_11
-                0x00000000000027fa       0x48 build/legacy-passive/uart.o
-                0x00000000000027fa                __vector_11
+                0x000000000000280a       0x48 build/legacy-passive/uart.o
+                0x000000000000280a                __vector_11
  .text.__vector_12
-                0x0000000000002842       0x4e build/legacy-passive/uart.o
-                0x0000000000002842                __vector_12
+                0x0000000000002852       0x4e build/legacy-passive/uart.o
+                0x0000000000002852                __vector_12
  .text.uart_init
-                0x0000000000002890       0x12 build/legacy-passive/uart.o
-                0x0000000000002890                uart_init
+                0x00000000000028a0       0x1a build/legacy-passive/uart.o
+                0x00000000000028a0                uart_init
  .text.uart_rx_poll
-                0x00000000000028a2        0x8 build/legacy-passive/uart.o
-                0x00000000000028a2                uart_rx_poll
+                0x00000000000028ba        0x8 build/legacy-passive/uart.o
+                0x00000000000028ba                uart_rx_poll
  .text.uart_get
-                0x00000000000028aa       0x30 build/legacy-passive/uart.o
-                0x00000000000028aa                uart_get
+                0x00000000000028c2       0x30 build/legacy-passive/uart.o
+                0x00000000000028c2                uart_get
  .text.uart_put
-                0x00000000000028da       0x72 build/legacy-passive/uart.o
-                0x00000000000028da                uart_put
+                0x00000000000028f2       0x72 build/legacy-passive/uart.o
+                0x00000000000028f2                uart_put
  .text.uart_text_P
-                0x000000000000294c       0x1e build/legacy-passive/uart.o
-                0x000000000000294c                uart_text_P
+                0x0000000000002964       0x1e build/legacy-passive/uart.o
+                0x0000000000002964                uart_text_P
  .text.uart_uint
-                0x000000000000296a       0x98 build/legacy-passive/uart.o
-                0x000000000000296a                uart_uint
+                0x0000000000002982       0x98 build/legacy-passive/uart.o
+                0x0000000000002982                uart_uint
  .text.uart_fixed
-                0x0000000000002a02       0x24 build/legacy-passive/uart.o
-                0x0000000000002a02                uart_fixed
+                0x0000000000002a1a       0x24 build/legacy-passive/uart.o
+                0x0000000000002a1a                uart_fixed
  .text.uart_errors
-                0x0000000000002a26        0x6 build/legacy-passive/uart.o
-                0x0000000000002a26                uart_errors
+                0x0000000000002a3e        0x6 build/legacy-passive/uart.o
+                0x0000000000002a3e                uart_errors
  .text.uart_clear_errors
-                0x0000000000002a2c        0xc build/legacy-passive/uart.o
-                0x0000000000002a2c                uart_clear_errors
+                0x0000000000002a44        0xc build/legacy-passive/uart.o
+                0x0000000000002a44                uart_clear_errors
  .text.uart_take_rx_fault
-                0x0000000000002a38       0x18 build/legacy-passive/uart.o
-                0x0000000000002a38                uart_take_rx_fault
+                0x0000000000002a50       0x18 build/legacy-passive/uart.o
+                0x0000000000002a50                uart_take_rx_fault
  .text.menu_value
-                0x0000000000002a50       0x6a build/legacy-passive/ui.o
+                0x0000000000002a68       0x6a build/legacy-passive/ui.o
  .text.menu_adjust
-                0x0000000000002aba       0xda build/legacy-passive/ui.o
+                0x0000000000002ad2       0xda build/legacy-passive/ui.o
  .text.ui_cancel
-                0x0000000000002b94        0x6 build/legacy-passive/ui.o
-                0x0000000000002b94                ui_cancel
- .text.ui_keys  0x0000000000002b9a       0xd2 build/legacy-passive/ui.o
-                0x0000000000002b9a                ui_keys
+                0x0000000000002bac        0x6 build/legacy-passive/ui.o
+                0x0000000000002bac                ui_cancel
+ .text.ui_keys  0x0000000000002bb2       0xd2 build/legacy-passive/ui.o
+                0x0000000000002bb2                ui_keys
  .text.ui_render
-                0x0000000000002c6c      0x5ae build/legacy-passive/ui.o
-                0x0000000000002c6c                ui_render
+                0x0000000000002c84      0x5ae build/legacy-passive/ui.o
+                0x0000000000002c84                ui_render
  .text.libgcc.div
-                0x000000000000321a       0x18 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodqi4.o)
-                0x000000000000321a                __udivmodqi4
+                0x0000000000003232       0x18 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodqi4.o)
+                0x0000000000003232                __udivmodqi4
  .text.libgcc.div
-                0x0000000000003232       0x28 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodhi4.o)
-                0x0000000000003232                __udivmodhi4
+                0x000000000000324a       0x28 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodhi4.o)
+                0x000000000000324a                __udivmodhi4
  .text.libgcc.div
-                0x000000000000325a       0x28 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_divmodhi4.o)
-                0x000000000000325a                __divmodhi4
-                0x000000000000325a                _div
+                0x0000000000003272       0x28 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_divmodhi4.o)
+                0x0000000000003272                __divmodhi4
+                0x0000000000003272                _div
  .text.libgcc.div
-                0x0000000000003282       0x44 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodsi4.o)
-                0x0000000000003282                __udivmodsi4
- .text.libgcc   0x00000000000032c6        0xc /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_tablejump2.o)
-                0x00000000000032c6                __tablejump2__
+                0x000000000000329a       0x44 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodsi4.o)
+                0x000000000000329a                __udivmodsi4
+ .text.libgcc   0x00000000000032de        0xc /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_tablejump2.o)
+                0x00000000000032de                __tablejump2__
  .text.libgcc.mul
-                0x00000000000032d2       0x1e /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_umulhisi3.o)
-                0x00000000000032d2                __umulhisi3
+                0x00000000000032ea       0x1e /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_umulhisi3.o)
+                0x00000000000032ea                __umulhisi3
  .text.libgcc.mul
-                0x00000000000032f0       0x16 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_muluhisi3.o)
-                0x00000000000032f0                __muluhisi3
+                0x0000000000003308       0x16 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_muluhisi3.o)
+                0x0000000000003308                __muluhisi3
  .text.avr-libc
-                0x0000000000003306       0x12 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(strcmp_P.o)
-                0x0000000000003306                strcmp_P
+                0x000000000000331e       0x12 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(strcmp_P.o)
+                0x000000000000331e                strcmp_P
  .text.avr-libc
-                0x0000000000003318        0xe /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(strcpy_P.o)
-                0x0000000000003318                strcpy_P
+                0x0000000000003330        0xe /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(strcpy_P.o)
+                0x0000000000003330                strcpy_P
  .text.avr-libc
-                0x0000000000003326       0x1c /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(strncmp_P.o)
-                0x0000000000003326                strncmp_P
+                0x000000000000333e       0x1c /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(strncmp_P.o)
+                0x000000000000333e                strncmp_P
  .text.avr-libc
-                0x0000000000003342       0x1a /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(memcmp.o)
-                0x0000000000003342                memcmp
+                0x000000000000335a       0x1a /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(memcmp.o)
+                0x000000000000335a                memcmp
  .text.avr-libc
-                0x000000000000335c       0x16 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(strchr.o)
-                0x000000000000335c                strchr
+                0x0000000000003374       0x16 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(strchr.o)
+                0x0000000000003374                strchr
  .text.avr-libc
-                0x0000000000003372       0x12 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(strcmp.o)
-                0x0000000000003372                strcmp
+                0x000000000000338a       0x12 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(strcmp.o)
+                0x000000000000338a                strcmp
  .text.avr-libc
-                0x0000000000003384       0x60 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(snprintf_p.o)
-                0x0000000000003384                snprintf_P
+                0x000000000000339c       0x60 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(snprintf_p.o)
+                0x000000000000339c                snprintf_P
  .text.avr-libc
-                0x00000000000033e4      0x3c2 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(vfprintf_std.o)
-                0x00000000000033e4                vfprintf
+                0x00000000000033fc      0x3c2 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+                0x00000000000033fc                vfprintf
  .text.avr-libc
-                0x00000000000037a6       0x16 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(strnlen_P.o)
-                0x00000000000037a6                strnlen_P
+                0x00000000000037be       0x16 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(strnlen_P.o)
+                0x00000000000037be                strnlen_P
  .text.avr-libc
-                0x00000000000037bc       0x16 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(strnlen.o)
-                0x00000000000037bc                strnlen
+                0x00000000000037d4       0x16 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(strnlen.o)
+                0x00000000000037d4                strnlen
  .text.avr-libc
-                0x00000000000037d2       0x78 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(fputc.o)
-                0x00000000000037d2                fputc
+                0x00000000000037ea       0x78 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(fputc.o)
+                0x00000000000037ea                fputc
  .text.avr-libc
-                0x000000000000384a       0xbc /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(ultoa_invert.o)
-                0x000000000000384a                __ultoa_invert
+                0x0000000000003862       0xbc /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(ultoa_invert.o)
+                0x0000000000003862                __ultoa_invert
  .text.avr-libc
-                0x0000000000003906       0x20 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libatmega16.a(eerd_block.o)
-                0x0000000000003906                eeprom_read_block
-                0x000000000000390a                eeprom_read_blraw
+                0x000000000000391e       0x20 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libatmega16.a(eerd_block.o)
+                0x000000000000391e                eeprom_read_block
+                0x0000000000003922                eeprom_read_blraw
  .text.avr-libc
-                0x0000000000003926       0x22 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libatmega16.a(eeupd_byte.o)
-                0x0000000000003926                eeprom_update_byte
-                0x0000000000003928                eeprom_update_r18
+                0x000000000000393e       0x22 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libatmega16.a(eeupd_byte.o)
+                0x000000000000393e                eeprom_update_byte
+                0x0000000000003940                eeprom_update_r18
  .text.libgcc.prologue
-                0x0000000000003948       0x38 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_prologue.o)
-                0x0000000000003948                __prologue_saves__
+                0x0000000000003960       0x38 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_prologue.o)
+                0x0000000000003960                __prologue_saves__
  .text.libgcc.prologue
-                0x0000000000003980       0x36 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_epilogue.o)
-                0x0000000000003980                __epilogue_restores__
-                0x00000000000039b6                . = ALIGN (0x2)
+                0x0000000000003998       0x36 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_epilogue.o)
+                0x0000000000003998                __epilogue_restores__
+                0x00000000000039ce                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x00000000000039b6        0x0 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_exit.o)
-                0x00000000000039b6                exit
-                0x00000000000039b6                _exit
+ .fini9         0x00000000000039ce        0x0 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_exit.o)
+                0x00000000000039ce                exit
+                0x00000000000039ce                _exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -1000,11 +1000,11 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x00000000000039b6        0x4 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_exit.o)
+ .fini0         0x00000000000039ce        0x4 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_exit.o)
  *(.fini0)
-                0x00000000000039ba                _etext = .
+                0x00000000000039d2                _etext = .
 
-.data           0x0000000000800060       0x7a load address 0x00000000000039ba
+.data           0x0000000000800060       0x7a load address 0x00000000000039d2
                 0x0000000000800060                PROVIDE (__data_start, .)
  *(.data)
  *(.data*)
@@ -1067,8 +1067,8 @@ END GROUP
  COMMON         0x00000000008001f6       0x65 build/legacy-passive/main.o
                 0x00000000008001f6                app
                 0x000000000080025b                PROVIDE (__bss_end, .)
-                0x00000000000039ba                __data_load_start = LOADADDR (.data)
-                0x0000000000003a34                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x00000000000039d2                __data_load_start = LOADADDR (.data)
+                0x0000000000003a4c                __data_load_end = (__data_load_start + SIZEOF (.data))
 
 .noinit         0x000000000080025b        0x1
                 [!provide]                        PROVIDE (__noinit_start, .)
@@ -1099,30 +1099,30 @@ END GROUP
 .user_signatures
  *(.user_signatures*)
 
-.stab           0x0000000000000000     0x7b84
+.stab           0x0000000000000000     0x7ca4
  *(.stab)
- .stab          0x0000000000000000      0xe4c build/legacy-passive/board.o
- .stab          0x0000000000000e4c      0xeb8 build/legacy-passive/command.o
+ .stab          0x0000000000000000      0xf48 build/legacy-passive/board.o
+ .stab          0x0000000000000f48      0xeb8 build/legacy-passive/command.o
                                        0x1104 (size before relaxing)
- .stab          0x0000000000001d04     0x15f0 build/legacy-passive/core.o
+ .stab          0x0000000000001e00     0x15f0 build/legacy-passive/core.o
                                        0x17d0 (size before relaxing)
- .stab          0x00000000000032f4      0x63c build/legacy-passive/dht.o
+ .stab          0x00000000000033f0      0x63c build/legacy-passive/dht.o
                                         0x888 (size before relaxing)
- .stab          0x0000000000003930      0xa80 build/legacy-passive/i2c.o
+ .stab          0x0000000000003a2c      0xa80 build/legacy-passive/i2c.o
                                         0xccc (size before relaxing)
- .stab          0x00000000000043b0      0x714 build/legacy-passive/lcd.o
+ .stab          0x00000000000044ac      0x714 build/legacy-passive/lcd.o
                                         0x960 (size before relaxing)
- .stab          0x0000000000004ac4      0x960 build/legacy-passive/main.o
-                                        0xbc4 (size before relaxing)
- .stab          0x0000000000005424      0x624 build/legacy-passive/optional.o
+ .stab          0x0000000000004bc0      0x96c build/legacy-passive/main.o
+                                        0xbd0 (size before relaxing)
+ .stab          0x000000000000552c      0x624 build/legacy-passive/optional.o
                                         0x870 (size before relaxing)
- .stab          0x0000000000005a48      0x378 build/legacy-passive/reset.o
+ .stab          0x0000000000005b50      0x378 build/legacy-passive/reset.o
                                         0x5c4 (size before relaxing)
- .stab          0x0000000000005dc0      0x618 build/legacy-passive/storage.o
+ .stab          0x0000000000005ec8      0x618 build/legacy-passive/storage.o
                                         0x864 (size before relaxing)
- .stab          0x00000000000063d8      0xbe8 build/legacy-passive/uart.o
-                                        0xe34 (size before relaxing)
- .stab          0x0000000000006fc0      0xbc4 build/legacy-passive/ui.o
+ .stab          0x00000000000064e0      0xc00 build/legacy-passive/uart.o
+                                        0xe4c (size before relaxing)
+ .stab          0x00000000000070e0      0xbc4 build/legacy-passive/ui.o
                                         0xe7c (size before relaxing)
 
 .stabstr        0x0000000000000000     0x25be

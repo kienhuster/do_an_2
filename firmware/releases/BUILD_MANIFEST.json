@@ -1,0 +1,466 @@
+{
+  "mcu": "atmega16",
+  "signature": "0x1e9403",
+  "f_cpu": 8000000,
+  "source_sha256": {
+    "Makefile": "a0171adc34493e2628be5f8aa95224863111f61bc2ce8a581cebac47503f7ea6",
+    "include/app.h": "16a7aca39c9bef8f96b47df4c1503b86731db358b706ad22fc508b270a0b1ae5",
+    "include/config.h": "2187d592f093821f97b958662d98cd1befb27c3f722b93f04c290a894c0cec38",
+    "include/core.h": "6411aea60d2f99fd0e9d2015690a1f6fbdce558bdeac0d84fb25fe83e4e95048",
+    "include/hal.h": "3b82cc3b6931b4c9fb0f13624597f139b186ff055af97453fc707ec7d1debfdb",
+    "src/board.c": "326c757bdbf0eb2176736ab356ee6bdd968702db72b384575907390436c2ea6a",
+    "src/command.c": "b9a0f355516754b4aa09ca96c019e7fa37d0ca9671081718323cc5b203b7ae9f",
+    "src/core.c": "b4cc7f0c3a684ab3db76694fa5532a41be80ae923e080ba59db260d938bae497",
+    "src/dht.c": "1cc2f1e6d86e5c3083c5c49a774b76e5223d4bdba219bc8a32d3f3413d3ac861",
+    "src/i2c.c": "733ba5b6ccf788e845d641c734a640d9e5892c3fec73766eb96f6b2b2775a326",
+    "src/lcd.c": "0bece238af0f380f2cb37e6e4d59476f105e8a803ae709f3bf88d6a4f38390de",
+    "src/main.c": "dc889178d9cb4f292875bebfe88bea69e080eaafd40836b2a522891ab56f5847",
+    "src/optional.c": "ddb5edcfa214bc792764fe84e7c23e2b2617b24b36d146d086eadd0cfc27455e",
+    "src/reset.c": "3996c658faa3dc8485166f2868d296e4305e8148ca87c29e7f7cb20dfd36805e",
+    "src/storage.c": "45734b3e9b0cde6ee7c367d80fc007842e3f9360a3d299d6f3206a3427a9f6cf",
+    "src/uart.c": "a1c5d29f59bd85a4d6402893b2784df383cd1d548928d07c077f83ab091b9164",
+    "src/ui.c": "b2644cd8af58e12aa05b708b81a33c7e7b0ff210974283a62545756b097a9ed5",
+    "studio/MonitorATmega16.cproj": "ff431f45a595784821c3c59809245dc558825b78839c3d8885c6ec2853389517",
+    "tools/build_stamp.py": "e88b031bac37304320b466e1dbff2878aa364d5fa46f3a9cb7335831fb243f5b",
+    "tools/capture_csv.py": "d9affd6839db883f194dd282baa9b0caaa9b74176799d1245a0995bfed6c80cd",
+    "tools/check_size.py": "40022df6a63d091c8d92a1bbc4a748634949f61ecf87ca6a802b86de6d9ac8c0",
+    "tools/generate_studio.py": "90d6d20fc92e77d2f4acb6483e5ff59d9a29f4a3faae0e144423ac5e28c7dc44",
+    "tools/package_release.py": "2597e39bcad199dd2ea7a4289f889312acdb32653fe4e8d42224224d7455bcff",
+    "tools/profiles.py": "2d584247f19f70f6c7fecc04e30ade7fd80333c857b0a353968012dbb9909750",
+    "tools/verify_studio.py": "8ff8bbda217fb4d0192c7a0e39f36c8d8c738ec1eaf90c9c7cf78730f8dd9f5a"
+  },
+  "builds": {
+    "base": {
+      "compiler": "avr-gcc (GCC) 14.2.0",
+      "flags": "-mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude ",
+      "macros": {
+        "ENABLE_DHT11": "1",
+        "DIAG_LED7": "0",
+        "ENABLE_BUZZER": "0",
+        "ENABLE_RTC": "0",
+        "BUZZER_ACTIVE": "1",
+        "ENABLE_UART": "0",
+        "ENABLE_ADC": "1",
+        "ENABLE_LCD": "1",
+        "ENABLE_DIAGNOSTIC": "1",
+        "BH1750_ADDRESS": "0x23",
+        "ENABLE_BH1750": "0",
+        "ENABLE_EEPROM": "1",
+        "F_CPU": "8000000UL"
+      },
+      "size": {
+        "flash": 8690,
+        "static_sram": 194,
+        "eeprom": 48,
+        "stack_headroom": 830
+      },
+      "hex_sha256": "fbf0534d6f905fc4eb759f95043463017ab829b9c45afd1798f6214094489f7d",
+      "elf_sha256": "f568921ca162cabb9a46b8db72d5dbd3c797a1708de37b344b4ab51b3911d49b"
+    },
+    "uart": {
+      "compiler": "avr-gcc (GCC) 14.2.0",
+      "flags": "-mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1",
+      "macros": {
+        "ENABLE_DHT11": "1",
+        "DIAG_LED7": "0",
+        "ENABLE_BUZZER": "0",
+        "ENABLE_RTC": "0",
+        "BUZZER_ACTIVE": "1",
+        "ENABLE_UART": "1",
+        "ENABLE_ADC": "1",
+        "ENABLE_LCD": "1",
+        "ENABLE_DIAGNOSTIC": "1",
+        "BH1750_ADDRESS": "0x23",
+        "ENABLE_BH1750": "0",
+        "ENABLE_EEPROM": "1",
+        "F_CPU": "8000000UL"
+      },
+      "size": {
+        "flash": 12696,
+        "static_sram": 490,
+        "eeprom": 48,
+        "stack_headroom": 534
+      },
+      "hex_sha256": "2cef7a7a7431e5ce768677a1cb63225345b29f1f38224ec380c728e8f5daca7c",
+      "elf_sha256": "74fa93d99262fd616c3d2948133c02e3135749c7dfb8888b39b980b54f80835d"
+    },
+    "full": {
+      "compiler": "avr-gcc (GCC) 14.2.0",
+      "flags": "-mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -DENABLE_BUZZER=1 -DENABLE_RTC=1 -DENABLE_BH1750=1",
+      "macros": {
+        "ENABLE_DHT11": "1",
+        "DIAG_LED7": "0",
+        "ENABLE_BUZZER": "1",
+        "ENABLE_RTC": "1",
+        "BUZZER_ACTIVE": "1",
+        "ENABLE_UART": "1",
+        "ENABLE_ADC": "1",
+        "ENABLE_LCD": "1",
+        "ENABLE_DIAGNOSTIC": "1",
+        "BH1750_ADDRESS": "0x23",
+        "ENABLE_BH1750": "1",
+        "ENABLE_EEPROM": "1",
+        "F_CPU": "8000000UL"
+      },
+      "size": {
+        "flash": 15002,
+        "static_sram": 508,
+        "eeprom": 48,
+        "stack_headroom": 516
+      },
+      "hex_sha256": "235be8e1e2cc82a99ebb34eae43d9b2fa971de782b3474a08cc19bac4057cd9b",
+      "elf_sha256": "2df01601d5d4e62ecc54f1d32607cada6b62a52c6c5cbe79dd053aa9420c8ae6"
+    },
+    "rtc": {
+      "compiler": "avr-gcc (GCC) 14.2.0",
+      "flags": "-mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -DENABLE_RTC=1",
+      "macros": {
+        "ENABLE_DHT11": "1",
+        "DIAG_LED7": "0",
+        "ENABLE_BUZZER": "0",
+        "ENABLE_RTC": "1",
+        "BUZZER_ACTIVE": "1",
+        "ENABLE_UART": "1",
+        "ENABLE_ADC": "1",
+        "ENABLE_LCD": "1",
+        "ENABLE_DIAGNOSTIC": "1",
+        "BH1750_ADDRESS": "0x23",
+        "ENABLE_BH1750": "0",
+        "ENABLE_EEPROM": "1",
+        "F_CPU": "8000000UL"
+      },
+      "size": {
+        "flash": 14520,
+        "static_sram": 508,
+        "eeprom": 48,
+        "stack_headroom": 516
+      },
+      "hex_sha256": "f27170471fecce9d29afec67a7b9bd8b221c284d0c2e6c7868d9943b6f9bcb2f",
+      "elf_sha256": "b2c9034739bed34e5814f1a3e2ff8e547d01006e2040a586a4cd0ca80375a06a"
+    },
+    "light": {
+      "compiler": "avr-gcc (GCC) 14.2.0",
+      "flags": "-mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -DENABLE_BH1750=1",
+      "macros": {
+        "ENABLE_DHT11": "1",
+        "DIAG_LED7": "0",
+        "ENABLE_BUZZER": "0",
+        "ENABLE_RTC": "0",
+        "BUZZER_ACTIVE": "1",
+        "ENABLE_UART": "1",
+        "ENABLE_ADC": "1",
+        "ENABLE_LCD": "1",
+        "ENABLE_DIAGNOSTIC": "1",
+        "BH1750_ADDRESS": "0x23",
+        "ENABLE_BH1750": "1",
+        "ENABLE_EEPROM": "1",
+        "F_CPU": "8000000UL"
+      },
+      "size": {
+        "flash": 13592,
+        "static_sram": 490,
+        "eeprom": 48,
+        "stack_headroom": 534
+      },
+      "hex_sha256": "30209353373194158c175f8fd74fe4fdd2db20c9f985b34e351563a4e914b10c",
+      "elf_sha256": "16d0bf10bc7a4432aaae2f5f978103ce7662bd8e1a53c5193396f620a0f89c94"
+    },
+    "passive": {
+      "compiler": "avr-gcc (GCC) 14.2.0",
+      "flags": "-mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -DENABLE_BUZZER=1 -DENABLE_RTC=1 -DENABLE_BH1750=1 -DBUZZER_ACTIVE=0",
+      "macros": {
+        "ENABLE_DHT11": "1",
+        "DIAG_LED7": "0",
+        "ENABLE_BUZZER": "1",
+        "ENABLE_RTC": "1",
+        "BUZZER_ACTIVE": "0",
+        "ENABLE_UART": "1",
+        "ENABLE_ADC": "1",
+        "ENABLE_LCD": "1",
+        "ENABLE_DIAGNOSTIC": "1",
+        "BH1750_ADDRESS": "0x23",
+        "ENABLE_BH1750": "1",
+        "ENABLE_EEPROM": "1",
+        "F_CPU": "8000000UL"
+      },
+      "size": {
+        "flash": 15052,
+        "static_sram": 508,
+        "eeprom": 48,
+        "stack_headroom": 516
+      },
+      "hex_sha256": "f4b9e6c76325b245cbb327890b7c526420ca85696cc99feddad54cc5fbbcdc93",
+      "elf_sha256": "46f1502cbb2e2242676adf7d7e75164e8b6ccd939d3bff62e39b869185da9967"
+    },
+    "diagnostic": {
+      "compiler": "avr-gcc (GCC) 14.2.0",
+      "flags": "-mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -DENABLE_LCD=0 -DENABLE_BUZZER=0 -DENABLE_RTC=0 -DENABLE_BH1750=0 -DDIAG_LED7=1",
+      "macros": {
+        "ENABLE_DHT11": "1",
+        "DIAG_LED7": "1",
+        "ENABLE_BUZZER": "0",
+        "ENABLE_RTC": "0",
+        "BUZZER_ACTIVE": "1",
+        "ENABLE_UART": "1",
+        "ENABLE_ADC": "1",
+        "ENABLE_LCD": "0",
+        "ENABLE_DIAGNOSTIC": "1",
+        "BH1750_ADDRESS": "0x23",
+        "ENABLE_BH1750": "0",
+        "ENABLE_EEPROM": "1",
+        "F_CPU": "8000000UL"
+      },
+      "size": {
+        "flash": 8920,
+        "static_sram": 448,
+        "eeprom": 48,
+        "stack_headroom": 576
+      },
+      "hex_sha256": "fd6ffd1f892f935c40ddeb1318c557deda08e64f0a5f73bdc9352ae320d36207",
+      "elf_sha256": "acc9e190062bd3e401e5c5327bf67624cdfaa68568e531990c8819a0d2e1cb55"
+    },
+    "minimal": {
+      "compiler": "avr-gcc (GCC) 14.2.0",
+      "flags": "-mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_LCD=0 -DENABLE_UART=0 -DENABLE_EEPROM=0 -DENABLE_ADC=0 -DENABLE_DIAGNOSTIC=0",
+      "macros": {
+        "ENABLE_DHT11": "1",
+        "DIAG_LED7": "0",
+        "ENABLE_BUZZER": "0",
+        "ENABLE_RTC": "0",
+        "BUZZER_ACTIVE": "1",
+        "ENABLE_UART": "0",
+        "ENABLE_ADC": "0",
+        "ENABLE_LCD": "0",
+        "ENABLE_DIAGNOSTIC": "0",
+        "BH1750_ADDRESS": "0x23",
+        "ENABLE_BH1750": "0",
+        "ENABLE_EEPROM": "0",
+        "F_CPU": "8000000UL"
+      },
+      "size": {
+        "flash": 3242,
+        "static_sram": 143,
+        "eeprom": 0,
+        "stack_headroom": 881
+      },
+      "hex_sha256": "e841e3ac1cb94a355a91d5f2d540763a831e92c4cfe4d0f0018fa1355bb0ccd2",
+      "elf_sha256": "b6c3d1e832a6e4f132fb060d6d4c0a57157d8f70b921e58401b78b9eb2ac9bd9"
+    },
+    "legacy-base": {
+      "compiler": "avr-gcc (GCC) 5.4.0",
+      "flags": "-mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude ",
+      "macros": {
+        "ENABLE_DHT11": "1",
+        "DIAG_LED7": "0",
+        "ENABLE_BUZZER": "0",
+        "ENABLE_RTC": "0",
+        "ENABLE_UART": "0",
+        "ENABLE_ADC": "1",
+        "ENABLE_LCD": "1",
+        "ENABLE_DIAGNOSTIC": "1",
+        "BH1750_ADDRESS": "0x23",
+        "ENABLE_BH1750": "0",
+        "ENABLE_EEPROM": "1",
+        "BUZZER_ACTIVE": "1",
+        "F_CPU": "8000000UL"
+      },
+      "size": {
+        "flash": 8638,
+        "static_sram": 194,
+        "eeprom": 48,
+        "stack_headroom": 830
+      },
+      "hex_sha256": "c341f7e098281e024afee0598543327df09dc2fcb7ece02eba20fb851059dc92",
+      "elf_sha256": "f271a526664649524e5d24cf3e8ec69cb4135cc3351f959b93af7831989ac5dc"
+    },
+    "legacy-uart": {
+      "compiler": "avr-gcc (GCC) 5.4.0",
+      "flags": "-mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1",
+      "macros": {
+        "ENABLE_DHT11": "1",
+        "DIAG_LED7": "0",
+        "ENABLE_BUZZER": "0",
+        "ENABLE_RTC": "0",
+        "ENABLE_UART": "1",
+        "ENABLE_ADC": "1",
+        "ENABLE_LCD": "1",
+        "ENABLE_DIAGNOSTIC": "1",
+        "BH1750_ADDRESS": "0x23",
+        "ENABLE_BH1750": "0",
+        "ENABLE_EEPROM": "1",
+        "BUZZER_ACTIVE": "1",
+        "F_CPU": "8000000UL"
+      },
+      "size": {
+        "flash": 12550,
+        "static_sram": 490,
+        "eeprom": 48,
+        "stack_headroom": 534
+      },
+      "hex_sha256": "29d87d04a11b54c590a806a6591c966cdba0b1fc7469af07b592e2080d1e31bc",
+      "elf_sha256": "5f2e626804153fa3e017bb20cb7ff47fc91833e90e5041ab0a10822e084593f7"
+    },
+    "legacy-full": {
+      "compiler": "avr-gcc (GCC) 5.4.0",
+      "flags": "-mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -DENABLE_BUZZER=1 -DENABLE_RTC=1 -DENABLE_BH1750=1",
+      "macros": {
+        "ENABLE_DHT11": "1",
+        "DIAG_LED7": "0",
+        "ENABLE_BUZZER": "1",
+        "ENABLE_RTC": "1",
+        "ENABLE_UART": "1",
+        "ENABLE_ADC": "1",
+        "ENABLE_LCD": "1",
+        "ENABLE_DIAGNOSTIC": "1",
+        "BH1750_ADDRESS": "0x23",
+        "ENABLE_BH1750": "1",
+        "ENABLE_EEPROM": "1",
+        "BUZZER_ACTIVE": "1",
+        "F_CPU": "8000000UL"
+      },
+      "size": {
+        "flash": 14864,
+        "static_sram": 508,
+        "eeprom": 48,
+        "stack_headroom": 516
+      },
+      "hex_sha256": "52424399acbc58ed7a01351c47662afa3bacf5be7af7597da018b435cf298678",
+      "elf_sha256": "2862d20c41aea14e193d42f7b17d9743513f221d641667b7ea7b1673136e8fa9"
+    },
+    "legacy-rtc": {
+      "compiler": "avr-gcc (GCC) 5.4.0",
+      "flags": "-mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -DENABLE_RTC=1",
+      "macros": {
+        "ENABLE_DHT11": "1",
+        "DIAG_LED7": "0",
+        "ENABLE_BUZZER": "0",
+        "ENABLE_RTC": "1",
+        "ENABLE_UART": "1",
+        "ENABLE_ADC": "1",
+        "ENABLE_LCD": "1",
+        "ENABLE_DIAGNOSTIC": "1",
+        "BH1750_ADDRESS": "0x23",
+        "ENABLE_BH1750": "0",
+        "ENABLE_EEPROM": "1",
+        "BUZZER_ACTIVE": "1",
+        "F_CPU": "8000000UL"
+      },
+      "size": {
+        "flash": 14342,
+        "static_sram": 508,
+        "eeprom": 48,
+        "stack_headroom": 516
+      },
+      "hex_sha256": "d7f9c031de7fb846a1172d60e7b2a22bb1885c4e3489465c4215b264d12e6d82",
+      "elf_sha256": "e82e839d808bd1ace80805283e3eab7dd7762d67df625ee496e78826b53fc822"
+    },
+    "legacy-light": {
+      "compiler": "avr-gcc (GCC) 5.4.0",
+      "flags": "-mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -DENABLE_BH1750=1",
+      "macros": {
+        "ENABLE_DHT11": "1",
+        "DIAG_LED7": "0",
+        "ENABLE_BUZZER": "0",
+        "ENABLE_RTC": "0",
+        "ENABLE_UART": "1",
+        "ENABLE_ADC": "1",
+        "ENABLE_LCD": "1",
+        "ENABLE_DIAGNOSTIC": "1",
+        "BH1750_ADDRESS": "0x23",
+        "ENABLE_BH1750": "1",
+        "ENABLE_EEPROM": "1",
+        "BUZZER_ACTIVE": "1",
+        "F_CPU": "8000000UL"
+      },
+      "size": {
+        "flash": 13418,
+        "static_sram": 490,
+        "eeprom": 48,
+        "stack_headroom": 534
+      },
+      "hex_sha256": "42d8f605aa7a300262392ebcc64a2b677e7f1e6784e9e4b5d8a7d6a199514ee4",
+      "elf_sha256": "338e08e41e4bdd55dcbea91590ac987420934e860ea6a6ee43e294c725ac97af"
+    },
+    "legacy-passive": {
+      "compiler": "avr-gcc (GCC) 5.4.0",
+      "flags": "-mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -DENABLE_BUZZER=1 -DENABLE_RTC=1 -DENABLE_BH1750=1 -DBUZZER_ACTIVE=0",
+      "macros": {
+        "ENABLE_DHT11": "1",
+        "DIAG_LED7": "0",
+        "ENABLE_BUZZER": "1",
+        "ENABLE_RTC": "1",
+        "ENABLE_UART": "1",
+        "ENABLE_ADC": "1",
+        "ENABLE_LCD": "1",
+        "ENABLE_DIAGNOSTIC": "1",
+        "BH1750_ADDRESS": "0x23",
+        "ENABLE_BH1750": "1",
+        "ENABLE_EEPROM": "1",
+        "BUZZER_ACTIVE": "0",
+        "F_CPU": "8000000UL"
+      },
+      "size": {
+        "flash": 14924,
+        "static_sram": 508,
+        "eeprom": 48,
+        "stack_headroom": 516
+      },
+      "hex_sha256": "5b661532d85189578e8ff2c2008ae8aed89718e59691eee99ff9ef1888815d65",
+      "elf_sha256": "1b22379860d64b365d05d42b82dd3d1b8bb38bfd0da9c29d91d0014b396c717d"
+    },
+    "legacy-diagnostic": {
+      "compiler": "avr-gcc (GCC) 5.4.0",
+      "flags": "-mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -DENABLE_LCD=0 -DENABLE_BUZZER=0 -DENABLE_RTC=0 -DENABLE_BH1750=0 -DDIAG_LED7=1",
+      "macros": {
+        "ENABLE_DHT11": "1",
+        "DIAG_LED7": "1",
+        "ENABLE_BUZZER": "0",
+        "ENABLE_RTC": "0",
+        "ENABLE_UART": "1",
+        "ENABLE_ADC": "1",
+        "ENABLE_LCD": "0",
+        "ENABLE_DIAGNOSTIC": "1",
+        "BH1750_ADDRESS": "0x23",
+        "ENABLE_BH1750": "0",
+        "ENABLE_EEPROM": "1",
+        "BUZZER_ACTIVE": "1",
+        "F_CPU": "8000000UL"
+      },
+      "size": {
+        "flash": 8794,
+        "static_sram": 448,
+        "eeprom": 48,
+        "stack_headroom": 576
+      },
+      "hex_sha256": "eef1c38ed4c77fdd5f93c222abcb739fb5055bf353681adf3c677521ad08c019",
+      "elf_sha256": "655424f8ed676b0cdc4d92de4553fcfe92e1c714061a2036ba424c7020d42354"
+    },
+    "legacy-minimal": {
+      "compiler": "avr-gcc (GCC) 5.4.0",
+      "flags": "-mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_LCD=0 -DENABLE_UART=0 -DENABLE_EEPROM=0 -DENABLE_ADC=0 -DENABLE_DIAGNOSTIC=0",
+      "macros": {
+        "ENABLE_DHT11": "1",
+        "DIAG_LED7": "0",
+        "ENABLE_BUZZER": "0",
+        "ENABLE_RTC": "0",
+        "ENABLE_UART": "0",
+        "ENABLE_ADC": "0",
+        "ENABLE_LCD": "0",
+        "ENABLE_DIAGNOSTIC": "0",
+        "BH1750_ADDRESS": "0x23",
+        "ENABLE_BH1750": "0",
+        "ENABLE_EEPROM": "0",
+        "BUZZER_ACTIVE": "1",
+        "F_CPU": "8000000UL"
+      },
+      "size": {
+        "flash": 3222,
+        "static_sram": 143,
+        "eeprom": 0,
+        "stack_headroom": 881
+      },
+      "hex_sha256": "d23f6dd8091e870004a9fc8032c5a7ac8bbe9104cd7f554d75ce76136ed5e585",
+      "elf_sha256": "efff520cb4c314328138a3b721f9466bd554b03972d10697644405676c9195ad"
+    }
+  }
+}

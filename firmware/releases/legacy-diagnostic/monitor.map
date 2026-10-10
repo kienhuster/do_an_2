@@ -409,7 +409,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x0000000000000000     0x2206
+.text           0x0000000000000000     0x221c
  *(.vectors)
  .vectors       0x0000000000000000       0x54 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/crtatmega16.o
                 0x0000000000000000                __vectors
@@ -427,7 +427,7 @@ END GROUP
  *libprintf_flt.a:*(.progmem.data)
  *libc.a:*(.progmem.data)
  *(.progmem*)
- .progmem.data.digits.2159
+ .progmem.data.digits.2169
                 0x0000000000000074        0xa build/legacy-diagnostic/board.o
  .progmem.data.__c.2373
                 0x000000000000007e        0x3 build/legacy-diagnostic/command.o
@@ -613,192 +613,192 @@ END GROUP
                 0x00000000000005ae       0x5a build/legacy-diagnostic/board.o
                 0x00000000000005ae                adc_read
  .text.diagnostic_tick
-                0x0000000000000608       0xb0 build/legacy-diagnostic/board.o
+                0x0000000000000608       0xbe build/legacy-diagnostic/board.o
                 0x0000000000000608                diagnostic_tick
  .text.signed_trend
-                0x00000000000006b8       0x2c build/legacy-diagnostic/command.o
- .text.comma    0x00000000000006e4        0x6 build/legacy-diagnostic/command.o
- .text.two      0x00000000000006ea       0x1a build/legacy-diagnostic/command.o
+                0x00000000000006c6       0x2c build/legacy-diagnostic/command.o
+ .text.comma    0x00000000000006f2        0x6 build/legacy-diagnostic/command.o
+ .text.two      0x00000000000006f8       0x1a build/legacy-diagnostic/command.o
  .text.csv_header
-                0x0000000000000704        0x8 build/legacy-diagnostic/command.o
-                0x0000000000000704                csv_header
+                0x0000000000000712        0x8 build/legacy-diagnostic/command.o
+                0x0000000000000712                csv_header
  .text.csv_send
-                0x000000000000070c      0x164 build/legacy-diagnostic/command.o
-                0x000000000000070c                csv_send
+                0x000000000000071a      0x164 build/legacy-diagnostic/command.o
+                0x000000000000071a                csv_send
  .text.command_poll
-                0x0000000000000870      0x4f0 build/legacy-diagnostic/command.o
-                0x0000000000000870                command_poll
+                0x000000000000087e      0x4f0 build/legacy-diagnostic/command.o
+                0x000000000000087e                command_poll
  .text.settings_defaults
-                0x0000000000000d60       0x12 build/legacy-diagnostic/core.o
-                0x0000000000000d60                settings_defaults
+                0x0000000000000d6e       0x12 build/legacy-diagnostic/core.o
+                0x0000000000000d6e                settings_defaults
  .text.settings_valid
-                0x0000000000000d72       0x92 build/legacy-diagnostic/core.o
-                0x0000000000000d72                settings_valid
+                0x0000000000000d80       0x92 build/legacy-diagnostic/core.o
+                0x0000000000000d80                settings_valid
  .text.settings_set
-                0x0000000000000e04      0x132 build/legacy-diagnostic/core.o
-                0x0000000000000e04                settings_set
+                0x0000000000000e12      0x132 build/legacy-diagnostic/core.o
+                0x0000000000000e12                settings_set
  .text.stats_reset
-                0x0000000000000f36        0xc build/legacy-diagnostic/core.o
-                0x0000000000000f36                stats_reset
+                0x0000000000000f44        0xc build/legacy-diagnostic/core.o
+                0x0000000000000f44                stats_reset
  .text.stats_add
-                0x0000000000000f42       0xec build/legacy-diagnostic/core.o
-                0x0000000000000f42                stats_add
+                0x0000000000000f50       0xec build/legacy-diagnostic/core.o
+                0x0000000000000f50                stats_add
  .text.stats_trend
-                0x000000000000102e       0x82 build/legacy-diagnostic/core.o
-                0x000000000000102e                stats_trend
+                0x000000000000103c       0x82 build/legacy-diagnostic/core.o
+                0x000000000000103c                stats_trend
  .text.alarm_update
-                0x00000000000010b0       0xa8 build/legacy-diagnostic/core.o
-                0x00000000000010b0                alarm_update
+                0x00000000000010be       0xa8 build/legacy-diagnostic/core.o
+                0x00000000000010be                alarm_update
  .text.alarm_ack
-                0x0000000000001158        0x8 build/legacy-diagnostic/core.o
-                0x0000000000001158                alarm_ack
- .text.crc16    0x0000000000001160       0x30 build/legacy-diagnostic/core.o
-                0x0000000000001160                crc16
+                0x0000000000001166        0x8 build/legacy-diagnostic/core.o
+                0x0000000000001166                alarm_ack
+ .text.crc16    0x000000000000116e       0x30 build/legacy-diagnostic/core.o
+                0x000000000000116e                crc16
  .text.sequence_newer
-                0x0000000000001190       0x1e build/legacy-diagnostic/core.o
-                0x0000000000001190                sequence_newer
+                0x000000000000119e       0x1e build/legacy-diagnostic/core.o
+                0x000000000000119e                sequence_newer
  .text.record_pack
-                0x00000000000011ae       0x6e build/legacy-diagnostic/core.o
-                0x00000000000011ae                record_pack
+                0x00000000000011bc       0x6e build/legacy-diagnostic/core.o
+                0x00000000000011bc                record_pack
  .text.record_unpack
-                0x000000000000121c      0x112 build/legacy-diagnostic/core.o
-                0x000000000000121c                record_unpack
+                0x000000000000122a      0x112 build/legacy-diagnostic/core.o
+                0x000000000000122a                record_unpack
  .text.dht_decode
-                0x000000000000132e       0x5e build/legacy-diagnostic/core.o
-                0x000000000000132e                dht_decode
- .text.due      0x000000000000138c       0x22 build/legacy-diagnostic/core.o
-                0x000000000000138c                due
+                0x000000000000133c       0x5e build/legacy-diagnostic/core.o
+                0x000000000000133c                dht_decode
+ .text.due      0x000000000000139a       0x22 build/legacy-diagnostic/core.o
+                0x000000000000139a                due
  .text.parse_i16
-                0x00000000000013ae       0xc0 build/legacy-diagnostic/core.o
-                0x00000000000013ae                parse_i16
+                0x00000000000013bc       0xc0 build/legacy-diagnostic/core.o
+                0x00000000000013bc                parse_i16
  .text.level.constprop.0
-                0x000000000000146e       0x2a build/legacy-diagnostic/dht.o
+                0x000000000000147c       0x2a build/legacy-diagnostic/dht.o
  .text.dht_init
-                0x0000000000001498        0x6 build/legacy-diagnostic/dht.o
-                0x0000000000001498                dht_init
+                0x00000000000014a6        0x6 build/legacy-diagnostic/dht.o
+                0x00000000000014a6                dht_init
  .text.dht_start
-                0x000000000000149e        0x6 build/legacy-diagnostic/dht.o
-                0x000000000000149e                dht_start
+                0x00000000000014ac        0x6 build/legacy-diagnostic/dht.o
+                0x00000000000014ac                dht_start
  .text.dht_finish
-                0x00000000000014a4       0xdc build/legacy-diagnostic/dht.o
-                0x00000000000014a4                dht_finish
+                0x00000000000014b2       0xdc build/legacy-diagnostic/dht.o
+                0x00000000000014b2                dht_finish
  .text.i2c_init
-                0x0000000000001580        0x2 build/legacy-diagnostic/i2c.o
-                0x0000000000001580                i2c_init
+                0x000000000000158e        0x2 build/legacy-diagnostic/i2c.o
+                0x000000000000158e                i2c_init
  .text.lcd_init
-                0x0000000000001582        0x2 build/legacy-diagnostic/lcd.o
-                0x0000000000001582                lcd_init
- .text.app_ack  0x0000000000001584       0x12 build/legacy-diagnostic/main.o
-                0x0000000000001584                app_ack
+                0x0000000000001590        0x2 build/legacy-diagnostic/lcd.o
+                0x0000000000001590                lcd_init
+ .text.app_ack  0x0000000000001592       0x12 build/legacy-diagnostic/main.o
+                0x0000000000001592                app_ack
  .text.app_save
-                0x0000000000001596       0x1c build/legacy-diagnostic/main.o
-                0x0000000000001596                app_save
+                0x00000000000015a4       0x1c build/legacy-diagnostic/main.o
+                0x00000000000015a4                app_save
  .text.app_load
-                0x00000000000015b2       0x2c build/legacy-diagnostic/main.o
-                0x00000000000015b2                app_load
+                0x00000000000015c0       0x2c build/legacy-diagnostic/main.o
+                0x00000000000015c0                app_load
  .text.startup.main
-                0x00000000000015de      0x3b0 build/legacy-diagnostic/main.o
-                0x00000000000015de                main
- .text.nv_load  0x000000000000198e       0xd6 build/legacy-diagnostic/storage.o
-                0x000000000000198e                nv_load
- .text.nv_save  0x0000000000001a64      0x16a build/legacy-diagnostic/storage.o
-                0x0000000000001a64                nv_save
- .text.receive  0x0000000000001bce       0x36 build/legacy-diagnostic/uart.o
+                0x00000000000015ec      0x3b0 build/legacy-diagnostic/main.o
+                0x00000000000015ec                main
+ .text.nv_load  0x000000000000199c       0xd6 build/legacy-diagnostic/storage.o
+                0x000000000000199c                nv_load
+ .text.nv_save  0x0000000000001a72      0x16a build/legacy-diagnostic/storage.o
+                0x0000000000001a72                nv_save
+ .text.receive  0x0000000000001bdc       0x36 build/legacy-diagnostic/uart.o
  .text.__vector_11
-                0x0000000000001c04       0x48 build/legacy-diagnostic/uart.o
-                0x0000000000001c04                __vector_11
+                0x0000000000001c12       0x48 build/legacy-diagnostic/uart.o
+                0x0000000000001c12                __vector_11
  .text.__vector_12
-                0x0000000000001c4c       0x4e build/legacy-diagnostic/uart.o
-                0x0000000000001c4c                __vector_12
+                0x0000000000001c5a       0x4e build/legacy-diagnostic/uart.o
+                0x0000000000001c5a                __vector_12
  .text.uart_init
-                0x0000000000001c9a       0x12 build/legacy-diagnostic/uart.o
-                0x0000000000001c9a                uart_init
+                0x0000000000001ca8       0x1a build/legacy-diagnostic/uart.o
+                0x0000000000001ca8                uart_init
  .text.uart_rx_poll
-                0x0000000000001cac        0x8 build/legacy-diagnostic/uart.o
-                0x0000000000001cac                uart_rx_poll
+                0x0000000000001cc2        0x8 build/legacy-diagnostic/uart.o
+                0x0000000000001cc2                uart_rx_poll
  .text.uart_get
-                0x0000000000001cb4       0x30 build/legacy-diagnostic/uart.o
-                0x0000000000001cb4                uart_get
+                0x0000000000001cca       0x30 build/legacy-diagnostic/uart.o
+                0x0000000000001cca                uart_get
  .text.uart_put
-                0x0000000000001ce4       0x72 build/legacy-diagnostic/uart.o
-                0x0000000000001ce4                uart_put
+                0x0000000000001cfa       0x72 build/legacy-diagnostic/uart.o
+                0x0000000000001cfa                uart_put
  .text.uart_text_P
-                0x0000000000001d56       0x1e build/legacy-diagnostic/uart.o
-                0x0000000000001d56                uart_text_P
+                0x0000000000001d6c       0x1e build/legacy-diagnostic/uart.o
+                0x0000000000001d6c                uart_text_P
  .text.uart_uint
-                0x0000000000001d74       0x98 build/legacy-diagnostic/uart.o
-                0x0000000000001d74                uart_uint
+                0x0000000000001d8a       0x98 build/legacy-diagnostic/uart.o
+                0x0000000000001d8a                uart_uint
  .text.uart_fixed
-                0x0000000000001e0c       0x24 build/legacy-diagnostic/uart.o
-                0x0000000000001e0c                uart_fixed
+                0x0000000000001e22       0x24 build/legacy-diagnostic/uart.o
+                0x0000000000001e22                uart_fixed
  .text.uart_errors
-                0x0000000000001e30        0x6 build/legacy-diagnostic/uart.o
-                0x0000000000001e30                uart_errors
+                0x0000000000001e46        0x6 build/legacy-diagnostic/uart.o
+                0x0000000000001e46                uart_errors
  .text.uart_clear_errors
-                0x0000000000001e36        0xc build/legacy-diagnostic/uart.o
-                0x0000000000001e36                uart_clear_errors
+                0x0000000000001e4c        0xc build/legacy-diagnostic/uart.o
+                0x0000000000001e4c                uart_clear_errors
  .text.uart_take_rx_fault
-                0x0000000000001e42       0x18 build/legacy-diagnostic/uart.o
-                0x0000000000001e42                uart_take_rx_fault
+                0x0000000000001e58       0x18 build/legacy-diagnostic/uart.o
+                0x0000000000001e58                uart_take_rx_fault
  .text.menu_adjust
-                0x0000000000001e5a      0x130 build/legacy-diagnostic/ui.o
+                0x0000000000001e70      0x130 build/legacy-diagnostic/ui.o
  .text.ui_cancel
-                0x0000000000001f8a        0x6 build/legacy-diagnostic/ui.o
-                0x0000000000001f8a                ui_cancel
- .text.ui_keys  0x0000000000001f90       0xd2 build/legacy-diagnostic/ui.o
-                0x0000000000001f90                ui_keys
+                0x0000000000001fa0        0x6 build/legacy-diagnostic/ui.o
+                0x0000000000001fa0                ui_cancel
+ .text.ui_keys  0x0000000000001fa6       0xd2 build/legacy-diagnostic/ui.o
+                0x0000000000001fa6                ui_keys
  .text.ui_render
-                0x0000000000002062        0x2 build/legacy-diagnostic/ui.o
-                0x0000000000002062                ui_render
+                0x0000000000002078        0x2 build/legacy-diagnostic/ui.o
+                0x0000000000002078                ui_render
  .text.libgcc.div
-                0x0000000000002064       0x18 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodqi4.o)
-                0x0000000000002064                __udivmodqi4
+                0x000000000000207a       0x18 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodqi4.o)
+                0x000000000000207a                __udivmodqi4
  .text.libgcc.div
-                0x000000000000207c       0x28 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodhi4.o)
-                0x000000000000207c                __udivmodhi4
+                0x0000000000002092       0x28 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodhi4.o)
+                0x0000000000002092                __udivmodhi4
  .text.libgcc.div
-                0x00000000000020a4       0x28 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_divmodhi4.o)
-                0x00000000000020a4                __divmodhi4
-                0x00000000000020a4                _div
+                0x00000000000020ba       0x28 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_divmodhi4.o)
+                0x00000000000020ba                __divmodhi4
+                0x00000000000020ba                _div
  .text.libgcc.div
-                0x00000000000020cc       0x44 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodsi4.o)
-                0x00000000000020cc                __udivmodsi4
- .text.libgcc   0x0000000000002110        0xc /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_tablejump2.o)
-                0x0000000000002110                __tablejump2__
+                0x00000000000020e2       0x44 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodsi4.o)
+                0x00000000000020e2                __udivmodsi4
+ .text.libgcc   0x0000000000002126        0xc /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_tablejump2.o)
+                0x0000000000002126                __tablejump2__
  .text.libgcc.mul
-                0x000000000000211c       0x1e /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_umulhisi3.o)
-                0x000000000000211c                __umulhisi3
+                0x0000000000002132       0x1e /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_umulhisi3.o)
+                0x0000000000002132                __umulhisi3
  .text.libgcc.mul
-                0x000000000000213a       0x16 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_muluhisi3.o)
-                0x000000000000213a                __muluhisi3
+                0x0000000000002150       0x16 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_muluhisi3.o)
+                0x0000000000002150                __muluhisi3
  .text.avr-libc
-                0x0000000000002150       0x12 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(strcmp_P.o)
-                0x0000000000002150                strcmp_P
+                0x0000000000002166       0x12 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(strcmp_P.o)
+                0x0000000000002166                strcmp_P
  .text.avr-libc
-                0x0000000000002162       0x1c /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(strncmp_P.o)
-                0x0000000000002162                strncmp_P
+                0x0000000000002178       0x1c /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(strncmp_P.o)
+                0x0000000000002178                strncmp_P
  .text.avr-libc
-                0x000000000000217e       0x1a /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(memcmp.o)
-                0x000000000000217e                memcmp
+                0x0000000000002194       0x1a /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(memcmp.o)
+                0x0000000000002194                memcmp
  .text.avr-libc
-                0x0000000000002198       0x16 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(strchr.o)
-                0x0000000000002198                strchr
+                0x00000000000021ae       0x16 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(strchr.o)
+                0x00000000000021ae                strchr
  .text.avr-libc
-                0x00000000000021ae       0x12 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(strcmp.o)
-                0x00000000000021ae                strcmp
+                0x00000000000021c4       0x12 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(strcmp.o)
+                0x00000000000021c4                strcmp
  .text.avr-libc
-                0x00000000000021c0       0x20 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libatmega16.a(eerd_block.o)
-                0x00000000000021c0                eeprom_read_block
-                0x00000000000021c4                eeprom_read_blraw
+                0x00000000000021d6       0x20 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libatmega16.a(eerd_block.o)
+                0x00000000000021d6                eeprom_read_block
+                0x00000000000021da                eeprom_read_blraw
  .text.avr-libc
-                0x00000000000021e0       0x22 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libatmega16.a(eeupd_byte.o)
-                0x00000000000021e0                eeprom_update_byte
-                0x00000000000021e2                eeprom_update_r18
-                0x0000000000002202                . = ALIGN (0x2)
+                0x00000000000021f6       0x22 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libatmega16.a(eeupd_byte.o)
+                0x00000000000021f6                eeprom_update_byte
+                0x00000000000021f8                eeprom_update_r18
+                0x0000000000002218                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x0000000000002202        0x0 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_exit.o)
-                0x0000000000002202                exit
-                0x0000000000002202                _exit
+ .fini9         0x0000000000002218        0x0 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_exit.o)
+                0x0000000000002218                exit
+                0x0000000000002218                _exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -817,11 +817,11 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x0000000000002202        0x4 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_exit.o)
+ .fini0         0x0000000000002218        0x4 /workspace/.avr/legacy/root/usr/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_exit.o)
  *(.fini0)
-                0x0000000000002206                _etext = .
+                0x000000000000221c                _etext = .
 
-.data           0x0000000000800060       0x3e load address 0x0000000000002206
+.data           0x0000000000800060       0x3e load address 0x000000000000221c
                 0x0000000000800060                PROVIDE (__data_start, .)
  *(.data)
  *(.data*)
@@ -876,8 +876,8 @@ END GROUP
  COMMON         0x00000000008001ba       0x65 build/legacy-diagnostic/main.o
                 0x00000000008001ba                app
                 0x000000000080021f                PROVIDE (__bss_end, .)
-                0x0000000000002206                __data_load_start = LOADADDR (.data)
-                0x0000000000002244                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x000000000000221c                __data_load_start = LOADADDR (.data)
+                0x000000000000225a                __data_load_end = (__data_load_start + SIZEOF (.data))
 
 .noinit         0x000000000080021f        0x1
                 [!provide]                        PROVIDE (__noinit_start, .)
@@ -908,28 +908,28 @@ END GROUP
 .user_signatures
  *(.user_signatures*)
 
-.stab           0x0000000000000000     0x5e50
+.stab           0x0000000000000000     0x5f7c
  *(.stab)
- .stab          0x0000000000000000      0xd80 build/legacy-diagnostic/board.o
- .stab          0x0000000000000d80      0xd5c build/legacy-diagnostic/command.o
+ .stab          0x0000000000000000      0xe88 build/legacy-diagnostic/board.o
+ .stab          0x0000000000000e88      0xd5c build/legacy-diagnostic/command.o
                                         0xfa8 (size before relaxing)
- .stab          0x0000000000001adc     0x11b8 build/legacy-diagnostic/core.o
+ .stab          0x0000000000001be4     0x11b8 build/legacy-diagnostic/core.o
                                        0x17d0 (size before relaxing)
- .stab          0x0000000000002c94      0x63c build/legacy-diagnostic/dht.o
+ .stab          0x0000000000002d9c      0x63c build/legacy-diagnostic/dht.o
                                         0x888 (size before relaxing)
- .stab          0x00000000000032d0      0x33c build/legacy-diagnostic/i2c.o
+ .stab          0x00000000000033d8      0x33c build/legacy-diagnostic/i2c.o
                                         0x654 (size before relaxing)
- .stab          0x000000000000360c      0x330 build/legacy-diagnostic/lcd.o
+ .stab          0x0000000000003714      0x330 build/legacy-diagnostic/lcd.o
                                         0x5c4 (size before relaxing)
- .stab          0x000000000000393c      0x870 build/legacy-diagnostic/main.o
-                                        0xad4 (size before relaxing)
- .stab          0x00000000000041ac      0x378 build/legacy-diagnostic/reset.o
+ .stab          0x0000000000003a44      0x87c build/legacy-diagnostic/main.o
+                                        0xae0 (size before relaxing)
+ .stab          0x00000000000042c0      0x378 build/legacy-diagnostic/reset.o
                                         0x5c4 (size before relaxing)
- .stab          0x0000000000004524      0x618 build/legacy-diagnostic/storage.o
+ .stab          0x0000000000004638      0x618 build/legacy-diagnostic/storage.o
                                         0x864 (size before relaxing)
- .stab          0x0000000000004b3c      0xbe8 build/legacy-diagnostic/uart.o
-                                        0xe34 (size before relaxing)
- .stab          0x0000000000005724      0x72c build/legacy-diagnostic/ui.o
+ .stab          0x0000000000004c50      0xc00 build/legacy-diagnostic/uart.o
+                                        0xe4c (size before relaxing)
+ .stab          0x0000000000005850      0x72c build/legacy-diagnostic/ui.o
                                         0x9e4 (size before relaxing)
 
 .stabstr        0x0000000000000000     0x2355

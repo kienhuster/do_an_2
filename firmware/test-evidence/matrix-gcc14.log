@@ -1,0 +1,140 @@
+make: Entering directory '/workspace/do_an_2/firmware'
+make[1]: Entering directory '/workspace/do_an_2/firmware'
+python3 tools/check_size.py avr-size build/base/monitor.elf
+Flash 8690/16384 bytes; static SRAM 194/1024; EEPROM 48/512; stack headroom 830
+make[1]: Leaving directory '/workspace/do_an_2/firmware'
+make[1]: Entering directory '/workspace/do_an_2/firmware'
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -MMD -MP -c src/board.c -o build/uart/board.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -MMD -MP -c src/command.c -o build/uart/command.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -MMD -MP -c src/core.c -o build/uart/core.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -MMD -MP -c src/dht.c -o build/uart/dht.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -MMD -MP -c src/i2c.c -o build/uart/i2c.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -MMD -MP -c src/lcd.c -o build/uart/lcd.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -MMD -MP -c src/main.c -o build/uart/main.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -MMD -MP -c src/optional.c -o build/uart/optional.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -Iinclude -DENABLE_UART=1 -MMD -MP -c src/reset.c -o build/uart/reset.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -MMD -MP -c src/storage.c -o build/uart/storage.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -MMD -MP -c src/uart.c -o build/uart/uart.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -MMD -MP -c src/ui.c -o build/uart/ui.o
+avr-gcc -mmcu=atmega16 -Wl,--gc-sections,-Map,build/uart/monitor.map build/uart/board.o build/uart/command.o build/uart/core.o build/uart/dht.o build/uart/i2c.o build/uart/lcd.o build/uart/main.o build/uart/optional.o build/uart/reset.o build/uart/storage.o build/uart/uart.o build/uart/ui.o -o build/uart/monitor.elf
+avr-objcopy -O ihex -R .eeprom build/uart/monitor.elf build/uart/monitor.hex
+avr-objcopy -O ihex -j .eeprom --change-section-lma .eeprom=0 build/uart/monitor.elf build/uart/monitor.eep
+python3 tools/check_size.py avr-size build/uart/monitor.elf
+Flash 12696/16384 bytes; static SRAM 490/1024; EEPROM 48/512; stack headroom 534
+make[1]: Leaving directory '/workspace/do_an_2/firmware'
+make[1]: Entering directory '/workspace/do_an_2/firmware'
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -DENABLE_BUZZER=1 -DENABLE_RTC=1 -DENABLE_BH1750=1 -MMD -MP -c src/board.c -o build/full/board.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -DENABLE_BUZZER=1 -DENABLE_RTC=1 -DENABLE_BH1750=1 -MMD -MP -c src/command.c -o build/full/command.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -DENABLE_BUZZER=1 -DENABLE_RTC=1 -DENABLE_BH1750=1 -MMD -MP -c src/core.c -o build/full/core.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -DENABLE_BUZZER=1 -DENABLE_RTC=1 -DENABLE_BH1750=1 -MMD -MP -c src/dht.c -o build/full/dht.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -DENABLE_BUZZER=1 -DENABLE_RTC=1 -DENABLE_BH1750=1 -MMD -MP -c src/i2c.c -o build/full/i2c.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -DENABLE_BUZZER=1 -DENABLE_RTC=1 -DENABLE_BH1750=1 -MMD -MP -c src/lcd.c -o build/full/lcd.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -DENABLE_BUZZER=1 -DENABLE_RTC=1 -DENABLE_BH1750=1 -MMD -MP -c src/main.c -o build/full/main.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -DENABLE_BUZZER=1 -DENABLE_RTC=1 -DENABLE_BH1750=1 -MMD -MP -c src/optional.c -o build/full/optional.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -Iinclude -DENABLE_UART=1 -DENABLE_BUZZER=1 -DENABLE_RTC=1 -DENABLE_BH1750=1 -MMD -MP -c src/reset.c -o build/full/reset.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -DENABLE_BUZZER=1 -DENABLE_RTC=1 -DENABLE_BH1750=1 -MMD -MP -c src/storage.c -o build/full/storage.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -DENABLE_BUZZER=1 -DENABLE_RTC=1 -DENABLE_BH1750=1 -MMD -MP -c src/uart.c -o build/full/uart.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -DENABLE_BUZZER=1 -DENABLE_RTC=1 -DENABLE_BH1750=1 -MMD -MP -c src/ui.c -o build/full/ui.o
+avr-gcc -mmcu=atmega16 -Wl,--gc-sections,-Map,build/full/monitor.map build/full/board.o build/full/command.o build/full/core.o build/full/dht.o build/full/i2c.o build/full/lcd.o build/full/main.o build/full/optional.o build/full/reset.o build/full/storage.o build/full/uart.o build/full/ui.o -o build/full/monitor.elf
+avr-objcopy -O ihex -R .eeprom build/full/monitor.elf build/full/monitor.hex
+avr-objcopy -O ihex -j .eeprom --change-section-lma .eeprom=0 build/full/monitor.elf build/full/monitor.eep
+python3 tools/check_size.py avr-size build/full/monitor.elf
+Flash 15002/16384 bytes; static SRAM 508/1024; EEPROM 48/512; stack headroom 516
+make[1]: Leaving directory '/workspace/do_an_2/firmware'
+make[1]: Entering directory '/workspace/do_an_2/firmware'
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -DENABLE_RTC=1 -MMD -MP -c src/command.c -o build/rtc/command.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -DENABLE_RTC=1 -MMD -MP -c src/board.c -o build/rtc/board.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -DENABLE_RTC=1 -MMD -MP -c src/core.c -o build/rtc/core.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -DENABLE_RTC=1 -MMD -MP -c src/dht.c -o build/rtc/dht.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -DENABLE_RTC=1 -MMD -MP -c src/i2c.c -o build/rtc/i2c.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -DENABLE_RTC=1 -MMD -MP -c src/lcd.c -o build/rtc/lcd.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -DENABLE_RTC=1 -MMD -MP -c src/main.c -o build/rtc/main.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -DENABLE_RTC=1 -MMD -MP -c src/optional.c -o build/rtc/optional.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -Iinclude -DENABLE_UART=1 -DENABLE_RTC=1 -MMD -MP -c src/reset.c -o build/rtc/reset.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -DENABLE_RTC=1 -MMD -MP -c src/storage.c -o build/rtc/storage.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -DENABLE_RTC=1 -MMD -MP -c src/uart.c -o build/rtc/uart.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -DENABLE_RTC=1 -MMD -MP -c src/ui.c -o build/rtc/ui.o
+avr-gcc -mmcu=atmega16 -Wl,--gc-sections,-Map,build/rtc/monitor.map build/rtc/board.o build/rtc/command.o build/rtc/core.o build/rtc/dht.o build/rtc/i2c.o build/rtc/lcd.o build/rtc/main.o build/rtc/optional.o build/rtc/reset.o build/rtc/storage.o build/rtc/uart.o build/rtc/ui.o -o build/rtc/monitor.elf
+avr-objcopy -O ihex -R .eeprom build/rtc/monitor.elf build/rtc/monitor.hex
+avr-objcopy -O ihex -j .eeprom --change-section-lma .eeprom=0 build/rtc/monitor.elf build/rtc/monitor.eep
+python3 tools/check_size.py avr-size build/rtc/monitor.elf
+Flash 14520/16384 bytes; static SRAM 508/1024; EEPROM 48/512; stack headroom 516
+make[1]: Leaving directory '/workspace/do_an_2/firmware'
+make[1]: Entering directory '/workspace/do_an_2/firmware'
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -DENABLE_BH1750=1 -MMD -MP -c src/board.c -o build/light/board.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -DENABLE_BH1750=1 -MMD -MP -c src/command.c -o build/light/command.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -DENABLE_BH1750=1 -MMD -MP -c src/core.c -o build/light/core.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -DENABLE_BH1750=1 -MMD -MP -c src/dht.c -o build/light/dht.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -DENABLE_BH1750=1 -MMD -MP -c src/i2c.c -o build/light/i2c.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -DENABLE_BH1750=1 -MMD -MP -c src/lcd.c -o build/light/lcd.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -DENABLE_BH1750=1 -MMD -MP -c src/main.c -o build/light/main.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -DENABLE_BH1750=1 -MMD -MP -c src/optional.c -o build/light/optional.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -Iinclude -DENABLE_UART=1 -DENABLE_BH1750=1 -MMD -MP -c src/reset.c -o build/light/reset.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -DENABLE_BH1750=1 -MMD -MP -c src/storage.c -o build/light/storage.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -DENABLE_BH1750=1 -MMD -MP -c src/uart.c -o build/light/uart.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -DENABLE_BH1750=1 -MMD -MP -c src/ui.c -o build/light/ui.o
+avr-gcc -mmcu=atmega16 -Wl,--gc-sections,-Map,build/light/monitor.map build/light/board.o build/light/command.o build/light/core.o build/light/dht.o build/light/i2c.o build/light/lcd.o build/light/main.o build/light/optional.o build/light/reset.o build/light/storage.o build/light/uart.o build/light/ui.o -o build/light/monitor.elf
+avr-objcopy -O ihex -R .eeprom build/light/monitor.elf build/light/monitor.hex
+avr-objcopy -O ihex -j .eeprom --change-section-lma .eeprom=0 build/light/monitor.elf build/light/monitor.eep
+python3 tools/check_size.py avr-size build/light/monitor.elf
+Flash 13592/16384 bytes; static SRAM 490/1024; EEPROM 48/512; stack headroom 534
+make[1]: Leaving directory '/workspace/do_an_2/firmware'
+make[1]: Entering directory '/workspace/do_an_2/firmware'
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -DENABLE_BUZZER=1 -DENABLE_RTC=1 -DENABLE_BH1750=1 -DBUZZER_ACTIVE=0 -MMD -MP -c src/command.c -o build/passive/command.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -DENABLE_BUZZER=1 -DENABLE_RTC=1 -DENABLE_BH1750=1 -DBUZZER_ACTIVE=0 -MMD -MP -c src/board.c -o build/passive/board.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -DENABLE_BUZZER=1 -DENABLE_RTC=1 -DENABLE_BH1750=1 -DBUZZER_ACTIVE=0 -MMD -MP -c src/core.c -o build/passive/core.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -DENABLE_BUZZER=1 -DENABLE_RTC=1 -DENABLE_BH1750=1 -DBUZZER_ACTIVE=0 -MMD -MP -c src/dht.c -o build/passive/dht.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -DENABLE_BUZZER=1 -DENABLE_RTC=1 -DENABLE_BH1750=1 -DBUZZER_ACTIVE=0 -MMD -MP -c src/i2c.c -o build/passive/i2c.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -DENABLE_BUZZER=1 -DENABLE_RTC=1 -DENABLE_BH1750=1 -DBUZZER_ACTIVE=0 -MMD -MP -c src/lcd.c -o build/passive/lcd.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -DENABLE_BUZZER=1 -DENABLE_RTC=1 -DENABLE_BH1750=1 -DBUZZER_ACTIVE=0 -MMD -MP -c src/main.c -o build/passive/main.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -DENABLE_BUZZER=1 -DENABLE_RTC=1 -DENABLE_BH1750=1 -DBUZZER_ACTIVE=0 -MMD -MP -c src/optional.c -o build/passive/optional.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -Iinclude -DENABLE_UART=1 -DENABLE_BUZZER=1 -DENABLE_RTC=1 -DENABLE_BH1750=1 -DBUZZER_ACTIVE=0 -MMD -MP -c src/reset.c -o build/passive/reset.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -DENABLE_BUZZER=1 -DENABLE_RTC=1 -DENABLE_BH1750=1 -DBUZZER_ACTIVE=0 -MMD -MP -c src/storage.c -o build/passive/storage.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -DENABLE_BUZZER=1 -DENABLE_RTC=1 -DENABLE_BH1750=1 -DBUZZER_ACTIVE=0 -MMD -MP -c src/uart.c -o build/passive/uart.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -DENABLE_BUZZER=1 -DENABLE_RTC=1 -DENABLE_BH1750=1 -DBUZZER_ACTIVE=0 -MMD -MP -c src/ui.c -o build/passive/ui.o
+avr-gcc -mmcu=atmega16 -Wl,--gc-sections,-Map,build/passive/monitor.map build/passive/board.o build/passive/command.o build/passive/core.o build/passive/dht.o build/passive/i2c.o build/passive/lcd.o build/passive/main.o build/passive/optional.o build/passive/reset.o build/passive/storage.o build/passive/uart.o build/passive/ui.o -o build/passive/monitor.elf
+avr-objcopy -O ihex -R .eeprom build/passive/monitor.elf build/passive/monitor.hex
+avr-objcopy -O ihex -j .eeprom --change-section-lma .eeprom=0 build/passive/monitor.elf build/passive/monitor.eep
+python3 tools/check_size.py avr-size build/passive/monitor.elf
+Flash 15052/16384 bytes; static SRAM 508/1024; EEPROM 48/512; stack headroom 516
+make[1]: Leaving directory '/workspace/do_an_2/firmware'
+make[1]: Entering directory '/workspace/do_an_2/firmware'
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -DENABLE_LCD=0 -DENABLE_BUZZER=0 -DENABLE_RTC=0 -DENABLE_BH1750=0 -DDIAG_LED7=1 -MMD -MP -c src/board.c -o build/diagnostic/board.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -DENABLE_LCD=0 -DENABLE_BUZZER=0 -DENABLE_RTC=0 -DENABLE_BH1750=0 -DDIAG_LED7=1 -MMD -MP -c src/command.c -o build/diagnostic/command.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -DENABLE_LCD=0 -DENABLE_BUZZER=0 -DENABLE_RTC=0 -DENABLE_BH1750=0 -DDIAG_LED7=1 -MMD -MP -c src/core.c -o build/diagnostic/core.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -DENABLE_LCD=0 -DENABLE_BUZZER=0 -DENABLE_RTC=0 -DENABLE_BH1750=0 -DDIAG_LED7=1 -MMD -MP -c src/dht.c -o build/diagnostic/dht.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -DENABLE_LCD=0 -DENABLE_BUZZER=0 -DENABLE_RTC=0 -DENABLE_BH1750=0 -DDIAG_LED7=1 -MMD -MP -c src/i2c.c -o build/diagnostic/i2c.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -DENABLE_LCD=0 -DENABLE_BUZZER=0 -DENABLE_RTC=0 -DENABLE_BH1750=0 -DDIAG_LED7=1 -MMD -MP -c src/lcd.c -o build/diagnostic/lcd.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -DENABLE_LCD=0 -DENABLE_BUZZER=0 -DENABLE_RTC=0 -DENABLE_BH1750=0 -DDIAG_LED7=1 -MMD -MP -c src/main.c -o build/diagnostic/main.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -DENABLE_LCD=0 -DENABLE_BUZZER=0 -DENABLE_RTC=0 -DENABLE_BH1750=0 -DDIAG_LED7=1 -MMD -MP -c src/optional.c -o build/diagnostic/optional.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -Iinclude -DENABLE_UART=1 -DENABLE_LCD=0 -DENABLE_BUZZER=0 -DENABLE_RTC=0 -DENABLE_BH1750=0 -DDIAG_LED7=1 -MMD -MP -c src/reset.c -o build/diagnostic/reset.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -DENABLE_LCD=0 -DENABLE_BUZZER=0 -DENABLE_RTC=0 -DENABLE_BH1750=0 -DDIAG_LED7=1 -MMD -MP -c src/uart.c -o build/diagnostic/uart.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -DENABLE_LCD=0 -DENABLE_BUZZER=0 -DENABLE_RTC=0 -DENABLE_BH1750=0 -DDIAG_LED7=1 -MMD -MP -c src/storage.c -o build/diagnostic/storage.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -DENABLE_LCD=0 -DENABLE_BUZZER=0 -DENABLE_RTC=0 -DENABLE_BH1750=0 -DDIAG_LED7=1 -MMD -MP -c src/ui.c -o build/diagnostic/ui.o
+avr-gcc -mmcu=atmega16 -Wl,--gc-sections,-Map,build/diagnostic/monitor.map build/diagnostic/board.o build/diagnostic/command.o build/diagnostic/core.o build/diagnostic/dht.o build/diagnostic/i2c.o build/diagnostic/lcd.o build/diagnostic/main.o build/diagnostic/optional.o build/diagnostic/reset.o build/diagnostic/storage.o build/diagnostic/uart.o build/diagnostic/ui.o -o build/diagnostic/monitor.elf
+avr-objcopy -O ihex -R .eeprom build/diagnostic/monitor.elf build/diagnostic/monitor.hex
+avr-objcopy -O ihex -j .eeprom --change-section-lma .eeprom=0 build/diagnostic/monitor.elf build/diagnostic/monitor.eep
+python3 tools/check_size.py avr-size build/diagnostic/monitor.elf
+Flash 8920/16384 bytes; static SRAM 448/1024; EEPROM 48/512; stack headroom 576
+make[1]: Leaving directory '/workspace/do_an_2/firmware'
+make[1]: Entering directory '/workspace/do_an_2/firmware'
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_LCD=0 -DENABLE_UART=0 -DENABLE_EEPROM=0 -DENABLE_ADC=0 -DENABLE_DIAGNOSTIC=0 -MMD -MP -c src/command.c -o build/minimal/command.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_LCD=0 -DENABLE_UART=0 -DENABLE_EEPROM=0 -DENABLE_ADC=0 -DENABLE_DIAGNOSTIC=0 -MMD -MP -c src/board.c -o build/minimal/board.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_LCD=0 -DENABLE_UART=0 -DENABLE_EEPROM=0 -DENABLE_ADC=0 -DENABLE_DIAGNOSTIC=0 -MMD -MP -c src/core.c -o build/minimal/core.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_LCD=0 -DENABLE_UART=0 -DENABLE_EEPROM=0 -DENABLE_ADC=0 -DENABLE_DIAGNOSTIC=0 -MMD -MP -c src/dht.c -o build/minimal/dht.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_LCD=0 -DENABLE_UART=0 -DENABLE_EEPROM=0 -DENABLE_ADC=0 -DENABLE_DIAGNOSTIC=0 -MMD -MP -c src/i2c.c -o build/minimal/i2c.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_LCD=0 -DENABLE_UART=0 -DENABLE_EEPROM=0 -DENABLE_ADC=0 -DENABLE_DIAGNOSTIC=0 -MMD -MP -c src/lcd.c -o build/minimal/lcd.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_LCD=0 -DENABLE_UART=0 -DENABLE_EEPROM=0 -DENABLE_ADC=0 -DENABLE_DIAGNOSTIC=0 -MMD -MP -c src/main.c -o build/minimal/main.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_LCD=0 -DENABLE_UART=0 -DENABLE_EEPROM=0 -DENABLE_ADC=0 -DENABLE_DIAGNOSTIC=0 -MMD -MP -c src/optional.c -o build/minimal/optional.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -Iinclude -DENABLE_LCD=0 -DENABLE_UART=0 -DENABLE_EEPROM=0 -DENABLE_ADC=0 -DENABLE_DIAGNOSTIC=0 -MMD -MP -c src/reset.c -o build/minimal/reset.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_LCD=0 -DENABLE_UART=0 -DENABLE_EEPROM=0 -DENABLE_ADC=0 -DENABLE_DIAGNOSTIC=0 -MMD -MP -c src/storage.c -o build/minimal/storage.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_LCD=0 -DENABLE_UART=0 -DENABLE_EEPROM=0 -DENABLE_ADC=0 -DENABLE_DIAGNOSTIC=0 -MMD -MP -c src/uart.c -o build/minimal/uart.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_LCD=0 -DENABLE_UART=0 -DENABLE_EEPROM=0 -DENABLE_ADC=0 -DENABLE_DIAGNOSTIC=0 -MMD -MP -c src/ui.c -o build/minimal/ui.o
+avr-gcc -mmcu=atmega16 -Wl,--gc-sections,-Map,build/minimal/monitor.map build/minimal/board.o build/minimal/command.o build/minimal/core.o build/minimal/dht.o build/minimal/i2c.o build/minimal/lcd.o build/minimal/main.o build/minimal/optional.o build/minimal/reset.o build/minimal/storage.o build/minimal/uart.o build/minimal/ui.o -o build/minimal/monitor.elf
+avr-objcopy -O ihex -R .eeprom build/minimal/monitor.elf build/minimal/monitor.hex
+avr-objcopy -O ihex -j .eeprom --change-section-lma .eeprom=0 build/minimal/monitor.elf build/minimal/monitor.eep
+python3 tools/check_size.py avr-size build/minimal/monitor.elf
+avr-objcopy: --change-section-lma .eeprom=0x0 never used
+Flash 3242/16384 bytes; static SRAM 143/1024; EEPROM 0/512; stack headroom 881
+make[1]: Leaving directory '/workspace/do_an_2/firmware'
+make: Leaving directory '/workspace/do_an_2/firmware'

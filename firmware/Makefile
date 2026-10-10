@@ -7,18 +7,15 @@ SIZE := $(AVR_PREFIX)size
 OUT := build/$(PROFILE)
 SRC := $(wildcard src/*.c)
 OBJ := $(patsubst src/%.c,$(OUT)/%.o,$(SRC))
-DEFS_base :=
-DEFS_full := -DENABLE_BUZZER=1 -DENABLE_RTC=1 -DENABLE_BH1750=1
-DEFS_rtc := -DENABLE_RTC=1
-DEFS_light := -DENABLE_BH1750=1
-DEFS_passive := $(DEFS_full) -DBUZZER_ACTIVE=0
-DEFS_diagnostic := -DENABLE_LCD=0 -DENABLE_BUZZER=0 -DENABLE_RTC=0 -DENABLE_BH1750=0 -DDIAG_LED7=1
-DEFS_minimal := -DENABLE_LCD=0 -DENABLE_UART=0 -DENABLE_EEPROM=0 -DENABLE_ADC=0 -DENABLE_DIAGNOSTIC=0
-PROFILES := base full rtc light passive diagnostic minimal
+PROFILES := base uart full rtc light passive diagnostic minimal
 ifeq ($(filter $(PROFILE),$(PROFILES)),)
 $(error Unknown PROFILE '$(PROFILE)')
 endif
-CFLAGS := -mmcu=$(MCU) -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude $(DEFS_$(PROFILE)) $(EXTRA_DEFS)
+DEFS := $(shell python3 tools/profiles.py $(PROFILE) $(EXTRA_DEFS))
+ifneq ($(.SHELLSTATUS),0)
+$(error Invalid profile definitions)
+endif
+CFLAGS := -mmcu=$(MCU) -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude $(DEFS)
 LDFLAGS := -mmcu=$(MCU) -Wl,--gc-sections,-Map,$(OUT)/monitor.map
 .PHONY: all matrix test simulate size clean FORCE
 all: $(OUT)/monitor.hex $(OUT)/monitor.eep size
@@ -42,6 +39,8 @@ test:
 	@mkdir -p build/tests
 	cc -std=c99 -g -Wall -Wextra -Werror -fsanitize=address,undefined -Iinclude tests/test_core.c src/core.c -o build/tests/test_core
 	./build/tests/test_core
+	cc -std=c99 -g -Wall -Wextra -Werror -fsanitize=address,undefined -Itests/fakes -Iinclude tests/test_ui.c src/ui.c src/core.c -o build/tests/test_ui
+	./build/tests/test_ui
 simulate: all
 	@mkdir -p build/tests
 	cc -std=c99 -g -Wall -Wextra -Werror $(SIM_CFLAGS) tests/sim_smoke.c -o build/tests/sim_smoke $(SIM_LDFLAGS) -lsimavr

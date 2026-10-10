@@ -1,0 +1,19 @@
+make: Entering directory '/workspace/do_an_2/firmware'
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_BH1750=1 -DBH1750_ADDRESS=0x5c -MMD -MP -c src/board.c -o build/address-high/board.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_BH1750=1 -DBH1750_ADDRESS=0x5c -MMD -MP -c src/command.c -o build/address-high/command.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_BH1750=1 -DBH1750_ADDRESS=0x5c -MMD -MP -c src/core.c -o build/address-high/core.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_BH1750=1 -DBH1750_ADDRESS=0x5c -MMD -MP -c src/dht.c -o build/address-high/dht.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_BH1750=1 -DBH1750_ADDRESS=0x5c -MMD -MP -c src/i2c.c -o build/address-high/i2c.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_BH1750=1 -DBH1750_ADDRESS=0x5c -MMD -MP -c src/lcd.c -o build/address-high/lcd.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_BH1750=1 -DBH1750_ADDRESS=0x5c -MMD -MP -c src/main.c -o build/address-high/main.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_BH1750=1 -DBH1750_ADDRESS=0x5c -MMD -MP -c src/optional.c -o build/address-high/optional.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -Iinclude -DENABLE_BH1750=1 -DBH1750_ADDRESS=0x5c -MMD -MP -c src/reset.c -o build/address-high/reset.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_BH1750=1 -DBH1750_ADDRESS=0x5c -MMD -MP -c src/storage.c -o build/address-high/storage.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_BH1750=1 -DBH1750_ADDRESS=0x5c -MMD -MP -c src/uart.c -o build/address-high/uart.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_BH1750=1 -DBH1750_ADDRESS=0x5c -MMD -MP -c src/ui.c -o build/address-high/ui.o
+avr-gcc -mmcu=atmega16 -Wl,--gc-sections,-Map,build/address-high/monitor.map build/address-high/board.o build/address-high/command.o build/address-high/core.o build/address-high/dht.o build/address-high/i2c.o build/address-high/lcd.o build/address-high/main.o build/address-high/optional.o build/address-high/reset.o build/address-high/storage.o build/address-high/uart.o build/address-high/ui.o -o build/address-high/monitor.elf
+avr-objcopy -O ihex -R .eeprom build/address-high/monitor.elf build/address-high/monitor.hex
+avr-objcopy -O ihex -j .eeprom --change-section-lma .eeprom=0 build/address-high/monitor.elf build/address-high/monitor.eep
+python3 tools/check_size.py avr-size build/address-high/monitor.elf
+Flash 9588/16384 bytes; static SRAM 194/1024; EEPROM 48/512; stack headroom 830
+make: Leaving directory '/workspace/do_an_2/firmware'

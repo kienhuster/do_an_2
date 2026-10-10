@@ -1,5 +1,7 @@
 # Sử dụng hệ thống
 
+Base/Debug mặc định UART OFF. Các lệnh và CSV dưới đây dùng profile UART hoặc bản mở rộng có UART ON.
+
 UART: 9600 baud, 8N1, TTL, không flow control. Gửi ASCII chữ hoa và kết thúc CR, LF hoặc
 CRLF; tối đa 47 ký tự mỗi lệnh. Chờ `# OK` hoặc `# ERR ...` rồi gửi lệnh tiếp theo.
 Các dòng phản hồi bắt đầu `#`; các dòng dữ liệu CSV bắt đầu bằng uptime dạng số.
