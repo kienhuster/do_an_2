@@ -1,0 +1,14 @@
+make: Entering directory '/workspace/do_an_2/firmware'
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude  -MMD -MP -c src/main.c -o build/base/main.o
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude  -MMD -MP -c src/uart.c -o build/base/uart.o
+avr-gcc -mmcu=atmega16 -Wl,--gc-sections,-Map,build/base/monitor.map build/base/board.o build/base/command.o build/base/core.o build/base/dht.o build/base/i2c.o build/base/lcd.o build/base/main.o build/base/optional.o build/base/reset.o build/base/storage.o build/base/uart.o build/base/ui.o -o build/base/monitor.elf
+avr-objcopy -O ihex -R .eeprom build/base/monitor.elf build/base/monitor.hex
+avr-objcopy -O ihex -j .eeprom --change-section-lma .eeprom=0 build/base/monitor.elf build/base/monitor.eep
+python3 tools/check_size.py avr-size build/base/monitor.elf
+Flash 8690/16384 bytes; static SRAM 194/1024; EEPROM 48/512; stack headroom 830
+cc -std=c99 -g -Wall -Wextra -Werror -I/workspace/.avr/simavr-source/simavr/sim tests/sim_smoke.c -o build/tests/sim_smoke -L/workspace/.avr/simavr-source/simavr/obj-x86_64-linux-gnu -lsimavr
+./build/tests/sim_smoke build/base/monitor.elf
+Loaded 8634 bytes of Flash data at 0
+Loaded 56 bytes of Flash data at 0x21ba
+PASS: 30 UART OFF simulator assertions: DHT/LCD, all four buttons, menu cancel/save, alarms/ACK/rearm, EEPROM across watchdog, ADC, uptime, ISP/JTAG
+make: Leaving directory '/workspace/do_an_2/firmware'

@@ -137,8 +137,10 @@ void diagnostic_tick(uint32_t now, bool on) {
     static uint8_t step;
     static uint32_t next;
     if (!on) {
-        DDRD &= ~mask;
-        PORTD &= ~mask;
+        ATOMIC_BLOCK(ATOMIC_RESTORESTATE) {
+            DDRD &= ~mask;
+            PORTD &= ~mask;
+        }
 #if DIAG_LED7
         PORTC = 0xff;
         DDRC = 0xff;
@@ -149,7 +151,10 @@ void diagnostic_tick(uint32_t now, bool on) {
     if (due(now, next)) {
         next = now + 300;
         step = (step + 1) % 10;
-        PORTD = (PORTD & ~mask) | ((uint8_t)~_BV(step % 8) & mask);
+        /* Timer0 may toggle PD2 between a read and write of PORTD. */
+        ATOMIC_BLOCK(ATOMIC_RESTORESTATE) {
+            PORTD = (PORTD & ~mask) | ((uint8_t)~_BV(step % 8) & mask);
+        }
 #if DIAG_LED7
         /* Common anode: a PC5,b PC4,c PC2,d PC1,e PC0,f PC6,g PC7,dot PC3. */
         static const uint8_t digits[10] PROGMEM = {0x88, 0xeb, 0x4c, 0x49, 0x2b,

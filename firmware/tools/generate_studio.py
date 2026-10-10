@@ -1,6 +1,7 @@
 """Generate a native AVR-GCC C project; no Arduino/C++ dependencies."""
 from pathlib import Path
 import xml.etree.ElementTree as ET
+from profiles import STUDIO, definitions
 
 root_dir = Path(__file__).resolve().parent.parent
 ns = 'http://schemas.microsoft.com/developer/msbuild/2003'
@@ -27,18 +28,10 @@ for name, value in {
     add(props, name, value)
 add(props, 'Configuration', 'Base', Condition="'$(Configuration)' == ''")
 add(props, 'Platform', 'AVR', Condition="'$(Platform)' == ''")
-profiles = {
-    'Base': [], 'Full': ['ENABLE_BUZZER=1', 'ENABLE_RTC=1', 'ENABLE_BH1750=1'],
-    'RTC': ['ENABLE_RTC=1'], 'Light': ['ENABLE_BH1750=1'],
-    'Passive': ['ENABLE_BUZZER=1', 'ENABLE_RTC=1', 'ENABLE_BH1750=1', 'BUZZER_ACTIVE=0'],
-    'Diagnostic': ['ENABLE_LCD=0', 'DIAG_LED7=1', 'ENABLE_BUZZER=0', 'ENABLE_RTC=0', 'ENABLE_BH1750=0'],
-    'Minimal': ['ENABLE_LCD=0', 'ENABLE_UART=0', 'ENABLE_EEPROM=0', 'ENABLE_ADC=0', 'ENABLE_DIAGNOSTIC=0'],
-}
-profiles['Debug'] = profiles['Base']
-profiles['Release'] = profiles['Full']
-for name, definitions in profiles.items():
+for name, profile in STUDIO.items():
     group = add(project, 'PropertyGroup', Condition=f"'$(Configuration)' == '{name}'")
-    add(group, 'OutputPath', f'..\\build\\studio-{name}\\')
+    # Compiler runs in studio/<Configuration>, unlike project file item paths.
+    add(group, 'OutputPath', f'{name}\\')
     tool = add(add(group, 'ToolchainSettings'), 'AvrGcc')
     for key, value in {
         'avrgcc.common.Device': '-mmcu=atmega16',
@@ -51,15 +44,15 @@ for name, definitions in profiles.items():
         'avrgcc.compiler.optimization.PrepareDataForGarbageCollection': 'True',
         'avrgcc.compiler.warnings.AllWarnings': 'True',
         'avrgcc.compiler.warnings.ExtraWarnings': 'True',
-        'avrgcc.compiler.miscellaneous.OtherFlags': '-std=gnu99',
+        'avrgcc.compiler.miscellaneous.OtherFlags': '-std=gnu99 -Werror',
         'avrgcc.linker.optimization.GarbageCollectUnusedSections': 'True',
     }.items():
         add(tool, key, value)
     defs = add(add(tool, 'avrgcc.compiler.symbols.DefSymbols'), 'ListValues')
-    for value in ['F_CPU=8000000UL'] + definitions:
+    for value in ['F_CPU=8000000UL'] + [d[2:] for d in definitions(profile)]:
         add(defs, 'Value', value)
     includes = add(add(tool, 'avrgcc.compiler.directories.IncludePaths'), 'ListValues')
-    add(includes, 'Value', '..\\include')
+    add(includes, 'Value', '..\\..\\include')
 items = add(project, 'ItemGroup')
 for folder, pattern, subtype in [('src', '*.c', 'compile'), ('include', '*.h', 'compile')]:
     for file in sorted((root_dir / folder).glob(pattern)):

@@ -1,6 +1,7 @@
 #include "app.h"
 #include <string.h>
 #include <stdio.h>
+#if ENABLE_UART
 #define SAY(s) uart_text_P(PSTR(s))
 static void comma(void) {
     uart_put(',');
@@ -60,7 +61,6 @@ void csv_send(void) {
     }
     SAY("\r\n");
 }
-#if ENABLE_UART
 static void config_send(void) {
     SAY("# TLOW=");
     uart_uint(app.settings.t_low);
@@ -226,6 +226,9 @@ static bool execute(char *line) {
 #endif
     return false;
 }
+#else
+void csv_header(void) {}
+void csv_send(void) {}
 #endif
 void command_poll(void) {
 #if ENABLE_UART

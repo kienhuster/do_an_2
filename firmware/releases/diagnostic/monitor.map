@@ -399,7 +399,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000     0x2286
+.text           0x00000000     0x229a
  *(.vectors)
  .vectors       0x00000000       0x54 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/crtatmega16.o
                 0x00000000                __vectors
@@ -599,189 +599,189 @@ END GROUP
                 0x0000059a       0x58 build/diagnostic/board.o
                 0x0000059a                adc_read
  .text.diagnostic_tick
-                0x000005f2       0xb0 build/diagnostic/board.o
+                0x000005f2       0xbc build/diagnostic/board.o
                 0x000005f2                diagnostic_tick
  .text.signed_trend
-                0x000006a2       0x20 build/diagnostic/command.o
- .text.comma    0x000006c2        0x6 build/diagnostic/command.o
- .text.two      0x000006c8       0x1a build/diagnostic/command.o
+                0x000006ae       0x20 build/diagnostic/command.o
+ .text.comma    0x000006ce        0x6 build/diagnostic/command.o
+ .text.two      0x000006d4       0x1a build/diagnostic/command.o
  .text.csv_header
-                0x000006e2        0x8 build/diagnostic/command.o
-                0x000006e2                csv_header
+                0x000006ee        0x8 build/diagnostic/command.o
+                0x000006ee                csv_header
  .text.csv_send
-                0x000006ea      0x164 build/diagnostic/command.o
-                0x000006ea                csv_send
+                0x000006f6      0x164 build/diagnostic/command.o
+                0x000006f6                csv_send
  .text.command_poll
-                0x0000084e      0x4d2 build/diagnostic/command.o
-                0x0000084e                command_poll
+                0x0000085a      0x4d2 build/diagnostic/command.o
+                0x0000085a                command_poll
  .text.settings_defaults
-                0x00000d20       0x12 build/diagnostic/core.o
-                0x00000d20                settings_defaults
+                0x00000d2c       0x12 build/diagnostic/core.o
+                0x00000d2c                settings_defaults
  .text.settings_valid
-                0x00000d32       0x8c build/diagnostic/core.o
-                0x00000d32                settings_valid
+                0x00000d3e       0x8c build/diagnostic/core.o
+                0x00000d3e                settings_valid
  .text.settings_set
-                0x00000dbe      0x1bc build/diagnostic/core.o
-                0x00000dbe                settings_set
+                0x00000dca      0x1bc build/diagnostic/core.o
+                0x00000dca                settings_set
  .text.stats_reset
-                0x00000f7a        0xc build/diagnostic/core.o
-                0x00000f7a                stats_reset
+                0x00000f86        0xc build/diagnostic/core.o
+                0x00000f86                stats_reset
  .text.stats_add
-                0x00000f86       0xfe build/diagnostic/core.o
-                0x00000f86                stats_add
+                0x00000f92       0xfe build/diagnostic/core.o
+                0x00000f92                stats_add
  .text.stats_trend
-                0x00001084       0x8e build/diagnostic/core.o
-                0x00001084                stats_trend
+                0x00001090       0x8e build/diagnostic/core.o
+                0x00001090                stats_trend
  .text.alarm_update
-                0x00001112       0xc6 build/diagnostic/core.o
-                0x00001112                alarm_update
+                0x0000111e       0xc6 build/diagnostic/core.o
+                0x0000111e                alarm_update
  .text.alarm_ack
-                0x000011d8        0x8 build/diagnostic/core.o
-                0x000011d8                alarm_ack
- .text.crc16    0x000011e0       0x2e build/diagnostic/core.o
-                0x000011e0                crc16
+                0x000011e4        0x8 build/diagnostic/core.o
+                0x000011e4                alarm_ack
+ .text.crc16    0x000011ec       0x2e build/diagnostic/core.o
+                0x000011ec                crc16
  .text.sequence_newer
-                0x0000120e       0x1a build/diagnostic/core.o
-                0x0000120e                sequence_newer
+                0x0000121a       0x1a build/diagnostic/core.o
+                0x0000121a                sequence_newer
  .text.record_pack
-                0x00001228       0x6c build/diagnostic/core.o
-                0x00001228                record_pack
+                0x00001234       0x6c build/diagnostic/core.o
+                0x00001234                record_pack
  .text.record_unpack
-                0x00001294      0x130 build/diagnostic/core.o
-                0x00001294                record_unpack
+                0x000012a0      0x130 build/diagnostic/core.o
+                0x000012a0                record_unpack
  .text.dht_decode
-                0x000013c4       0x62 build/diagnostic/core.o
-                0x000013c4                dht_decode
- .text.due      0x00001426       0x14 build/diagnostic/core.o
-                0x00001426                due
+                0x000013d0       0x62 build/diagnostic/core.o
+                0x000013d0                dht_decode
+ .text.due      0x00001432       0x14 build/diagnostic/core.o
+                0x00001432                due
  .text.parse_i16
-                0x0000143a       0xb6 build/diagnostic/core.o
-                0x0000143a                parse_i16
+                0x00001446       0xb6 build/diagnostic/core.o
+                0x00001446                parse_i16
  .text.level.constprop.0
-                0x000014f0       0x2a build/diagnostic/dht.o
+                0x000014fc       0x2a build/diagnostic/dht.o
  .text.dht_init
-                0x0000151a        0x6 build/diagnostic/dht.o
-                0x0000151a                dht_init
+                0x00001526        0x6 build/diagnostic/dht.o
+                0x00001526                dht_init
  .text.dht_start
-                0x00001520        0x6 build/diagnostic/dht.o
-                0x00001520                dht_start
+                0x0000152c        0x6 build/diagnostic/dht.o
+                0x0000152c                dht_start
  .text.dht_finish
-                0x00001526       0xe2 build/diagnostic/dht.o
-                0x00001526                dht_finish
+                0x00001532       0xe2 build/diagnostic/dht.o
+                0x00001532                dht_finish
  .text.i2c_init
-                0x00001608        0x2 build/diagnostic/i2c.o
-                0x00001608                i2c_init
+                0x00001614        0x2 build/diagnostic/i2c.o
+                0x00001614                i2c_init
  .text.lcd_init
-                0x0000160a        0x2 build/diagnostic/lcd.o
-                0x0000160a                lcd_init
- .text.app_ack  0x0000160c       0x12 build/diagnostic/main.o
-                0x0000160c                app_ack
+                0x00001616        0x2 build/diagnostic/lcd.o
+                0x00001616                lcd_init
+ .text.app_ack  0x00001618       0x12 build/diagnostic/main.o
+                0x00001618                app_ack
  .text.app_save
-                0x0000161e       0x1c build/diagnostic/main.o
-                0x0000161e                app_save
+                0x0000162a       0x1c build/diagnostic/main.o
+                0x0000162a                app_save
  .text.app_load
-                0x0000163a       0x2c build/diagnostic/main.o
-                0x0000163a                app_load
+                0x00001646       0x2c build/diagnostic/main.o
+                0x00001646                app_load
  .text.startup.main
-                0x00001666      0x3a6 build/diagnostic/main.o
-                0x00001666                main
- .text.nv_load  0x00001a0c       0xe4 build/diagnostic/storage.o
-                0x00001a0c                nv_load
- .text.nv_save  0x00001af0      0x142 build/diagnostic/storage.o
-                0x00001af0                nv_save
- .text.receive  0x00001c32       0x38 build/diagnostic/uart.o
+                0x00001672      0x3a6 build/diagnostic/main.o
+                0x00001672                main
+ .text.nv_load  0x00001a18       0xe4 build/diagnostic/storage.o
+                0x00001a18                nv_load
+ .text.nv_save  0x00001afc      0x142 build/diagnostic/storage.o
+                0x00001afc                nv_save
+ .text.receive  0x00001c3e       0x38 build/diagnostic/uart.o
  .text.__vector_11
-                0x00001c6a       0x48 build/diagnostic/uart.o
-                0x00001c6a                __vector_11
+                0x00001c76       0x48 build/diagnostic/uart.o
+                0x00001c76                __vector_11
  .text.__vector_12
-                0x00001cb2       0x44 build/diagnostic/uart.o
-                0x00001cb2                __vector_12
+                0x00001cbe       0x44 build/diagnostic/uart.o
+                0x00001cbe                __vector_12
  .text.uart_init
-                0x00001cf6       0x12 build/diagnostic/uart.o
-                0x00001cf6                uart_init
+                0x00001d02       0x1a build/diagnostic/uart.o
+                0x00001d02                uart_init
  .text.uart_rx_poll
-                0x00001d08        0x8 build/diagnostic/uart.o
-                0x00001d08                uart_rx_poll
+                0x00001d1c        0x8 build/diagnostic/uart.o
+                0x00001d1c                uart_rx_poll
  .text.uart_get
-                0x00001d10       0x30 build/diagnostic/uart.o
-                0x00001d10                uart_get
+                0x00001d24       0x30 build/diagnostic/uart.o
+                0x00001d24                uart_get
  .text.uart_put
-                0x00001d40       0x70 build/diagnostic/uart.o
-                0x00001d40                uart_put
+                0x00001d54       0x70 build/diagnostic/uart.o
+                0x00001d54                uart_put
  .text.uart_text_P
-                0x00001db0       0x1e build/diagnostic/uart.o
-                0x00001db0                uart_text_P
+                0x00001dc4       0x1e build/diagnostic/uart.o
+                0x00001dc4                uart_text_P
  .text.uart_uint
-                0x00001dce       0xbe build/diagnostic/uart.o
-                0x00001dce                uart_uint
+                0x00001de2       0xbe build/diagnostic/uart.o
+                0x00001de2                uart_uint
  .text.uart_fixed
-                0x00001e8c       0x24 build/diagnostic/uart.o
-                0x00001e8c                uart_fixed
+                0x00001ea0       0x24 build/diagnostic/uart.o
+                0x00001ea0                uart_fixed
  .text.uart_errors
-                0x00001eb0        0x6 build/diagnostic/uart.o
-                0x00001eb0                uart_errors
+                0x00001ec4        0x6 build/diagnostic/uart.o
+                0x00001ec4                uart_errors
  .text.uart_clear_errors
-                0x00001eb6        0xc build/diagnostic/uart.o
-                0x00001eb6                uart_clear_errors
+                0x00001eca        0xc build/diagnostic/uart.o
+                0x00001eca                uart_clear_errors
  .text.uart_take_rx_fault
-                0x00001ec2       0x18 build/diagnostic/uart.o
-                0x00001ec2                uart_take_rx_fault
+                0x00001ed6       0x18 build/diagnostic/uart.o
+                0x00001ed6                uart_take_rx_fault
  .text.menu_adjust
-                0x00001eda      0x134 build/diagnostic/ui.o
+                0x00001eee      0x134 build/diagnostic/ui.o
  .text.ui_cancel
-                0x0000200e        0x6 build/diagnostic/ui.o
-                0x0000200e                ui_cancel
- .text.ui_keys  0x00002014       0xc4 build/diagnostic/ui.o
-                0x00002014                ui_keys
+                0x00002022        0x6 build/diagnostic/ui.o
+                0x00002022                ui_cancel
+ .text.ui_keys  0x00002028       0xc4 build/diagnostic/ui.o
+                0x00002028                ui_keys
  .text.ui_render
-                0x000020d8        0x2 build/diagnostic/ui.o
-                0x000020d8                ui_render
+                0x000020ec        0x2 build/diagnostic/ui.o
+                0x000020ec                ui_render
  .text.libgcc.div
-                0x000020da       0x18 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodqi4.o)
-                0x000020da                __udivmodqi4
+                0x000020ee       0x18 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodqi4.o)
+                0x000020ee                __udivmodqi4
  .text.libgcc.div
-                0x000020f2       0x28 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodhi4.o)
-                0x000020f2                __udivmodhi4
+                0x00002106       0x28 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodhi4.o)
+                0x00002106                __udivmodhi4
  .text.libgcc.div
-                0x0000211a       0x28 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_divmodhi4.o)
-                0x0000211a                __divmodhi4
-                0x0000211a                _div
+                0x0000212e       0x28 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_divmodhi4.o)
+                0x0000212e                __divmodhi4
+                0x0000212e                _div
  .text.libgcc.div
-                0x00002142       0x44 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodsi4.o)
-                0x00002142                __udivmodsi4
- .text.libgcc   0x00002186        0xc /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_tablejump2.o)
-                0x00002186                __tablejump2__
+                0x00002156       0x44 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodsi4.o)
+                0x00002156                __udivmodsi4
+ .text.libgcc   0x0000219a        0xc /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_tablejump2.o)
+                0x0000219a                __tablejump2__
  .text.libgcc.mul
-                0x00002192       0x1e /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_umulhisi3.o)
-                0x00002192                __umulhisi3
+                0x000021a6       0x1e /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_umulhisi3.o)
+                0x000021a6                __umulhisi3
  .text.avr-libc
-                0x000021b0       0x12 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strcmp_P.o)
-                0x000021b0                strcmp_P
+                0x000021c4       0x12 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strcmp_P.o)
+                0x000021c4                strcmp_P
  .text.avr-libc
-                0x000021c2       0x1c /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strncmp_P.o)
-                0x000021c2                strncmp_P
+                0x000021d6       0x1c /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strncmp_P.o)
+                0x000021d6                strncmp_P
  .text.avr-libc
-                0x000021de       0x1a /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(memcmp.o)
-                0x000021de                memcmp
+                0x000021f2       0x1a /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(memcmp.o)
+                0x000021f2                memcmp
  .text.avr-libc
-                0x000021f8       0x16 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strchr.o)
-                0x000021f8                strchr
+                0x0000220c       0x16 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strchr.o)
+                0x0000220c                strchr
  .text.avr-libc
-                0x0000220e       0x12 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strcmp.o)
-                0x0000220e                strcmp
+                0x00002222       0x12 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strcmp.o)
+                0x00002222                strcmp
  .text.avr-libc
-                0x00002220       0x20 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libatmega16.a(eerd_block.o)
-                0x00002220                eeprom_read_block
-                0x00002224                eeprom_read_blraw
+                0x00002234       0x20 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libatmega16.a(eerd_block.o)
+                0x00002234                eeprom_read_block
+                0x00002238                eeprom_read_blraw
  .text.avr-libc
-                0x00002240       0x22 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libatmega16.a(eeupd_byte.o)
-                0x00002240                eeprom_update_byte
-                0x00002242                eeprom_update_r18
-                0x00002262                        . = ALIGN (0x2)
+                0x00002254       0x22 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libatmega16.a(eeupd_byte.o)
+                0x00002254                eeprom_update_byte
+                0x00002256                eeprom_update_r18
+                0x00002276                        . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x00002262        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_exit.o)
-                0x00002262                exit
-                0x00002262                _exit
+ .fini9         0x00002276        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_exit.o)
+                0x00002276                exit
+                0x00002276                _exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -800,19 +800,19 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x00002262        0x4 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_exit.o)
+ .fini0         0x00002276        0x4 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_exit.o)
  *(.fini0)
  *(.hightext)
  *(.hightext*)
  *(.progmemx.*)
-                0x00002266                        . = ALIGN (0x2)
+                0x0000227a                        . = ALIGN (0x2)
  *(.jumptables)
  *(.jumptables*)
  .jumptables.gcc.menu_adjust
-                0x00002266       0x20 build/diagnostic/ui.o
-                0x00002286                        _etext = .
+                0x0000227a       0x20 build/diagnostic/ui.o
+                0x0000229a                        _etext = .
 
-.data           0x00800060       0x3e load address 0x00002286
+.data           0x00800060       0x3e load address 0x0000229a
                 0x00800060                        PROVIDE (__data_start = .)
  *(.data)
  *(.data*)
@@ -861,8 +861,8 @@ END GROUP
  .bss.menu      0x0080021e        0x1 build/diagnostic/ui.o
  *(COMMON)
                 0x0080021f                        PROVIDE (__bss_end = .)
-                0x00002286                        __data_load_start = LOADADDR (.data)
-                0x000022c4                        __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x0000229a                        __data_load_start = LOADADDR (.data)
+                0x000022d8                        __data_load_end = (__data_load_start + SIZEOF (.data))
 
 .noinit         0x0080021f        0x1
                 [!provide]                        PROVIDE (__noinit_start = .)
@@ -976,50 +976,50 @@ END GROUP
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0x5174
+.debug_info     0x00000000     0x524c
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000      0x52e /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/crtatmega16.o
- .debug_info    0x0000052e      0x4d0 build/diagnostic/board.o
- .debug_info    0x000009fe     0x15f1 build/diagnostic/command.o
- .debug_info    0x00001fef     0x106f build/diagnostic/core.o
- .debug_info    0x0000305e      0x34c build/diagnostic/dht.o
- .debug_info    0x000033aa      0x174 build/diagnostic/i2c.o
- .debug_info    0x0000351e       0xc7 build/diagnostic/lcd.o
- .debug_info    0x000035e5      0xaa5 build/diagnostic/main.o
- .debug_info    0x0000408a       0xf6 build/diagnostic/reset.o
- .debug_info    0x00004180      0x4ce build/diagnostic/storage.o
- .debug_info    0x0000464e      0x5ef build/diagnostic/uart.o
- .debug_info    0x00004c3d      0x537 build/diagnostic/ui.o
+ .debug_info    0x0000052e      0x5a8 build/diagnostic/board.o
+ .debug_info    0x00000ad6     0x15f1 build/diagnostic/command.o
+ .debug_info    0x000020c7     0x106f build/diagnostic/core.o
+ .debug_info    0x00003136      0x34c build/diagnostic/dht.o
+ .debug_info    0x00003482      0x174 build/diagnostic/i2c.o
+ .debug_info    0x000035f6       0xc7 build/diagnostic/lcd.o
+ .debug_info    0x000036bd      0xaa5 build/diagnostic/main.o
+ .debug_info    0x00004162       0xf6 build/diagnostic/reset.o
+ .debug_info    0x00004258      0x4ce build/diagnostic/storage.o
+ .debug_info    0x00004726      0x5ef build/diagnostic/uart.o
+ .debug_info    0x00004d15      0x537 build/diagnostic/ui.o
 
-.debug_abbrev   0x00000000     0x19c6
+.debug_abbrev   0x00000000     0x19c4
  *(.debug_abbrev)
  .debug_abbrev  0x00000000      0x4e7 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/crtatmega16.o
- .debug_abbrev  0x000004e7      0x215 build/diagnostic/board.o
- .debug_abbrev  0x000006fc      0x2e5 build/diagnostic/command.o
- .debug_abbrev  0x000009e1      0x2d6 build/diagnostic/core.o
- .debug_abbrev  0x00000cb7      0x220 build/diagnostic/dht.o
- .debug_abbrev  0x00000ed7      0x118 build/diagnostic/i2c.o
- .debug_abbrev  0x00000fef       0x9f build/diagnostic/lcd.o
- .debug_abbrev  0x0000108e      0x246 build/diagnostic/main.o
- .debug_abbrev  0x000012d4       0xce build/diagnostic/reset.o
- .debug_abbrev  0x000013a2      0x18f build/diagnostic/storage.o
- .debug_abbrev  0x00001531      0x274 build/diagnostic/uart.o
- .debug_abbrev  0x000017a5      0x221 build/diagnostic/ui.o
+ .debug_abbrev  0x000004e7      0x213 build/diagnostic/board.o
+ .debug_abbrev  0x000006fa      0x2e5 build/diagnostic/command.o
+ .debug_abbrev  0x000009df      0x2d6 build/diagnostic/core.o
+ .debug_abbrev  0x00000cb5      0x220 build/diagnostic/dht.o
+ .debug_abbrev  0x00000ed5      0x118 build/diagnostic/i2c.o
+ .debug_abbrev  0x00000fed       0x9f build/diagnostic/lcd.o
+ .debug_abbrev  0x0000108c      0x246 build/diagnostic/main.o
+ .debug_abbrev  0x000012d2       0xce build/diagnostic/reset.o
+ .debug_abbrev  0x000013a0      0x18f build/diagnostic/storage.o
+ .debug_abbrev  0x0000152f      0x274 build/diagnostic/uart.o
+ .debug_abbrev  0x000017a3      0x221 build/diagnostic/ui.o
 
-.debug_line     0x00000000     0x4afd
+.debug_line     0x00000000     0x4c29
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x00000000       0x1d /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/crtatmega16.o
- .debug_line    0x0000001d      0x89a build/diagnostic/board.o
- .debug_line    0x000008b7      0xd2d build/diagnostic/command.o
- .debug_line    0x000015e4     0x17ec build/diagnostic/core.o
- .debug_line    0x00002dd0      0x386 build/diagnostic/dht.o
- .debug_line    0x00003156       0xef build/diagnostic/i2c.o
- .debug_line    0x00003245       0x86 build/diagnostic/lcd.o
- .debug_line    0x000032cb      0x74e build/diagnostic/main.o
- .debug_line    0x00003a19       0xc8 build/diagnostic/reset.o
- .debug_line    0x00003ae1      0x2ff build/diagnostic/storage.o
- .debug_line    0x00003de0      0x822 build/diagnostic/uart.o
- .debug_line    0x00004602      0x4fb build/diagnostic/ui.o
+ .debug_line    0x0000001d      0x99a build/diagnostic/board.o
+ .debug_line    0x000009b7      0xd2d build/diagnostic/command.o
+ .debug_line    0x000016e4     0x17ec build/diagnostic/core.o
+ .debug_line    0x00002ed0      0x386 build/diagnostic/dht.o
+ .debug_line    0x00003256       0xef build/diagnostic/i2c.o
+ .debug_line    0x00003345       0x86 build/diagnostic/lcd.o
+ .debug_line    0x000033cb      0x752 build/diagnostic/main.o
+ .debug_line    0x00003b1d       0xc8 build/diagnostic/reset.o
+ .debug_line    0x00003be5      0x2ff build/diagnostic/storage.o
+ .debug_line    0x00003ee4      0x84a build/diagnostic/uart.o
+ .debug_line    0x0000472e      0x4fb build/diagnostic/ui.o
 
 .debug_frame    0x00000000      0x938
  *(.debug_frame)
@@ -1106,26 +1106,26 @@ END GROUP
                 0x000001ad       0x9c build/diagnostic/ui.o
 
 .debug_loclists
-                0x00000000     0x1d01
+                0x00000000     0x1d63
  *(.debug_loclists)
  .debug_loclists
-                0x00000000      0x226 build/diagnostic/board.o
+                0x00000000      0x288 build/diagnostic/board.o
  .debug_loclists
-                0x00000226       0x74 build/diagnostic/command.o
+                0x00000288       0x74 build/diagnostic/command.o
  .debug_loclists
-                0x0000029a     0x11fd build/diagnostic/core.o
+                0x000002fc     0x11fd build/diagnostic/core.o
  .debug_loclists
-                0x00001497      0x116 build/diagnostic/dht.o
+                0x000014f9      0x116 build/diagnostic/dht.o
  .debug_loclists
-                0x000015ad       0x46 build/diagnostic/i2c.o
+                0x0000160f       0x46 build/diagnostic/i2c.o
  .debug_loclists
-                0x000015f3      0x2f6 build/diagnostic/main.o
+                0x00001655      0x2f6 build/diagnostic/main.o
  .debug_loclists
-                0x000018e9      0x102 build/diagnostic/storage.o
+                0x0000194b      0x102 build/diagnostic/storage.o
  .debug_loclists
-                0x000019eb      0x268 build/diagnostic/uart.o
+                0x00001a4d      0x268 build/diagnostic/uart.o
  .debug_loclists
-                0x00001c53       0xae build/diagnostic/ui.o
+                0x00001cb5       0xae build/diagnostic/ui.o
 
 .debug_macro
  *(.debug_macro)

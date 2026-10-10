@@ -1,0 +1,10 @@
+make: Entering directory '/workspace/do_an_2/firmware'
+python3 tools/check_size.py /workspace/.avr/legacy/root/usr/bin/avr-size build/legacy-full/monitor.elf
+Flash 14864/16384 bytes; static SRAM 508/1024; EEPROM 48/512; stack headroom 516
+cc -std=c99 -g -Wall -Wextra -Werror -I/workspace/.avr/simavr-source/simavr/sim tests/sim_smoke.c -o build/tests/sim_smoke -L/workspace/.avr/simavr-source/simavr/obj-x86_64-linux-gnu -lsimavr
+./build/tests/sim_smoke build/legacy-full/monitor.elf
+Loaded 14742 bytes of Flash data at 0
+Loaded 122 bytes of Flash data at 0x3996
+Measured stack watermark: >=338 bytes untouched above static data (tested paths only)
+PASS: 41 simulator assertions: GPIO DHT/LCD/buttons, UART, ADC, EEPROM, alarms, recovery, watchdog, DS3231/BH1750/buzzer
+make: Leaving directory '/workspace/do_an_2/firmware'

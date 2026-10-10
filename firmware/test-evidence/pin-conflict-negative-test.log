@@ -1,0 +1,12 @@
+make: Entering directory '/workspace/do_an_2/firmware'
+avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -DENABLE_BUZZER=1 -DENABLE_RTC=1 -DENABLE_BH1750=1 -DDIAG_LED7=1 -MMD -MP -c src/board.c -o build/conflict-check/board.o
+make: Leaving directory '/workspace/do_an_2/firmware'
+In file included from include/core.h:5,
+                 from include/hal.h:3,
+                 from src/board.c:1:
+include/config.h:41:2: error: #error "LED7 owns PORTC: disable LCD and both I2C modules"
+   41 | #error "LED7 owns PORTC: disable LCD and both I2C modules"
+      |  ^~~~~
+make: *** [Makefile:27: build/conflict-check/board.o] Error 1
+
+PASS: expected compile rejection for conflicting LED7/LCD/I2C.

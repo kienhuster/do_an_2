@@ -14,7 +14,7 @@
 #define ENABLE_LCD 1
 #endif
 #ifndef ENABLE_UART
-#define ENABLE_UART 1
+#define ENABLE_UART 0
 #endif
 #ifndef ENABLE_EEPROM
 #define ENABLE_EEPROM 1
@@ -43,7 +43,12 @@
 #ifndef BUZZER_ACTIVE
 #define BUZZER_ACTIVE 1
 #endif
+#ifndef BH1750_ADDRESS
 #define BH1750_ADDRESS 0x23 /* ADDR low; use 0x5c if ADDR high */
+#endif
+#if BH1750_ADDRESS != 0x23 && BH1750_ADDRESS != 0x5c
+#error "BH1750_ADDRESS must match ADDR: 0x23 or 0x5c"
+#endif
 #define UART_BAUD 9600UL
 #define DHT_PERIOD_MS 2000UL
 #define TREND_SAMPLES 8

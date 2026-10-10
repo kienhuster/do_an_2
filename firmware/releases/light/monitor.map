@@ -442,7 +442,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000     0x349a
+.text           0x00000000     0x34b0
  *(.vectors)
  .vectors       0x00000000       0x54 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/crtatmega16.o
                 0x00000000                __vectors
@@ -707,242 +707,242 @@ END GROUP
                 0x00000738       0x58 build/light/board.o
                 0x00000738                adc_read
  .text.diagnostic_tick
-                0x00000790       0x96 build/light/board.o
+                0x00000790       0xa4 build/light/board.o
                 0x00000790                diagnostic_tick
  .text.signed_trend
-                0x00000826       0x20 build/light/command.o
- .text.comma    0x00000846        0x6 build/light/command.o
- .text.two      0x0000084c       0x1a build/light/command.o
+                0x00000834       0x20 build/light/command.o
+ .text.comma    0x00000854        0x6 build/light/command.o
+ .text.two      0x0000085a       0x1a build/light/command.o
  .text.csv_header
-                0x00000866        0x8 build/light/command.o
-                0x00000866                csv_header
+                0x00000874        0x8 build/light/command.o
+                0x00000874                csv_header
  .text.csv_send
-                0x0000086e      0x164 build/light/command.o
-                0x0000086e                csv_send
+                0x0000087c      0x164 build/light/command.o
+                0x0000087c                csv_send
  .text.command_poll
-                0x000009d2      0x4d2 build/light/command.o
-                0x000009d2                command_poll
+                0x000009e0      0x4d2 build/light/command.o
+                0x000009e0                command_poll
  .text.settings_defaults
-                0x00000ea4       0x12 build/light/core.o
-                0x00000ea4                settings_defaults
+                0x00000eb2       0x12 build/light/core.o
+                0x00000eb2                settings_defaults
  .text.settings_valid
-                0x00000eb6       0x8c build/light/core.o
-                0x00000eb6                settings_valid
+                0x00000ec4       0x8c build/light/core.o
+                0x00000ec4                settings_valid
  .text.settings_set
-                0x00000f42      0x1bc build/light/core.o
-                0x00000f42                settings_set
+                0x00000f50      0x1bc build/light/core.o
+                0x00000f50                settings_set
  .text.stats_reset
-                0x000010fe        0xc build/light/core.o
-                0x000010fe                stats_reset
+                0x0000110c        0xc build/light/core.o
+                0x0000110c                stats_reset
  .text.stats_add
-                0x0000110a       0xfe build/light/core.o
-                0x0000110a                stats_add
+                0x00001118       0xfe build/light/core.o
+                0x00001118                stats_add
  .text.stats_trend
-                0x00001208       0x8e build/light/core.o
-                0x00001208                stats_trend
+                0x00001216       0x8e build/light/core.o
+                0x00001216                stats_trend
  .text.alarm_update
-                0x00001296       0xc6 build/light/core.o
-                0x00001296                alarm_update
+                0x000012a4       0xc6 build/light/core.o
+                0x000012a4                alarm_update
  .text.alarm_ack
-                0x0000135c        0x8 build/light/core.o
-                0x0000135c                alarm_ack
- .text.crc16    0x00001364       0x2e build/light/core.o
-                0x00001364                crc16
+                0x0000136a        0x8 build/light/core.o
+                0x0000136a                alarm_ack
+ .text.crc16    0x00001372       0x2e build/light/core.o
+                0x00001372                crc16
  .text.sequence_newer
-                0x00001392       0x1a build/light/core.o
-                0x00001392                sequence_newer
+                0x000013a0       0x1a build/light/core.o
+                0x000013a0                sequence_newer
  .text.record_pack
-                0x000013ac       0x6c build/light/core.o
-                0x000013ac                record_pack
+                0x000013ba       0x6c build/light/core.o
+                0x000013ba                record_pack
  .text.record_unpack
-                0x00001418      0x130 build/light/core.o
-                0x00001418                record_unpack
+                0x00001426      0x130 build/light/core.o
+                0x00001426                record_unpack
  .text.dht_decode
-                0x00001548       0x62 build/light/core.o
-                0x00001548                dht_decode
- .text.due      0x000015aa       0x14 build/light/core.o
-                0x000015aa                due
+                0x00001556       0x62 build/light/core.o
+                0x00001556                dht_decode
+ .text.due      0x000015b8       0x14 build/light/core.o
+                0x000015b8                due
  .text.parse_i16
-                0x000015be       0xb6 build/light/core.o
-                0x000015be                parse_i16
+                0x000015cc       0xb6 build/light/core.o
+                0x000015cc                parse_i16
  .text.level.constprop.0
-                0x00001674       0x2a build/light/dht.o
+                0x00001682       0x2a build/light/dht.o
  .text.dht_init
-                0x0000169e        0x6 build/light/dht.o
-                0x0000169e                dht_init
+                0x000016ac        0x6 build/light/dht.o
+                0x000016ac                dht_init
  .text.dht_start
-                0x000016a4        0x6 build/light/dht.o
-                0x000016a4                dht_start
+                0x000016b2        0x6 build/light/dht.o
+                0x000016b2                dht_start
  .text.dht_finish
-                0x000016aa       0xe2 build/light/dht.o
-                0x000016aa                dht_finish
+                0x000016b8       0xe2 build/light/dht.o
+                0x000016b8                dht_finish
  .text.wait_twi
-                0x0000178c       0x1e build/light/i2c.o
- .text.put      0x000017aa       0x1c build/light/i2c.o
- .text.get      0x000017c6       0x46 build/light/i2c.o
- .text.recover  0x0000180c       0x4c build/light/i2c.o
- .text.stop     0x00001858       0x26 build/light/i2c.o
- .text.start    0x0000187e       0x50 build/light/i2c.o
+                0x0000179a       0x1e build/light/i2c.o
+ .text.put      0x000017b8       0x1c build/light/i2c.o
+ .text.get      0x000017d4       0x46 build/light/i2c.o
+ .text.recover  0x0000181a       0x4c build/light/i2c.o
+ .text.stop     0x00001866       0x26 build/light/i2c.o
+ .text.start    0x0000188c       0x50 build/light/i2c.o
  .text.i2c_init
-                0x000018ce       0x18 build/light/i2c.o
-                0x000018ce                i2c_init
+                0x000018dc       0x18 build/light/i2c.o
+                0x000018dc                i2c_init
  .text.i2c_write
-                0x000018e6       0x54 build/light/i2c.o
-                0x000018e6                i2c_write
+                0x000018f4       0x54 build/light/i2c.o
+                0x000018f4                i2c_write
  .text.i2c_read
-                0x0000193a       0x62 build/light/i2c.o
-                0x0000193a                i2c_read
- .text.nibble   0x0000199c       0x28 build/light/lcd.o
- .text.send     0x000019c4       0x2c build/light/lcd.o
+                0x00001948       0x62 build/light/i2c.o
+                0x00001948                i2c_read
+ .text.nibble   0x000019aa       0x28 build/light/lcd.o
+ .text.send     0x000019d2       0x2c build/light/lcd.o
  .text.lcd_init
-                0x000019f0       0x9a build/light/lcd.o
-                0x000019f0                lcd_init
+                0x000019fe       0x9a build/light/lcd.o
+                0x000019fe                lcd_init
  .text.lcd_line
-                0x00001a8a       0x44 build/light/lcd.o
-                0x00001a8a                lcd_line
- .text.app_ack  0x00001ace       0x12 build/light/main.o
-                0x00001ace                app_ack
+                0x00001a98       0x44 build/light/lcd.o
+                0x00001a98                lcd_line
+ .text.app_ack  0x00001adc       0x12 build/light/main.o
+                0x00001adc                app_ack
  .text.app_save
-                0x00001ae0       0x1c build/light/main.o
-                0x00001ae0                app_save
+                0x00001aee       0x1c build/light/main.o
+                0x00001aee                app_save
  .text.app_load
-                0x00001afc       0x2c build/light/main.o
-                0x00001afc                app_load
+                0x00001b0a       0x2c build/light/main.o
+                0x00001b0a                app_load
  .text.startup.main
-                0x00001b28      0x462 build/light/main.o
-                0x00001b28                main
+                0x00001b36      0x462 build/light/main.o
+                0x00001b36                main
  .text.light_start
-                0x00001f8a       0x54 build/light/optional.o
-                0x00001f8a                light_start
+                0x00001f98       0x54 build/light/optional.o
+                0x00001f98                light_start
  .text.light_read
-                0x00001fde       0x60 build/light/optional.o
-                0x00001fde                light_read
- .text.nv_load  0x0000203e       0xe4 build/light/storage.o
-                0x0000203e                nv_load
- .text.nv_save  0x00002122      0x142 build/light/storage.o
-                0x00002122                nv_save
- .text.receive  0x00002264       0x38 build/light/uart.o
+                0x00001fec       0x60 build/light/optional.o
+                0x00001fec                light_read
+ .text.nv_load  0x0000204c       0xe4 build/light/storage.o
+                0x0000204c                nv_load
+ .text.nv_save  0x00002130      0x142 build/light/storage.o
+                0x00002130                nv_save
+ .text.receive  0x00002272       0x38 build/light/uart.o
  .text.__vector_11
-                0x0000229c       0x48 build/light/uart.o
-                0x0000229c                __vector_11
+                0x000022aa       0x48 build/light/uart.o
+                0x000022aa                __vector_11
  .text.__vector_12
-                0x000022e4       0x44 build/light/uart.o
-                0x000022e4                __vector_12
+                0x000022f2       0x44 build/light/uart.o
+                0x000022f2                __vector_12
  .text.uart_init
-                0x00002328       0x12 build/light/uart.o
-                0x00002328                uart_init
+                0x00002336       0x1a build/light/uart.o
+                0x00002336                uart_init
  .text.uart_rx_poll
-                0x0000233a        0x8 build/light/uart.o
-                0x0000233a                uart_rx_poll
+                0x00002350        0x8 build/light/uart.o
+                0x00002350                uart_rx_poll
  .text.uart_get
-                0x00002342       0x30 build/light/uart.o
-                0x00002342                uart_get
+                0x00002358       0x30 build/light/uart.o
+                0x00002358                uart_get
  .text.uart_put
-                0x00002372       0x70 build/light/uart.o
-                0x00002372                uart_put
+                0x00002388       0x70 build/light/uart.o
+                0x00002388                uart_put
  .text.uart_text_P
-                0x000023e2       0x1e build/light/uart.o
-                0x000023e2                uart_text_P
+                0x000023f8       0x1e build/light/uart.o
+                0x000023f8                uart_text_P
  .text.uart_uint
-                0x00002400       0xbe build/light/uart.o
-                0x00002400                uart_uint
+                0x00002416       0xbe build/light/uart.o
+                0x00002416                uart_uint
  .text.uart_fixed
-                0x000024be       0x24 build/light/uart.o
-                0x000024be                uart_fixed
+                0x000024d4       0x24 build/light/uart.o
+                0x000024d4                uart_fixed
  .text.uart_errors
-                0x000024e2        0x6 build/light/uart.o
-                0x000024e2                uart_errors
+                0x000024f8        0x6 build/light/uart.o
+                0x000024f8                uart_errors
  .text.uart_clear_errors
-                0x000024e8        0xc build/light/uart.o
-                0x000024e8                uart_clear_errors
+                0x000024fe        0xc build/light/uart.o
+                0x000024fe                uart_clear_errors
  .text.uart_take_rx_fault
-                0x000024f4       0x18 build/light/uart.o
-                0x000024f4                uart_take_rx_fault
+                0x0000250a       0x18 build/light/uart.o
+                0x0000250a                uart_take_rx_fault
  .text.menu_value
-                0x0000250c       0x64 build/light/ui.o
+                0x00002522       0x64 build/light/ui.o
  .text.menu_adjust
-                0x00002570       0xd4 build/light/ui.o
+                0x00002586       0xd4 build/light/ui.o
  .text.ui_cancel
-                0x00002644        0x6 build/light/ui.o
-                0x00002644                ui_cancel
- .text.ui_keys  0x0000264a       0xc4 build/light/ui.o
-                0x0000264a                ui_keys
+                0x0000265a        0x6 build/light/ui.o
+                0x0000265a                ui_cancel
+ .text.ui_keys  0x00002660       0xc4 build/light/ui.o
+                0x00002660                ui_keys
  .text.ui_render
-                0x0000270e      0x5d2 build/light/ui.o
-                0x0000270e                ui_render
+                0x00002724      0x5d2 build/light/ui.o
+                0x00002724                ui_render
  .text.libgcc.div
-                0x00002ce0       0x18 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodqi4.o)
-                0x00002ce0                __udivmodqi4
+                0x00002cf6       0x18 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodqi4.o)
+                0x00002cf6                __udivmodqi4
  .text.libgcc.div
-                0x00002cf8       0x28 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodhi4.o)
-                0x00002cf8                __udivmodhi4
+                0x00002d0e       0x28 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodhi4.o)
+                0x00002d0e                __udivmodhi4
  .text.libgcc.div
-                0x00002d20       0x28 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_divmodhi4.o)
-                0x00002d20                __divmodhi4
-                0x00002d20                _div
+                0x00002d36       0x28 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_divmodhi4.o)
+                0x00002d36                __divmodhi4
+                0x00002d36                _div
  .text.libgcc.div
-                0x00002d48       0x44 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodsi4.o)
-                0x00002d48                __udivmodsi4
- .text.libgcc   0x00002d8c        0xc /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_tablejump2.o)
-                0x00002d8c                __tablejump2__
+                0x00002d5e       0x44 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_udivmodsi4.o)
+                0x00002d5e                __udivmodsi4
+ .text.libgcc   0x00002da2        0xc /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_tablejump2.o)
+                0x00002da2                __tablejump2__
  .text.libgcc.mul
-                0x00002d98       0x1e /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_umulhisi3.o)
-                0x00002d98                __umulhisi3
+                0x00002dae       0x1e /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_umulhisi3.o)
+                0x00002dae                __umulhisi3
  .text.avr-libc
-                0x00002db6       0x12 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strcmp_P.o)
-                0x00002db6                strcmp_P
+                0x00002dcc       0x12 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strcmp_P.o)
+                0x00002dcc                strcmp_P
  .text.avr-libc
-                0x00002dc8        0xe /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strcpy_P.o)
-                0x00002dc8                strcpy_P
+                0x00002dde        0xe /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strcpy_P.o)
+                0x00002dde                strcpy_P
  .text.avr-libc
-                0x00002dd6       0x1c /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strncmp_P.o)
-                0x00002dd6                strncmp_P
+                0x00002dec       0x1c /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strncmp_P.o)
+                0x00002dec                strncmp_P
  .text.avr-libc
-                0x00002df2       0x1a /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(memcmp.o)
-                0x00002df2                memcmp
+                0x00002e08       0x1a /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(memcmp.o)
+                0x00002e08                memcmp
  .text.avr-libc
-                0x00002e0c       0x16 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strchr.o)
-                0x00002e0c                strchr
+                0x00002e22       0x16 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strchr.o)
+                0x00002e22                strchr
  .text.avr-libc
-                0x00002e22       0x12 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strcmp.o)
-                0x00002e22                strcmp
+                0x00002e38       0x12 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strcmp.o)
+                0x00002e38                strcmp
  .text.avr-libc
-                0x00002e34       0x64 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(snprintf_p.o)
-                0x00002e34                snprintf_P
+                0x00002e4a       0x64 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(snprintf_p.o)
+                0x00002e4a                snprintf_P
  .text.avr-libc
-                0x00002e98      0x3d6 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(vfprintf_std.o)
-                0x00002e98                vfprintf
+                0x00002eae      0x3d6 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+                0x00002eae                vfprintf
  .text.avr-libc
-                0x0000326e       0x16 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strnlen_P.o)
-                0x0000326e                strnlen_P
+                0x00003284       0x16 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strnlen_P.o)
+                0x00003284                strnlen_P
  .text.avr-libc
-                0x00003284       0x16 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strnlen.o)
-                0x00003284                strnlen
+                0x0000329a       0x16 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(strnlen.o)
+                0x0000329a                strnlen
  .text.avr-libc
-                0x0000329a       0x60 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(fputc.o)
-                0x0000329a                fputc
+                0x000032b0       0x60 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(fputc.o)
+                0x000032b0                fputc
  .text.avr-libc
-                0x000032fa       0xbc /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(ultoa_invert.o)
-                0x000032fa                __ultoa_invert
+                0x00003310       0xbc /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libc.a(ultoa_invert.o)
+                0x00003310                __ultoa_invert
  .text.avr-libc
-                0x000033b6       0x20 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libatmega16.a(eerd_block.o)
-                0x000033b6                eeprom_read_block
-                0x000033ba                eeprom_read_blraw
+                0x000033cc       0x20 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libatmega16.a(eerd_block.o)
+                0x000033cc                eeprom_read_block
+                0x000033d0                eeprom_read_blraw
  .text.avr-libc
-                0x000033d6       0x22 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libatmega16.a(eeupd_byte.o)
-                0x000033d6                eeprom_update_byte
-                0x000033d8                eeprom_update_r18
+                0x000033ec       0x22 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/libatmega16.a(eeupd_byte.o)
+                0x000033ec                eeprom_update_byte
+                0x000033ee                eeprom_update_r18
  .text.libgcc.prologue
-                0x000033f8       0x38 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_prologue.o)
-                0x000033f8                __prologue_saves__
+                0x0000340e       0x38 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_prologue.o)
+                0x0000340e                __prologue_saves__
  .text.libgcc.prologue
-                0x00003430       0x36 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_epilogue.o)
-                0x00003430                __epilogue_restores__
-                0x00003466                        . = ALIGN (0x2)
+                0x00003446       0x36 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_epilogue.o)
+                0x00003446                __epilogue_restores__
+                0x0000347c                        . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x00003466        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_exit.o)
-                0x00003466                exit
-                0x00003466                _exit
+ .fini9         0x0000347c        0x0 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_exit.o)
+                0x0000347c                exit
+                0x0000347c                _exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -961,23 +961,23 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x00003466        0x4 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_exit.o)
+ .fini0         0x0000347c        0x4 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/avr5/libgcc.a(_exit.o)
  *(.fini0)
  *(.hightext)
  *(.hightext*)
  *(.progmemx.*)
-                0x0000346a                        . = ALIGN (0x2)
+                0x00003480                        . = ALIGN (0x2)
  *(.jumptables)
  *(.jumptables*)
  .jumptables.gcc.menu_value
-                0x0000346a       0x10 build/light/ui.o
+                0x00003480       0x10 build/light/ui.o
  .jumptables.gcc.menu_adjust
-                0x0000347a       0x10 build/light/ui.o
+                0x00003490       0x10 build/light/ui.o
  .jumptables.gcc.ui_render
-                0x0000348a       0x10 build/light/ui.o
-                0x0000349a                        _etext = .
+                0x000034a0       0x10 build/light/ui.o
+                0x000034b0                        _etext = .
 
-.data           0x00800060       0x68 load address 0x0000349a
+.data           0x00800060       0x68 load address 0x000034b0
                 0x00800060                        PROVIDE (__data_start = .)
  *(.data)
  *(.data*)
@@ -1032,8 +1032,8 @@ END GROUP
  .bss.menu      0x00800248        0x1 build/light/ui.o
  *(COMMON)
                 0x00800249                        PROVIDE (__bss_end = .)
-                0x0000349a                        __data_load_start = LOADADDR (.data)
-                0x00003502                        __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x000034b0                        __data_load_start = LOADADDR (.data)
+                0x00003518                        __data_load_end = (__data_load_start + SIZEOF (.data))
 
 .noinit         0x00800249        0x1
                 [!provide]                        PROVIDE (__noinit_start = .)
@@ -1153,53 +1153,53 @@ END GROUP
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0x67c2
+.debug_info     0x00000000     0x6897
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000      0x52e /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/crtatmega16.o
- .debug_info    0x0000052e      0x46c build/light/board.o
- .debug_info    0x0000099a     0x15f1 build/light/command.o
- .debug_info    0x00001f8b     0x106f build/light/core.o
- .debug_info    0x00002ffa      0x34c build/light/dht.o
- .debug_info    0x00003346      0x64a build/light/i2c.o
- .debug_info    0x00003990      0x56a build/light/lcd.o
- .debug_info    0x00003efa      0xb54 build/light/main.o
- .debug_info    0x00004a4e      0x272 build/light/optional.o
- .debug_info    0x00004cc0       0xf6 build/light/reset.o
- .debug_info    0x00004db6      0x4ce build/light/storage.o
- .debug_info    0x00005284      0x5ef build/light/uart.o
- .debug_info    0x00005873      0xf4f build/light/ui.o
+ .debug_info    0x0000052e      0x541 build/light/board.o
+ .debug_info    0x00000a6f     0x15f1 build/light/command.o
+ .debug_info    0x00002060     0x106f build/light/core.o
+ .debug_info    0x000030cf      0x34c build/light/dht.o
+ .debug_info    0x0000341b      0x64a build/light/i2c.o
+ .debug_info    0x00003a65      0x56a build/light/lcd.o
+ .debug_info    0x00003fcf      0xb54 build/light/main.o
+ .debug_info    0x00004b23      0x272 build/light/optional.o
+ .debug_info    0x00004d95       0xf6 build/light/reset.o
+ .debug_info    0x00004e8b      0x4ce build/light/storage.o
+ .debug_info    0x00005359      0x5ef build/light/uart.o
+ .debug_info    0x00005948      0xf4f build/light/ui.o
 
-.debug_abbrev   0x00000000     0x1daf
+.debug_abbrev   0x00000000     0x1dce
  *(.debug_abbrev)
  .debug_abbrev  0x00000000      0x4e7 /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/crtatmega16.o
- .debug_abbrev  0x000004e7      0x20a build/light/board.o
- .debug_abbrev  0x000006f1      0x2e5 build/light/command.o
- .debug_abbrev  0x000009d6      0x2d6 build/light/core.o
- .debug_abbrev  0x00000cac      0x220 build/light/dht.o
- .debug_abbrev  0x00000ecc      0x22f build/light/i2c.o
- .debug_abbrev  0x000010fb      0x1a5 build/light/lcd.o
- .debug_abbrev  0x000012a0      0x246 build/light/main.o
- .debug_abbrev  0x000014e6      0x169 build/light/optional.o
- .debug_abbrev  0x0000164f       0xce build/light/reset.o
- .debug_abbrev  0x0000171d      0x18f build/light/storage.o
- .debug_abbrev  0x000018ac      0x274 build/light/uart.o
- .debug_abbrev  0x00001b20      0x28f build/light/ui.o
+ .debug_abbrev  0x000004e7      0x229 build/light/board.o
+ .debug_abbrev  0x00000710      0x2e5 build/light/command.o
+ .debug_abbrev  0x000009f5      0x2d6 build/light/core.o
+ .debug_abbrev  0x00000ccb      0x220 build/light/dht.o
+ .debug_abbrev  0x00000eeb      0x22f build/light/i2c.o
+ .debug_abbrev  0x0000111a      0x1a5 build/light/lcd.o
+ .debug_abbrev  0x000012bf      0x246 build/light/main.o
+ .debug_abbrev  0x00001505      0x169 build/light/optional.o
+ .debug_abbrev  0x0000166e       0xce build/light/reset.o
+ .debug_abbrev  0x0000173c      0x18f build/light/storage.o
+ .debug_abbrev  0x000018cb      0x274 build/light/uart.o
+ .debug_abbrev  0x00001b3f      0x28f build/light/ui.o
 
-.debug_line     0x00000000     0x62f0
+.debug_line     0x00000000     0x6413
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x00000000       0x1d /workspace/.avr/root/usr/bin/../lib/gcc/avr/14.2.0/../../../avr/lib/avr5/crtatmega16.o
- .debug_line    0x0000001d      0x820 build/light/board.o
- .debug_line    0x0000083d      0xd2d build/light/command.o
- .debug_line    0x0000156a     0x17ec build/light/core.o
- .debug_line    0x00002d56      0x386 build/light/dht.o
- .debug_line    0x000030dc      0xa5c build/light/i2c.o
- .debug_line    0x00003b38      0x5ae build/light/lcd.o
- .debug_line    0x000040e6      0x8ce build/light/main.o
- .debug_line    0x000049b4      0x1b2 build/light/optional.o
- .debug_line    0x00004b66       0xc8 build/light/reset.o
- .debug_line    0x00004c2e      0x2ff build/light/storage.o
- .debug_line    0x00004f2d      0x822 build/light/uart.o
- .debug_line    0x0000574f      0xba1 build/light/ui.o
+ .debug_line    0x0000001d      0x917 build/light/board.o
+ .debug_line    0x00000934      0xd2d build/light/command.o
+ .debug_line    0x00001661     0x17ec build/light/core.o
+ .debug_line    0x00002e4d      0x386 build/light/dht.o
+ .debug_line    0x000031d3      0xa5c build/light/i2c.o
+ .debug_line    0x00003c2f      0x5ae build/light/lcd.o
+ .debug_line    0x000041dd      0x8d2 build/light/main.o
+ .debug_line    0x00004aaf      0x1b2 build/light/optional.o
+ .debug_line    0x00004c61       0xc8 build/light/reset.o
+ .debug_line    0x00004d29      0x2ff build/light/storage.o
+ .debug_line    0x00005028      0x84a build/light/uart.o
+ .debug_line    0x00005872      0xba1 build/light/ui.o
 
 .debug_frame    0x00000000      0xb1c
  *(.debug_frame)
@@ -1290,30 +1290,30 @@ END GROUP
                 0x000001c4      0x119 build/light/ui.o
 
 .debug_loclists
-                0x00000000     0x2710
+                0x00000000     0x2772
  *(.debug_loclists)
  .debug_loclists
-                0x00000000      0x200 build/light/board.o
+                0x00000000      0x262 build/light/board.o
  .debug_loclists
-                0x00000200       0x74 build/light/command.o
+                0x00000262       0x74 build/light/command.o
  .debug_loclists
-                0x00000274     0x11fd build/light/core.o
+                0x000002d6     0x11fd build/light/core.o
  .debug_loclists
-                0x00001471      0x116 build/light/dht.o
+                0x000014d3      0x116 build/light/dht.o
  .debug_loclists
-                0x00001587      0x4b7 build/light/i2c.o
+                0x000015e9      0x4b7 build/light/i2c.o
  .debug_loclists
-                0x00001a3e      0x310 build/light/lcd.o
+                0x00001aa0      0x310 build/light/lcd.o
  .debug_loclists
-                0x00001d4e      0x4b8 build/light/main.o
+                0x00001db0      0x4b8 build/light/main.o
  .debug_loclists
-                0x00002206       0x5c build/light/optional.o
+                0x00002268       0x5c build/light/optional.o
  .debug_loclists
-                0x00002262      0x102 build/light/storage.o
+                0x000022c4      0x102 build/light/storage.o
  .debug_loclists
-                0x00002364      0x268 build/light/uart.o
+                0x000023c6      0x268 build/light/uart.o
  .debug_loclists
-                0x000025cc      0x144 build/light/ui.o
+                0x0000262e      0x144 build/light/ui.o
 
 .debug_macro
  *(.debug_macro)
@@ -1322,32 +1322,32 @@ END GROUP
  *(.debug_names)
 
 .debug_rnglists
-                0x00000000      0x3b6
+                0x00000000      0x3d0
  *(.debug_rnglists)
  .debug_rnglists
-                0x00000000       0x65 build/light/board.o
+                0x00000000       0x7f build/light/board.o
  .debug_rnglists
-                0x00000065       0x66 build/light/command.o
+                0x0000007f       0x66 build/light/command.o
  .debug_rnglists
-                0x000000cb       0xba build/light/core.o
+                0x000000e5       0xba build/light/core.o
  .debug_rnglists
-                0x00000185       0x26 build/light/dht.o
+                0x0000019f       0x26 build/light/dht.o
  .debug_rnglists
-                0x000001ab       0x80 build/light/i2c.o
+                0x000001c5       0x80 build/light/i2c.o
  .debug_rnglists
-                0x0000022b       0x35 build/light/lcd.o
+                0x00000245       0x35 build/light/lcd.o
  .debug_rnglists
-                0x00000260       0x3a build/light/main.o
+                0x0000027a       0x3a build/light/main.o
  .debug_rnglists
-                0x0000029a       0x25 build/light/optional.o
+                0x000002b4       0x25 build/light/optional.o
  .debug_rnglists
-                0x000002bf       0x13 build/light/reset.o
+                0x000002d9       0x13 build/light/reset.o
  .debug_rnglists
-                0x000002d2       0x3b build/light/storage.o
+                0x000002ec       0x3b build/light/storage.o
  .debug_rnglists
-                0x0000030d       0x5c build/light/uart.o
+                0x00000327       0x5c build/light/uart.o
  .debug_rnglists
-                0x00000369       0x4d build/light/ui.o
+                0x00000383       0x4d build/light/ui.o
 
 .debug_str_offsets
  *(.debug_str_offsets)

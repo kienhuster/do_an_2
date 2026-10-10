@@ -19,8 +19,8 @@
     <Configuration Condition="'$(Configuration)' == ''">Base</Configuration>
     <Platform Condition="'$(Platform)' == ''">AVR</Platform>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)' == 'Base'">
-    <OutputPath>..\build\studio-Base\</OutputPath>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <OutputPath>Debug\</OutputPath>
     <ToolchainSettings>
       <AvrGcc>
         <avrgcc.common.Device>-mmcu=atmega16</avrgcc.common.Device>
@@ -33,7 +33,7 @@
         <avrgcc.compiler.optimization.PrepareDataForGarbageCollection>True</avrgcc.compiler.optimization.PrepareDataForGarbageCollection>
         <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
         <avrgcc.compiler.warnings.ExtraWarnings>True</avrgcc.compiler.warnings.ExtraWarnings>
-        <avrgcc.compiler.miscellaneous.OtherFlags>-std=gnu99</avrgcc.compiler.miscellaneous.OtherFlags>
+        <avrgcc.compiler.miscellaneous.OtherFlags>-std=gnu99 -Werror</avrgcc.compiler.miscellaneous.OtherFlags>
         <avrgcc.linker.optimization.GarbageCollectUnusedSections>True</avrgcc.linker.optimization.GarbageCollectUnusedSections>
         <avrgcc.compiler.symbols.DefSymbols>
           <ListValues>
@@ -42,14 +42,14 @@
         </avrgcc.compiler.symbols.DefSymbols>
         <avrgcc.compiler.directories.IncludePaths>
           <ListValues>
-            <Value>..\include</Value>
+            <Value>..\..\include</Value>
           </ListValues>
         </avrgcc.compiler.directories.IncludePaths>
       </AvrGcc>
     </ToolchainSettings>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)' == 'Full'">
-    <OutputPath>..\build\studio-Full\</OutputPath>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <OutputPath>Release\</OutputPath>
     <ToolchainSettings>
       <AvrGcc>
         <avrgcc.common.Device>-mmcu=atmega16</avrgcc.common.Device>
@@ -62,11 +62,12 @@
         <avrgcc.compiler.optimization.PrepareDataForGarbageCollection>True</avrgcc.compiler.optimization.PrepareDataForGarbageCollection>
         <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
         <avrgcc.compiler.warnings.ExtraWarnings>True</avrgcc.compiler.warnings.ExtraWarnings>
-        <avrgcc.compiler.miscellaneous.OtherFlags>-std=gnu99</avrgcc.compiler.miscellaneous.OtherFlags>
+        <avrgcc.compiler.miscellaneous.OtherFlags>-std=gnu99 -Werror</avrgcc.compiler.miscellaneous.OtherFlags>
         <avrgcc.linker.optimization.GarbageCollectUnusedSections>True</avrgcc.linker.optimization.GarbageCollectUnusedSections>
         <avrgcc.compiler.symbols.DefSymbols>
           <ListValues>
             <Value>F_CPU=8000000UL</Value>
+            <Value>ENABLE_UART=1</Value>
             <Value>ENABLE_BUZZER=1</Value>
             <Value>ENABLE_RTC=1</Value>
             <Value>ENABLE_BH1750=1</Value>
@@ -74,14 +75,106 @@
         </avrgcc.compiler.symbols.DefSymbols>
         <avrgcc.compiler.directories.IncludePaths>
           <ListValues>
-            <Value>..\include</Value>
+            <Value>..\..\include</Value>
+          </ListValues>
+        </avrgcc.compiler.directories.IncludePaths>
+      </AvrGcc>
+    </ToolchainSettings>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Base'">
+    <OutputPath>Base\</OutputPath>
+    <ToolchainSettings>
+      <AvrGcc>
+        <avrgcc.common.Device>-mmcu=atmega16</avrgcc.common.Device>
+        <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+        <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+        <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+        <avrgcc.common.outputfiles.map>True</avrgcc.common.outputfiles.map>
+        <avrgcc.compiler.optimization.level>Optimize for size (-Os)</avrgcc.compiler.optimization.level>
+        <avrgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>True</avrgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>
+        <avrgcc.compiler.optimization.PrepareDataForGarbageCollection>True</avrgcc.compiler.optimization.PrepareDataForGarbageCollection>
+        <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+        <avrgcc.compiler.warnings.ExtraWarnings>True</avrgcc.compiler.warnings.ExtraWarnings>
+        <avrgcc.compiler.miscellaneous.OtherFlags>-std=gnu99 -Werror</avrgcc.compiler.miscellaneous.OtherFlags>
+        <avrgcc.linker.optimization.GarbageCollectUnusedSections>True</avrgcc.linker.optimization.GarbageCollectUnusedSections>
+        <avrgcc.compiler.symbols.DefSymbols>
+          <ListValues>
+            <Value>F_CPU=8000000UL</Value>
+          </ListValues>
+        </avrgcc.compiler.symbols.DefSymbols>
+        <avrgcc.compiler.directories.IncludePaths>
+          <ListValues>
+            <Value>..\..\include</Value>
+          </ListValues>
+        </avrgcc.compiler.directories.IncludePaths>
+      </AvrGcc>
+    </ToolchainSettings>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'UART'">
+    <OutputPath>UART\</OutputPath>
+    <ToolchainSettings>
+      <AvrGcc>
+        <avrgcc.common.Device>-mmcu=atmega16</avrgcc.common.Device>
+        <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+        <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+        <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+        <avrgcc.common.outputfiles.map>True</avrgcc.common.outputfiles.map>
+        <avrgcc.compiler.optimization.level>Optimize for size (-Os)</avrgcc.compiler.optimization.level>
+        <avrgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>True</avrgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>
+        <avrgcc.compiler.optimization.PrepareDataForGarbageCollection>True</avrgcc.compiler.optimization.PrepareDataForGarbageCollection>
+        <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+        <avrgcc.compiler.warnings.ExtraWarnings>True</avrgcc.compiler.warnings.ExtraWarnings>
+        <avrgcc.compiler.miscellaneous.OtherFlags>-std=gnu99 -Werror</avrgcc.compiler.miscellaneous.OtherFlags>
+        <avrgcc.linker.optimization.GarbageCollectUnusedSections>True</avrgcc.linker.optimization.GarbageCollectUnusedSections>
+        <avrgcc.compiler.symbols.DefSymbols>
+          <ListValues>
+            <Value>F_CPU=8000000UL</Value>
+            <Value>ENABLE_UART=1</Value>
+          </ListValues>
+        </avrgcc.compiler.symbols.DefSymbols>
+        <avrgcc.compiler.directories.IncludePaths>
+          <ListValues>
+            <Value>..\..\include</Value>
+          </ListValues>
+        </avrgcc.compiler.directories.IncludePaths>
+      </AvrGcc>
+    </ToolchainSettings>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Full'">
+    <OutputPath>Full\</OutputPath>
+    <ToolchainSettings>
+      <AvrGcc>
+        <avrgcc.common.Device>-mmcu=atmega16</avrgcc.common.Device>
+        <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+        <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+        <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+        <avrgcc.common.outputfiles.map>True</avrgcc.common.outputfiles.map>
+        <avrgcc.compiler.optimization.level>Optimize for size (-Os)</avrgcc.compiler.optimization.level>
+        <avrgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>True</avrgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>
+        <avrgcc.compiler.optimization.PrepareDataForGarbageCollection>True</avrgcc.compiler.optimization.PrepareDataForGarbageCollection>
+        <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+        <avrgcc.compiler.warnings.ExtraWarnings>True</avrgcc.compiler.warnings.ExtraWarnings>
+        <avrgcc.compiler.miscellaneous.OtherFlags>-std=gnu99 -Werror</avrgcc.compiler.miscellaneous.OtherFlags>
+        <avrgcc.linker.optimization.GarbageCollectUnusedSections>True</avrgcc.linker.optimization.GarbageCollectUnusedSections>
+        <avrgcc.compiler.symbols.DefSymbols>
+          <ListValues>
+            <Value>F_CPU=8000000UL</Value>
+            <Value>ENABLE_UART=1</Value>
+            <Value>ENABLE_BUZZER=1</Value>
+            <Value>ENABLE_RTC=1</Value>
+            <Value>ENABLE_BH1750=1</Value>
+          </ListValues>
+        </avrgcc.compiler.symbols.DefSymbols>
+        <avrgcc.compiler.directories.IncludePaths>
+          <ListValues>
+            <Value>..\..\include</Value>
           </ListValues>
         </avrgcc.compiler.directories.IncludePaths>
       </AvrGcc>
     </ToolchainSettings>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'RTC'">
-    <OutputPath>..\build\studio-RTC\</OutputPath>
+    <OutputPath>RTC\</OutputPath>
     <ToolchainSettings>
       <AvrGcc>
         <avrgcc.common.Device>-mmcu=atmega16</avrgcc.common.Device>
@@ -94,24 +187,25 @@
         <avrgcc.compiler.optimization.PrepareDataForGarbageCollection>True</avrgcc.compiler.optimization.PrepareDataForGarbageCollection>
         <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
         <avrgcc.compiler.warnings.ExtraWarnings>True</avrgcc.compiler.warnings.ExtraWarnings>
-        <avrgcc.compiler.miscellaneous.OtherFlags>-std=gnu99</avrgcc.compiler.miscellaneous.OtherFlags>
+        <avrgcc.compiler.miscellaneous.OtherFlags>-std=gnu99 -Werror</avrgcc.compiler.miscellaneous.OtherFlags>
         <avrgcc.linker.optimization.GarbageCollectUnusedSections>True</avrgcc.linker.optimization.GarbageCollectUnusedSections>
         <avrgcc.compiler.symbols.DefSymbols>
           <ListValues>
             <Value>F_CPU=8000000UL</Value>
+            <Value>ENABLE_UART=1</Value>
             <Value>ENABLE_RTC=1</Value>
           </ListValues>
         </avrgcc.compiler.symbols.DefSymbols>
         <avrgcc.compiler.directories.IncludePaths>
           <ListValues>
-            <Value>..\include</Value>
+            <Value>..\..\include</Value>
           </ListValues>
         </avrgcc.compiler.directories.IncludePaths>
       </AvrGcc>
     </ToolchainSettings>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Light'">
-    <OutputPath>..\build\studio-Light\</OutputPath>
+    <OutputPath>Light\</OutputPath>
     <ToolchainSettings>
       <AvrGcc>
         <avrgcc.common.Device>-mmcu=atmega16</avrgcc.common.Device>
@@ -124,24 +218,25 @@
         <avrgcc.compiler.optimization.PrepareDataForGarbageCollection>True</avrgcc.compiler.optimization.PrepareDataForGarbageCollection>
         <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
         <avrgcc.compiler.warnings.ExtraWarnings>True</avrgcc.compiler.warnings.ExtraWarnings>
-        <avrgcc.compiler.miscellaneous.OtherFlags>-std=gnu99</avrgcc.compiler.miscellaneous.OtherFlags>
+        <avrgcc.compiler.miscellaneous.OtherFlags>-std=gnu99 -Werror</avrgcc.compiler.miscellaneous.OtherFlags>
         <avrgcc.linker.optimization.GarbageCollectUnusedSections>True</avrgcc.linker.optimization.GarbageCollectUnusedSections>
         <avrgcc.compiler.symbols.DefSymbols>
           <ListValues>
             <Value>F_CPU=8000000UL</Value>
+            <Value>ENABLE_UART=1</Value>
             <Value>ENABLE_BH1750=1</Value>
           </ListValues>
         </avrgcc.compiler.symbols.DefSymbols>
         <avrgcc.compiler.directories.IncludePaths>
           <ListValues>
-            <Value>..\include</Value>
+            <Value>..\..\include</Value>
           </ListValues>
         </avrgcc.compiler.directories.IncludePaths>
       </AvrGcc>
     </ToolchainSettings>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Passive'">
-    <OutputPath>..\build\studio-Passive\</OutputPath>
+    <OutputPath>Passive\</OutputPath>
     <ToolchainSettings>
       <AvrGcc>
         <avrgcc.common.Device>-mmcu=atmega16</avrgcc.common.Device>
@@ -154,11 +249,12 @@
         <avrgcc.compiler.optimization.PrepareDataForGarbageCollection>True</avrgcc.compiler.optimization.PrepareDataForGarbageCollection>
         <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
         <avrgcc.compiler.warnings.ExtraWarnings>True</avrgcc.compiler.warnings.ExtraWarnings>
-        <avrgcc.compiler.miscellaneous.OtherFlags>-std=gnu99</avrgcc.compiler.miscellaneous.OtherFlags>
+        <avrgcc.compiler.miscellaneous.OtherFlags>-std=gnu99 -Werror</avrgcc.compiler.miscellaneous.OtherFlags>
         <avrgcc.linker.optimization.GarbageCollectUnusedSections>True</avrgcc.linker.optimization.GarbageCollectUnusedSections>
         <avrgcc.compiler.symbols.DefSymbols>
           <ListValues>
             <Value>F_CPU=8000000UL</Value>
+            <Value>ENABLE_UART=1</Value>
             <Value>ENABLE_BUZZER=1</Value>
             <Value>ENABLE_RTC=1</Value>
             <Value>ENABLE_BH1750=1</Value>
@@ -167,14 +263,14 @@
         </avrgcc.compiler.symbols.DefSymbols>
         <avrgcc.compiler.directories.IncludePaths>
           <ListValues>
-            <Value>..\include</Value>
+            <Value>..\..\include</Value>
           </ListValues>
         </avrgcc.compiler.directories.IncludePaths>
       </AvrGcc>
     </ToolchainSettings>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Diagnostic'">
-    <OutputPath>..\build\studio-Diagnostic\</OutputPath>
+    <OutputPath>Diagnostic\</OutputPath>
     <ToolchainSettings>
       <AvrGcc>
         <avrgcc.common.Device>-mmcu=atmega16</avrgcc.common.Device>
@@ -187,28 +283,29 @@
         <avrgcc.compiler.optimization.PrepareDataForGarbageCollection>True</avrgcc.compiler.optimization.PrepareDataForGarbageCollection>
         <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
         <avrgcc.compiler.warnings.ExtraWarnings>True</avrgcc.compiler.warnings.ExtraWarnings>
-        <avrgcc.compiler.miscellaneous.OtherFlags>-std=gnu99</avrgcc.compiler.miscellaneous.OtherFlags>
+        <avrgcc.compiler.miscellaneous.OtherFlags>-std=gnu99 -Werror</avrgcc.compiler.miscellaneous.OtherFlags>
         <avrgcc.linker.optimization.GarbageCollectUnusedSections>True</avrgcc.linker.optimization.GarbageCollectUnusedSections>
         <avrgcc.compiler.symbols.DefSymbols>
           <ListValues>
             <Value>F_CPU=8000000UL</Value>
+            <Value>ENABLE_UART=1</Value>
             <Value>ENABLE_LCD=0</Value>
-            <Value>DIAG_LED7=1</Value>
             <Value>ENABLE_BUZZER=0</Value>
             <Value>ENABLE_RTC=0</Value>
             <Value>ENABLE_BH1750=0</Value>
+            <Value>DIAG_LED7=1</Value>
           </ListValues>
         </avrgcc.compiler.symbols.DefSymbols>
         <avrgcc.compiler.directories.IncludePaths>
           <ListValues>
-            <Value>..\include</Value>
+            <Value>..\..\include</Value>
           </ListValues>
         </avrgcc.compiler.directories.IncludePaths>
       </AvrGcc>
     </ToolchainSettings>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Minimal'">
-    <OutputPath>..\build\studio-Minimal\</OutputPath>
+    <OutputPath>Minimal\</OutputPath>
     <ToolchainSettings>
       <AvrGcc>
         <avrgcc.common.Device>-mmcu=atmega16</avrgcc.common.Device>
@@ -221,7 +318,7 @@
         <avrgcc.compiler.optimization.PrepareDataForGarbageCollection>True</avrgcc.compiler.optimization.PrepareDataForGarbageCollection>
         <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
         <avrgcc.compiler.warnings.ExtraWarnings>True</avrgcc.compiler.warnings.ExtraWarnings>
-        <avrgcc.compiler.miscellaneous.OtherFlags>-std=gnu99</avrgcc.compiler.miscellaneous.OtherFlags>
+        <avrgcc.compiler.miscellaneous.OtherFlags>-std=gnu99 -Werror</avrgcc.compiler.miscellaneous.OtherFlags>
         <avrgcc.linker.optimization.GarbageCollectUnusedSections>True</avrgcc.linker.optimization.GarbageCollectUnusedSections>
         <avrgcc.compiler.symbols.DefSymbols>
           <ListValues>
@@ -235,68 +332,7 @@
         </avrgcc.compiler.symbols.DefSymbols>
         <avrgcc.compiler.directories.IncludePaths>
           <ListValues>
-            <Value>..\include</Value>
-          </ListValues>
-        </avrgcc.compiler.directories.IncludePaths>
-      </AvrGcc>
-    </ToolchainSettings>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
-    <OutputPath>..\build\studio-Debug\</OutputPath>
-    <ToolchainSettings>
-      <AvrGcc>
-        <avrgcc.common.Device>-mmcu=atmega16</avrgcc.common.Device>
-        <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
-        <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
-        <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
-        <avrgcc.common.outputfiles.map>True</avrgcc.common.outputfiles.map>
-        <avrgcc.compiler.optimization.level>Optimize for size (-Os)</avrgcc.compiler.optimization.level>
-        <avrgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>True</avrgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>
-        <avrgcc.compiler.optimization.PrepareDataForGarbageCollection>True</avrgcc.compiler.optimization.PrepareDataForGarbageCollection>
-        <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
-        <avrgcc.compiler.warnings.ExtraWarnings>True</avrgcc.compiler.warnings.ExtraWarnings>
-        <avrgcc.compiler.miscellaneous.OtherFlags>-std=gnu99</avrgcc.compiler.miscellaneous.OtherFlags>
-        <avrgcc.linker.optimization.GarbageCollectUnusedSections>True</avrgcc.linker.optimization.GarbageCollectUnusedSections>
-        <avrgcc.compiler.symbols.DefSymbols>
-          <ListValues>
-            <Value>F_CPU=8000000UL</Value>
-          </ListValues>
-        </avrgcc.compiler.symbols.DefSymbols>
-        <avrgcc.compiler.directories.IncludePaths>
-          <ListValues>
-            <Value>..\include</Value>
-          </ListValues>
-        </avrgcc.compiler.directories.IncludePaths>
-      </AvrGcc>
-    </ToolchainSettings>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
-    <OutputPath>..\build\studio-Release\</OutputPath>
-    <ToolchainSettings>
-      <AvrGcc>
-        <avrgcc.common.Device>-mmcu=atmega16</avrgcc.common.Device>
-        <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
-        <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
-        <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
-        <avrgcc.common.outputfiles.map>True</avrgcc.common.outputfiles.map>
-        <avrgcc.compiler.optimization.level>Optimize for size (-Os)</avrgcc.compiler.optimization.level>
-        <avrgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>True</avrgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>
-        <avrgcc.compiler.optimization.PrepareDataForGarbageCollection>True</avrgcc.compiler.optimization.PrepareDataForGarbageCollection>
-        <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
-        <avrgcc.compiler.warnings.ExtraWarnings>True</avrgcc.compiler.warnings.ExtraWarnings>
-        <avrgcc.compiler.miscellaneous.OtherFlags>-std=gnu99</avrgcc.compiler.miscellaneous.OtherFlags>
-        <avrgcc.linker.optimization.GarbageCollectUnusedSections>True</avrgcc.linker.optimization.GarbageCollectUnusedSections>
-        <avrgcc.compiler.symbols.DefSymbols>
-          <ListValues>
-            <Value>F_CPU=8000000UL</Value>
-            <Value>ENABLE_BUZZER=1</Value>
-            <Value>ENABLE_RTC=1</Value>
-            <Value>ENABLE_BH1750=1</Value>
-          </ListValues>
-        </avrgcc.compiler.symbols.DefSymbols>
-        <avrgcc.compiler.directories.IncludePaths>
-          <ListValues>
-            <Value>..\include</Value>
+            <Value>..\..\include</Value>
           </ListValues>
         </avrgcc.compiler.directories.IncludePaths>
       </AvrGcc>

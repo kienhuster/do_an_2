@@ -7,6 +7,14 @@ Repository ban đầu không có `GccApplication2.cppproj` hay project Studio đ
 Tài liệu báo cáo cũ mô tả DHT22/động cơ; project này dùng **DHT11**, ánh xạ theo kit trong
 “Merged - Tai lieu huong dan.pdf” và theo yêu cầu mới. Không dùng báo cáo cũ làm hướng dẫn đấu nối cho firmware mới.
 
+## Bản sửa build Windows và UART OFF (2026-10-10)
+
+Dùng [hướng dẫn Windows/PROGISP](BUILD_INSTRUCTIONS_WINDOWS.md),
+[báo cáo sửa lỗi](BUILD_FIX_REPORT.md), [bảng cấu hình](BUILD_CONFIGURATIONS.md),
+[checklist kit thật](HARDWARE_TEST_GUIDE.md) và [changelog](CHANGELOG.md).
+HEX khuyên dùng cho kit hiện tại: `releases/windows-gcc54/ATmega16_DHT11_BASE_UART_OFF.hex`.
+Gói `ATmega16_Monitor_C_BUILD_FIX.zip` mới ở gốc repository; ZIP không có hậu tố BUILD_FIX là bản cũ.
+
 ## Bắt đầu
 
 Trên môi trường cloud đã thiết lập:
@@ -19,6 +27,7 @@ make -j2 matrix
 make test
 make PROFILE=base simulate
 make PROFILE=full simulate
+make PROFILE=uart simulate
 ```
 
 Để cài lại các công cụ trên cloud Debian amd64, chạy `bash tools/setup_cloud.sh`.
@@ -32,10 +41,10 @@ Các test host cần compiler C có AddressSanitizer/UBSan. Mô phỏng cần si
 
 Trên Windows mở `studio/MonitorATmega16.cproj` trong Microchip Studio/Atmel Studio 7,
 chọn ATmega16 và toolchain **AVR/GNU C Compiler**. `Debug` tương đương `Base`, `Release`
-tương đương `Full`; các cấu hình Base/Full/RTC/Light/Passive/Diagnostic/Minimal cũng được khai báo.
+tương đương `Full`; các cấu hình Base/UART/Full/RTC/Light/Passive/Diagnostic/Minimal cũng được khai báo.
 Nếu IDE chưa hiện các cấu hình tùy chỉnh, thêm tên tương ứng trong Configuration Manager.
 Các tệp `.c` được biên dịch bằng AVR-GCC; header được khai báo trong project.
-Compiler phải có `-std=gnu99`, `-Os`, `F_CPU=8000000UL`, include `../include`, và linker
+Compiler phải có `-std=gnu99`, `-Os`, `F_CPU=8000000UL`, include `../../include` tính từ `studio/<Configuration>`, và linker
 `--gc-sections`. Có thể tái tạo XML bằng `python3 tools/generate_studio.py`.
 
 **Đã kiểm tra compiler AVR-GCC 14.2 và 5.4 trên Linux. Chưa chạy IDE Studio trên Windows**;
@@ -46,16 +55,17 @@ mở/build project bằng IDE trên máy Windows của bạn.
 
 | `PROFILE` | Thành phần |
 |---|---|
-| `base` | DHT11, LCD, nút, EEPROM, UART/CSV, ADC, thống kê, cảnh báo, watchdog, diagnostic chân trống |
-| `full` | Base + buzzer active + DS3231 + BH1750 |
-| `rtc` | Base + DS3231 |
-| `light` | Base + BH1750 |
+| `base` | DHT11, LCD, nút, EEPROM, ADC, thống kê, cảnh báo, watchdog, diagnostic chân trống; UART OFF |
+| `uart` | Base + UART hai chiều và CSV |
+| `full` | UART + buzzer active + DS3231 + BH1750 |
+| `rtc` | UART + DS3231 |
+| `light` | UART + BH1750 |
 | `passive` | Full, dùng buzzer passive với sóng 2 kHz từ Timer0 CTC |
 | `diagnostic` | LCD/I²C/buzzer tắt; LED 7 đoạn + các LED đơn không chiếm UART; tự vào diagnostic |
 | `minimal` | DHT11, xử lý dữ liệu/cảnh báo, nút và watchdog; không LCD/UART/ADC/EEPROM |
 
 Tùy chọn nằm ở `include/config.h`, có thể bật bằng `#define` hoặc `-D`.
-Các giá trị mặc định cho buzzer/RTC/BH1750 là 0; **driver đầy đủ đã có trong `src/optional.c`
+Các giá trị mặc định cho UART/buzzer/RTC/BH1750 là 0; **driver đầy đủ đã có trong `src/optional.c`
 và `src/i2c.c`**, và được biên dịch trong các cấu hình tương ứng. Các nhánh module tắt trả về
 “không khả dụng”; chúng không sinh dữ liệu giả. Dữ liệu mô phỏng chỉ nằm trong `tests/`.
 

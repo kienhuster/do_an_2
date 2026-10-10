@@ -1,0 +1,19 @@
+make: Entering directory '/workspace/do_an_2/firmware'
+/workspace/.avr/legacy/root/usr/bin/avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -MMD -MP -c src/board.c -o build/legacy-uart/board.o
+/workspace/.avr/legacy/root/usr/bin/avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -MMD -MP -c src/command.c -o build/legacy-uart/command.o
+/workspace/.avr/legacy/root/usr/bin/avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -MMD -MP -c src/core.c -o build/legacy-uart/core.o
+/workspace/.avr/legacy/root/usr/bin/avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -MMD -MP -c src/dht.c -o build/legacy-uart/dht.o
+/workspace/.avr/legacy/root/usr/bin/avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -MMD -MP -c src/i2c.c -o build/legacy-uart/i2c.o
+/workspace/.avr/legacy/root/usr/bin/avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -MMD -MP -c src/lcd.c -o build/legacy-uart/lcd.o
+/workspace/.avr/legacy/root/usr/bin/avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -MMD -MP -c src/main.c -o build/legacy-uart/main.o
+/workspace/.avr/legacy/root/usr/bin/avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -MMD -MP -c src/optional.c -o build/legacy-uart/optional.o
+/workspace/.avr/legacy/root/usr/bin/avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -Iinclude -DENABLE_UART=1 -MMD -MP -c src/reset.c -o build/legacy-uart/reset.o
+/workspace/.avr/legacy/root/usr/bin/avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -MMD -MP -c src/storage.c -o build/legacy-uart/storage.o
+/workspace/.avr/legacy/root/usr/bin/avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -MMD -MP -c src/uart.c -o build/legacy-uart/uart.o
+/workspace/.avr/legacy/root/usr/bin/avr-gcc -mmcu=atmega16 -DF_CPU=8000000UL -std=gnu99 -Os -g -Wall -Wextra -Werror -ffunction-sections -fdata-sections -fstack-usage -Iinclude -DENABLE_UART=1 -MMD -MP -c src/ui.c -o build/legacy-uart/ui.o
+/workspace/.avr/legacy/root/usr/bin/avr-gcc -mmcu=atmega16 -Wl,--gc-sections,-Map,build/legacy-uart/monitor.map build/legacy-uart/board.o build/legacy-uart/command.o build/legacy-uart/core.o build/legacy-uart/dht.o build/legacy-uart/i2c.o build/legacy-uart/lcd.o build/legacy-uart/main.o build/legacy-uart/optional.o build/legacy-uart/reset.o build/legacy-uart/storage.o build/legacy-uart/uart.o build/legacy-uart/ui.o -o build/legacy-uart/monitor.elf
+/workspace/.avr/legacy/root/usr/bin/avr-objcopy -O ihex -R .eeprom build/legacy-uart/monitor.elf build/legacy-uart/monitor.hex
+/workspace/.avr/legacy/root/usr/bin/avr-objcopy -O ihex -j .eeprom --change-section-lma .eeprom=0 build/legacy-uart/monitor.elf build/legacy-uart/monitor.eep
+python3 tools/check_size.py /workspace/.avr/legacy/root/usr/bin/avr-size build/legacy-uart/monitor.elf
+Flash 12550/16384 bytes; static SRAM 490/1024; EEPROM 48/512; stack headroom 534
+make: Leaving directory '/workspace/do_an_2/firmware'

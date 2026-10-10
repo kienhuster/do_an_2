@@ -6,7 +6,9 @@
 static bool level(bool high, uint8_t limit) {
     uint8_t start = TCNT2;
     while (((PINA & _BV(PA1)) != 0) != high) {
+#if ENABLE_UART
         uart_rx_poll();
+#endif
         if ((uint8_t)(TCNT2 - start) >= limit)
             return false;
     }
@@ -49,7 +51,9 @@ bool dht_finish(uint16_t *t, uint16_t *h) {
     }
     ok = dht_decode(data, t, h);
 done:
+#if ENABLE_UART
     uart_rx_poll();
+#endif
     SREG = sr;
     return ok;
 #else
